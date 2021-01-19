@@ -26,6 +26,15 @@
  *
  * ==========================================================
  */
+
+/**
+ * *****************Calculated consumption********************
+ * Battery : Energizer max plus C/LR14
+ * Capacity : 8000mAH
+ * Consumption sleep mode : 70uA
+ * #year = (8000mAH/70uA)/24/365 = 13 years
+ * ***********************************************************
+ */
 #include <it_sdk/config.h>
 #include <it_sdk/itsdk.h>
 #include <it_sdk/time/time.h>
