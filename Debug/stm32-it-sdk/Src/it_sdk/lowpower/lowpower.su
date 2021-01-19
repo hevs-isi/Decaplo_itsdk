@@ -1,0 +1,4 @@
+lowpower.c:48:38:lowPower_switch	16	static
+lowpower.c:88:6:lowPower_enable	8	static
+lowpower.c:95:6:lowPower_disable	8	static
+lowpower.c:104:10:lowPower_delayMs	24	static

@@ -1,0 +1,4 @@
+eeprom.c:44:6:_eeprom_write	40	static
+eeprom.c:77:6:_eeprom_read	40	static
+eeprom.c:103:10:__eepromRead	16	static
+eeprom.c:111:6:__eepromWrite	24	static

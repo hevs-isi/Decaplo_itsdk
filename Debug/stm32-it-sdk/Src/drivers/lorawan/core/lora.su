@@ -1,0 +1,2 @@
+lora.c:90:6:TraceUpLinkFrame	72	static
+lora.c:135:6:TraceDownLinkFrame	16	static

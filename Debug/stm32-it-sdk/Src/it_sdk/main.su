@@ -1,0 +1,3 @@
+main.c:99:6:itsdk_setup	8	static
+main.c:148:6:itsdk_restart	8	static
+main.c:161:6:itsdk_loop	8	static

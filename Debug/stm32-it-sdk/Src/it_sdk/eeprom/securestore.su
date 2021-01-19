@@ -1,0 +1,16 @@
+securestore.c:68:31:_itsdk_secstore_getOffset	32	static
+securestore.c:223:31:_itsdk_secstore_getEntries	24	static
+securestore.c:239:31:_itsdk_secstore_controlHeader	32	static
+securestore.c:255:24:itsdk_secstore_getStoreSize	16	static
+securestore.c:276:13:itsdk_secstore_generateMasterKey	24	static
+securestore.c:304:24:itsdk_secstore_readBlock	64	static
+securestore.c:334:24:itsdk_secstore_writeBlock	64	static
+securestore.c:369:24:itsdk_secstore_init	72	static
+securestore.c:394:24:itsdk_secstore_isInit	24	static
+securestore.c:417:31:_itsdk_secstore_writeBlockKey	32	static
+securestore.c:437:31:_itsk_secstore_rekey	72	static
+securestore.c:563:13:__checkAndConvert	32	static
+securestore.c:575:31:__updateField	40	static
+securestore.c:593:31:__updateField2	64	static
+securestore.c:619:31:_itsdk_secStore_consolePriv	64	static
+securestore.c:966:24:itsdk_secStore_RegisterConsole	8	static

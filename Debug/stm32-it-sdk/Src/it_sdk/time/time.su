@@ -1,0 +1,15 @@
+time.c:50:6:itsdk_time_add_us	48	static
+time.c:66:6:itsdk_time_set_ms	32	static
+time.c:78:10:itsdk_time_get_ms	16	static
+time.c:85:10:itsdk_time_get_us	12	static
+time.c:94:6:itsdk_time_sync_UTC_s	24	static
+time.c:103:10:itsdk_time_get_UTC_s	24	static
+time.c:112:9:itsdk_time_get_UTC_hour	32	static
+time.c:126:9:itsdk_time_get_UTC_min	32	static
+time.c:140:9:itsdk_time_get_UTC_sec	32	static
+time.c:157:14:itsdk_time_is_UTC_s	32	static
+time.c:174:6:itsdk_time_sync_EPOC_s	24	static
+time.c:183:10:itsdk_time_get_EPOC_s	24	static
+time.c:197:14:itsdk_time_is_EPOC_s	32	static
+time.c:211:6:itsdk_time_reset	16	static
+time.c:225:6:itsdk_time_init	16	static

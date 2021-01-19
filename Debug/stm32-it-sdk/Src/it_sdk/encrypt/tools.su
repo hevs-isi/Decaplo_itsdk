@@ -1,0 +1,7 @@
+tools.c:41:6:itsdk_encrypt_cifferKey	24	static
+tools.c:57:6:itsdk_encrypt_unCifferKey	16	static
+tools.c:106:24:itsdk_encrypt_resetFactoryDefaults	16	static
+tools.c:119:32:itsdk_encrypt_aes_getNonce	32	static
+tools.c:137:31:itsdk_encrypt_aes_getSharedKey	40	static
+tools.c:159:31:itsdk_encrypt_aes_getMasterKey	72	static
+tools.c:183:31:itsdk_encrypt_speck_getMasterKey	56	static

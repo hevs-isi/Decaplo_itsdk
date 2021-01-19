@@ -1,0 +1,2 @@
+aes128ctr.c:185:6:itsdk_aes_ecb_encrypt_128B	240	static
+aes128ctr.c:209:6:itsdk_aes_ecb_decrypt_128B	240	static

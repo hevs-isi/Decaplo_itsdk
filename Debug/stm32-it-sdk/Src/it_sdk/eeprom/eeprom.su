@@ -1,0 +1,6 @@
+eeprom.c:49:6:eeprom_write	48	static
+eeprom.c:77:6:eeprom_read	56	static
+eeprom.c:117:6:eeprom_getConfigOffset	32	static
+eeprom.c:136:6:eeprom_getConfigSize	48	static
+eeprom.c:155:6:eeprom_getPostConfigOffset	24	static
+eeprom.c:170:6:eeprom_clearAllEprom	16	static
