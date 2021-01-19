@@ -163,10 +163,12 @@
 									/*	 | __LP_GPIO_14*/	/* spi2 NA */		\
 									/*	 | __LP_GPIO_15*/	/* spi2 */			\
 									)										// Keep activ
+
+																			//ITSDK_LOWPOWER_GPIO_C_KEEP uncomment __LP_GPIO_1 __LP_GPIO_0 __LP_GPIO_2
 #define ITSDK_LOWPOWER_GPIO_C_KEEP	(     __LP_GPIO_NONE \
-										| __LP_GPIO_0 	/* LoRa Reset */	\
-										| __LP_GPIO_1 	/* LoRa TxBoost*/	\
-										| __LP_GPIO_2 	/* LoRa Radiosw*/	\
+									/*	| __LP_GPIO_0 */	/* LoRa Reset */	\
+									/*	| __LP_GPIO_1 */	/* LoRa TxBoost*/	\
+									/*	| __LP_GPIO_2 */	/* LoRa Radiosw*/	\
 								  /*    | __LP_GPIO_13 */ /* LoRa Dio3*/	\
 								  /*	| __LP_GPIO_14 */ /* nc */			\
 								  /*	| __LP_GPIO_15 */ /* nc */			\

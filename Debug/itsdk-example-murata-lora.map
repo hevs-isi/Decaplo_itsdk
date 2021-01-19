@@ -4672,7 +4672,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT.o
  .debug_line    0x0000000000000000      0x895 stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT.o
- .debug_str     0x0000000000000000    0x89bc6 stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT.o
+ .debug_str     0x0000000000000000    0x89b9c stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT.o
@@ -4783,7 +4783,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT_printf.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT_printf.o
  .debug_line    0x0000000000000000      0x89c stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT_printf.o
- .debug_str     0x0000000000000000    0x89bcd stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT_printf.o
+ .debug_str     0x0000000000000000    0x89ba3 stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT_printf.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT_printf.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/SeggerRTT/SEGGER_RTT_printf.o
@@ -4894,7 +4894,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/accel/st_lis2dh12/lis2dh12.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/accel/st_lis2dh12/lis2dh12.o
  .debug_line    0x0000000000000000      0x89b stm32-it-sdk/Src/drivers/accel/st_lis2dh12/lis2dh12.o
- .debug_str     0x0000000000000000    0x89bcc stm32-it-sdk/Src/drivers/accel/st_lis2dh12/lis2dh12.o
+ .debug_str     0x0000000000000000    0x89ba2 stm32-it-sdk/Src/drivers/accel/st_lis2dh12/lis2dh12.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/accel/st_lis2dh12/lis2dh12.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/accel/st_lis2dh12/lis2dh12.o
@@ -5011,7 +5011,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 stm32-it-sdk/Src/drivers/eeprom/m95640/m95640.o
  .debug_macro   0x0000000000000000       0x4c stm32-it-sdk/Src/drivers/eeprom/m95640/m95640.o
  .debug_line    0x0000000000000000      0x99d stm32-it-sdk/Src/drivers/eeprom/m95640/m95640.o
- .debug_str     0x0000000000000000    0x89e81 stm32-it-sdk/Src/drivers/eeprom/m95640/m95640.o
+ .debug_str     0x0000000000000000    0x89e57 stm32-it-sdk/Src/drivers/eeprom/m95640/m95640.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/eeprom/m95640/m95640.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/eeprom/m95640/m95640.o
@@ -5122,7 +5122,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/gauge/max17205/max17205.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/gauge/max17205/max17205.o
  .debug_line    0x0000000000000000      0x898 stm32-it-sdk/Src/drivers/gauge/max17205/max17205.o
- .debug_str     0x0000000000000000    0x89bc9 stm32-it-sdk/Src/drivers/gauge/max17205/max17205.o
+ .debug_str     0x0000000000000000    0x89b9f stm32-it-sdk/Src/drivers/gauge/max17205/max17205.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/gauge/max17205/max17205.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/gauge/max17205/max17205.o
@@ -5233,7 +5233,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/gnss/quectel/quectel.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/gnss/quectel/quectel.o
  .debug_line    0x0000000000000000      0x895 stm32-it-sdk/Src/drivers/gnss/quectel/quectel.o
- .debug_str     0x0000000000000000    0x89bc6 stm32-it-sdk/Src/drivers/gnss/quectel/quectel.o
+ .debug_str     0x0000000000000000    0x89b9c stm32-it-sdk/Src/drivers/gnss/quectel/quectel.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/gnss/quectel/quectel.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/gnss/quectel/quectel.o
@@ -5344,7 +5344,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/hall/sl353/sl353.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/hall/sl353/sl353.o
  .debug_line    0x0000000000000000      0x891 stm32-it-sdk/Src/drivers/hall/sl353/sl353.o
- .debug_str     0x0000000000000000    0x89bc2 stm32-it-sdk/Src/drivers/hall/sl353/sl353.o
+ .debug_str     0x0000000000000000    0x89b98 stm32-it-sdk/Src/drivers/hall/sl353/sl353.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/hall/sl353/sl353.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/hall/sl353/sl353.o
@@ -5455,7 +5455,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/light/max44009/max44009.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/light/max44009/max44009.o
  .debug_line    0x0000000000000000      0x898 stm32-it-sdk/Src/drivers/light/max44009/max44009.o
- .debug_str     0x0000000000000000    0x89bc9 stm32-it-sdk/Src/drivers/light/max44009/max44009.o
+ .debug_str     0x0000000000000000    0x89b9f stm32-it-sdk/Src/drivers/light/max44009/max44009.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/light/max44009/max44009.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/light/max44009/max44009.o
@@ -5820,7 +5820,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lora.o
  .debug_macro   0x0000000000000000       0x46 stm32-it-sdk/Src/drivers/lorawan/core/lora.o
  .debug_line    0x0000000000000000      0xf19 stm32-it-sdk/Src/drivers/lorawan/core/lora.o
- .debug_str     0x0000000000000000    0x9065f stm32-it-sdk/Src/drivers/lorawan/core/lora.o
+ .debug_str     0x0000000000000000    0x90635 stm32-it-sdk/Src/drivers/lorawan/core/lora.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/lorawan/core/lora.o
  .debug_frame   0x0000000000000000       0x50 stm32-it-sdk/Src/drivers/lorawan/core/lora.o
  .ARM.attributes
@@ -10891,7 +10891,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/nfc/st25dv/st25dv.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/nfc/st25dv/st25dv.o
  .debug_line    0x0000000000000000      0x892 stm32-it-sdk/Src/drivers/nfc/st25dv/st25dv.o
- .debug_str     0x0000000000000000    0x89bc3 stm32-it-sdk/Src/drivers/nfc/st25dv/st25dv.o
+ .debug_str     0x0000000000000000    0x89b99 stm32-it-sdk/Src/drivers/nfc/st25dv/st25dv.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/nfc/st25dv/st25dv.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/nfc/st25dv/st25dv.o
@@ -11002,7 +11002,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/s2lp/s2lp.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/s2lp/s2lp.o
  .debug_line    0x0000000000000000      0x88a stm32-it-sdk/Src/drivers/s2lp/s2lp.o
- .debug_str     0x0000000000000000    0x89bbb stm32-it-sdk/Src/drivers/s2lp/s2lp.o
+ .debug_str     0x0000000000000000    0x89b91 stm32-it-sdk/Src/drivers/s2lp/s2lp.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/s2lp/s2lp.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/s2lp/s2lp.o
@@ -11113,7 +11113,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/s2lp/s2lp_idRetriever.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/s2lp/s2lp_idRetriever.o
  .debug_line    0x0000000000000000      0x896 stm32-it-sdk/Src/drivers/s2lp/s2lp_idRetriever.o
- .debug_str     0x0000000000000000    0x89bc7 stm32-it-sdk/Src/drivers/s2lp/s2lp_idRetriever.o
+ .debug_str     0x0000000000000000    0x89b9d stm32-it-sdk/Src/drivers/s2lp/s2lp_idRetriever.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/s2lp/s2lp_idRetriever.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/s2lp/s2lp_idRetriever.o
@@ -11224,7 +11224,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/s2lp/s2lp_spi.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/s2lp/s2lp_spi.o
  .debug_line    0x0000000000000000      0x88e stm32-it-sdk/Src/drivers/s2lp/s2lp_spi.o
- .debug_str     0x0000000000000000    0x89bbf stm32-it-sdk/Src/drivers/s2lp/s2lp_spi.o
+ .debug_str     0x0000000000000000    0x89b95 stm32-it-sdk/Src/drivers/s2lp/s2lp_spi.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/s2lp/s2lp_spi.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/s2lp/s2lp_spi.o
@@ -11335,7 +11335,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/s2lp/sigfox_helper.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/s2lp/sigfox_helper.o
  .debug_line    0x0000000000000000      0x893 stm32-it-sdk/Src/drivers/s2lp/sigfox_helper.o
- .debug_str     0x0000000000000000    0x89bc4 stm32-it-sdk/Src/drivers/s2lp/sigfox_helper.o
+ .debug_str     0x0000000000000000    0x89b9a stm32-it-sdk/Src/drivers/s2lp/sigfox_helper.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/s2lp/sigfox_helper.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/s2lp/sigfox_helper.o
@@ -11446,7 +11446,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/s2lp/st_lib_api.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/s2lp/st_lib_api.o
  .debug_line    0x0000000000000000      0x890 stm32-it-sdk/Src/drivers/s2lp/st_lib_api.o
- .debug_str     0x0000000000000000    0x89bc1 stm32-it-sdk/Src/drivers/s2lp/st_lib_api.o
+ .debug_str     0x0000000000000000    0x89b97 stm32-it-sdk/Src/drivers/s2lp/st_lib_api.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/s2lp/st_lib_api.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/s2lp/st_lib_api.o
@@ -11724,7 +11724,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/sx1276/sigfox_credentials.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/sx1276/sigfox_credentials.o
  .debug_line    0x0000000000000000      0x9e5 stm32-it-sdk/Src/drivers/sx1276/sigfox_credentials.o
- .debug_str     0x0000000000000000    0x8cb59 stm32-it-sdk/Src/drivers/sx1276/sigfox_credentials.o
+ .debug_str     0x0000000000000000    0x8cb2f stm32-it-sdk/Src/drivers/sx1276/sigfox_credentials.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/sx1276/sigfox_credentials.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/sx1276/sigfox_credentials.o
@@ -11835,7 +11835,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/sx1276/sigfox_lib_api.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/sx1276/sigfox_lib_api.o
  .debug_line    0x0000000000000000      0x896 stm32-it-sdk/Src/drivers/sx1276/sigfox_lib_api.o
- .debug_str     0x0000000000000000    0x89bc7 stm32-it-sdk/Src/drivers/sx1276/sigfox_lib_api.o
+ .debug_str     0x0000000000000000    0x89b9d stm32-it-sdk/Src/drivers/sx1276/sigfox_lib_api.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/sx1276/sigfox_lib_api.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/sx1276/sigfox_lib_api.o
@@ -11946,7 +11946,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/sx1276/sigfox_lowlevel.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/sx1276/sigfox_lowlevel.o
  .debug_line    0x0000000000000000      0x897 stm32-it-sdk/Src/drivers/sx1276/sigfox_lowlevel.o
- .debug_str     0x0000000000000000    0x89bc8 stm32-it-sdk/Src/drivers/sx1276/sigfox_lowlevel.o
+ .debug_str     0x0000000000000000    0x89b9e stm32-it-sdk/Src/drivers/sx1276/sigfox_lowlevel.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/sx1276/sigfox_lowlevel.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/sx1276/sigfox_lowlevel.o
@@ -12057,7 +12057,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/sx1276/sigfox_sx1276.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/sx1276/sigfox_sx1276.o
  .debug_line    0x0000000000000000      0x895 stm32-it-sdk/Src/drivers/sx1276/sigfox_sx1276.o
- .debug_str     0x0000000000000000    0x89bc6 stm32-it-sdk/Src/drivers/sx1276/sigfox_sx1276.o
+ .debug_str     0x0000000000000000    0x89b9c stm32-it-sdk/Src/drivers/sx1276/sigfox_sx1276.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/sx1276/sigfox_sx1276.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/sx1276/sigfox_sx1276.o
@@ -12345,7 +12345,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/temphygropressure/bosh_bme280/bme280.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/temphygropressure/bosh_bme280/bme280.o
  .debug_line    0x0000000000000000      0x8a5 stm32-it-sdk/Src/drivers/temphygropressure/bosh_bme280/bme280.o
- .debug_str     0x0000000000000000    0x89bd6 stm32-it-sdk/Src/drivers/temphygropressure/bosh_bme280/bme280.o
+ .debug_str     0x0000000000000000    0x89bac stm32-it-sdk/Src/drivers/temphygropressure/bosh_bme280/bme280.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/temphygropressure/bosh_bme280/bme280.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/temphygropressure/bosh_bme280/bme280.o
@@ -12456,7 +12456,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/drivers/temphygropressure/omron_2smpb-02b/o_2smpb.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/drivers/temphygropressure/omron_2smpb-02b/o_2smpb.o
  .debug_line    0x0000000000000000      0x8aa stm32-it-sdk/Src/drivers/temphygropressure/omron_2smpb-02b/o_2smpb.o
- .debug_str     0x0000000000000000    0x89bdb stm32-it-sdk/Src/drivers/temphygropressure/omron_2smpb-02b/o_2smpb.o
+ .debug_str     0x0000000000000000    0x89bb1 stm32-it-sdk/Src/drivers/temphygropressure/omron_2smpb-02b/o_2smpb.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/drivers/temphygropressure/omron_2smpb-02b/o_2smpb.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/drivers/temphygropressure/omron_2smpb-02b/o_2smpb.o
@@ -12597,7 +12597,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x330 stm32-it-sdk/Src/it_sdk/accel/accel.o
  .debug_macro   0x0000000000000000      0x1e1 stm32-it-sdk/Src/it_sdk/accel/accel.o
  .debug_line    0x0000000000000000      0xb15 stm32-it-sdk/Src/it_sdk/accel/accel.o
- .debug_str     0x0000000000000000    0x8d6cd stm32-it-sdk/Src/it_sdk/accel/accel.o
+ .debug_str     0x0000000000000000    0x8d6a3 stm32-it-sdk/Src/it_sdk/accel/accel.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/it_sdk/accel/accel.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/it_sdk/accel/accel.o
@@ -13546,7 +13546,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/it_sdk/encrypt/speck.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/it_sdk/encrypt/speck.o
  .debug_line    0x0000000000000000      0x9d8 stm32-it-sdk/Src/it_sdk/encrypt/speck.o
- .debug_str     0x0000000000000000    0x8cb4c stm32-it-sdk/Src/it_sdk/encrypt/speck.o
+ .debug_str     0x0000000000000000    0x8cb22 stm32-it-sdk/Src/it_sdk/encrypt/speck.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/it_sdk/encrypt/speck.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/it_sdk/encrypt/speck.o
@@ -13807,7 +13807,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/it_sdk/encrypt/speck/speck32.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/it_sdk/encrypt/speck/speck32.o
  .debug_line    0x0000000000000000      0x9a1 stm32-it-sdk/Src/it_sdk/encrypt/speck/speck32.o
- .debug_str     0x0000000000000000    0x89c12 stm32-it-sdk/Src/it_sdk/encrypt/speck/speck32.o
+ .debug_str     0x0000000000000000    0x89be8 stm32-it-sdk/Src/it_sdk/encrypt/speck/speck32.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/it_sdk/encrypt/speck/speck32.o
  .debug_frame   0x0000000000000000       0x34 stm32-it-sdk/Src/it_sdk/encrypt/speck/speck32.o
  .ARM.attributes
@@ -13970,7 +13970,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/it_sdk/gnss/gnss.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/it_sdk/gnss/gnss.o
  .debug_line    0x0000000000000000      0x889 stm32-it-sdk/Src/it_sdk/gnss/gnss.o
- .debug_str     0x0000000000000000    0x89bba stm32-it-sdk/Src/it_sdk/gnss/gnss.o
+ .debug_str     0x0000000000000000    0x89b90 stm32-it-sdk/Src/it_sdk/gnss/gnss.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/it_sdk/gnss/gnss.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/it_sdk/gnss/gnss.o
@@ -14085,7 +14085,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/it_sdk/gnss/nmea.o
  .debug_macro   0x0000000000000000       0x16 stm32-it-sdk/Src/it_sdk/gnss/nmea.o
  .debug_line    0x0000000000000000      0x8af stm32-it-sdk/Src/it_sdk/gnss/nmea.o
- .debug_str     0x0000000000000000    0x89c64 stm32-it-sdk/Src/it_sdk/gnss/nmea.o
+ .debug_str     0x0000000000000000    0x89c3a stm32-it-sdk/Src/it_sdk/gnss/nmea.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/it_sdk/gnss/nmea.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/it_sdk/gnss/nmea.o
@@ -15294,7 +15294,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x4c stm32-it-sdk/Src/it_sdk/sigfox/sigfox.o
  .debug_macro   0x0000000000000000      0x1e2 stm32-it-sdk/Src/it_sdk/sigfox/sigfox.o
  .debug_line    0x0000000000000000      0xb63 stm32-it-sdk/Src/it_sdk/sigfox/sigfox.o
- .debug_str     0x0000000000000000    0x8ee77 stm32-it-sdk/Src/it_sdk/sigfox/sigfox.o
+ .debug_str     0x0000000000000000    0x8ee4d stm32-it-sdk/Src/it_sdk/sigfox/sigfox.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/it_sdk/sigfox/sigfox.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/it_sdk/sigfox/sigfox.o
@@ -15417,7 +15417,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x4c stm32-it-sdk/Src/it_sdk/statemachine/statemachine.o
  .debug_macro   0x0000000000000000       0x2e stm32-it-sdk/Src/it_sdk/statemachine/statemachine.o
  .debug_line    0x0000000000000000      0x9eb stm32-it-sdk/Src/it_sdk/statemachine/statemachine.o
- .debug_str     0x0000000000000000    0x8a09b stm32-it-sdk/Src/it_sdk/statemachine/statemachine.o
+ .debug_str     0x0000000000000000    0x8a071 stm32-it-sdk/Src/it_sdk/statemachine/statemachine.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/it_sdk/statemachine/statemachine.o
  .debug_frame   0x0000000000000000       0x34 stm32-it-sdk/Src/it_sdk/statemachine/statemachine.o
  .ARM.attributes
@@ -15894,7 +15894,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/stm32l_sdk/devices.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/stm32l_sdk/devices.o
  .debug_line    0x0000000000000000      0x88b stm32-it-sdk/Src/stm32l_sdk/devices.o
- .debug_str     0x0000000000000000    0x89bbc stm32-it-sdk/Src/stm32l_sdk/devices.o
+ .debug_str     0x0000000000000000    0x89b92 stm32-it-sdk/Src/stm32l_sdk/devices.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/stm32l_sdk/devices.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/stm32l_sdk/devices.o
@@ -16542,7 +16542,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x1d2 stm32-it-sdk/Src/stm32l_sdk/i2c/i2c.o
  .debug_macro   0x0000000000000000       0x10 stm32-it-sdk/Src/stm32l_sdk/i2c/i2c.o
  .debug_line    0x0000000000000000      0x88b stm32-it-sdk/Src/stm32l_sdk/i2c/i2c.o
- .debug_str     0x0000000000000000    0x89bbc stm32-it-sdk/Src/stm32l_sdk/i2c/i2c.o
+ .debug_str     0x0000000000000000    0x89b92 stm32-it-sdk/Src/stm32l_sdk/i2c/i2c.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/stm32l_sdk/i2c/i2c.o
  .ARM.attributes
                 0x0000000000000000       0x32 stm32-it-sdk/Src/stm32l_sdk/i2c/i2c.o
@@ -17189,7 +17189,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x2e stm32-it-sdk/Src/stm32l_sdk/timer/timer.o
  .debug_macro   0x0000000000000000       0x16 stm32-it-sdk/Src/stm32l_sdk/timer/timer.o
  .debug_line    0x0000000000000000      0xabf stm32-it-sdk/Src/stm32l_sdk/timer/timer.o
- .debug_str     0x0000000000000000    0x8a19c stm32-it-sdk/Src/stm32l_sdk/timer/timer.o
+ .debug_str     0x0000000000000000    0x8a172 stm32-it-sdk/Src/stm32l_sdk/timer/timer.o
  .comment       0x0000000000000000       0x7c stm32-it-sdk/Src/stm32l_sdk/timer/timer.o
  .debug_frame   0x0000000000000000       0xcc stm32-it-sdk/Src/stm32l_sdk/timer/timer.o
  .ARM.attributes
@@ -17634,7 +17634,7 @@ LOAD /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.g
                 0x0000000008000000                g_pfnVectors
                 0x00000000080000c0                . = ALIGN (0x4)
 
-.text           0x00000000080000c0    0x2cf04
+.text           0x00000000080000c0    0x2cf0c
                 0x00000000080000c0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080000c0       0x48 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
@@ -20235,506 +20235,506 @@ LOAD /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.g
                 0x000000000802bc98       0x98 stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
                 0x000000000802bc98                __GpioAnalog
  .text._stm32l_disableGpios
-                0x000000000802bd30       0xac stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
+                0x000000000802bd30       0xb4 stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
                 0x000000000802bd30                _stm32l_disableGpios
  .text.rtc_configure4LowPower
-                0x000000000802bddc       0x2a stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802bddc                rtc_configure4LowPower
+                0x000000000802bde4       0x2a stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802bde4                rtc_configure4LowPower
  .text.rtc_disable4LowPower
-                0x000000000802be06       0x12 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802be06                rtc_disable4LowPower
+                0x000000000802be0e       0x12 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802be0e                rtc_disable4LowPower
  .text.rtc_runRtcUntil
-                0x000000000802be18       0x26 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802be18                rtc_runRtcUntil
+                0x000000000802be20       0x26 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802be20                rtc_runRtcUntil
  .text.rtc_getTicksFromDuration
-                0x000000000802be3e       0x20 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802be3e                rtc_getTicksFromDuration
- *fill*         0x000000000802be5e        0x2 
+                0x000000000802be46       0x20 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802be46                rtc_getTicksFromDuration
+ *fill*         0x000000000802be66        0x2 
  .text.rtc_runRtcUntilTicks
-                0x000000000802be60       0x20 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802be60                rtc_runRtcUntilTicks
+                0x000000000802be68       0x20 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802be68                rtc_runRtcUntilTicks
  .text.rtc_disableWakeUp
-                0x000000000802be80       0x18 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802be80                rtc_disableWakeUp
+                0x000000000802be88       0x18 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802be88                rtc_disableWakeUp
  .text.rtc_getTimestampMs
-                0x000000000802be98       0x16 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802be98                rtc_getTimestampMs
- *fill*         0x000000000802beae        0x2 
+                0x000000000802bea0       0x16 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802bea0                rtc_getTimestampMs
+ *fill*         0x000000000802beb6        0x2 
  .text.rtc_getTimestampMsRaw
-                0x000000000802beb0      0x1c4 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802beb0                rtc_getTimestampMsRaw
+                0x000000000802beb8      0x1c4 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802beb8                rtc_getTimestampMsRaw
  .text.rtc_resetTime
-                0x000000000802c074       0x6c stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802c074                rtc_resetTime
+                0x000000000802c07c       0x6c stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802c07c                rtc_resetTime
  .text.rtc_prepareSleepTime
-                0x000000000802c0e0       0x24 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802c0e0                rtc_prepareSleepTime
+                0x000000000802c0e8       0x24 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802c0e8                rtc_prepareSleepTime
  .text.rtc_updateTimeAfterSleepTime
-                0x000000000802c104       0x24 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802c104                rtc_updateTimeAfterSleepTime
+                0x000000000802c10c       0x24 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802c10c                rtc_updateTimeAfterSleepTime
  .text.HAL_RTCEx_WakeUpTimerEventCallback
-                0x000000000802c128       0x54 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802c128                HAL_RTCEx_WakeUpTimerEventCallback
+                0x000000000802c130       0x54 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802c130                HAL_RTCEx_WakeUpTimerEventCallback
  .text.rtc_getClockAdjustement
-                0x000000000802c17c       0x28 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802c17c                rtc_getClockAdjustement
+                0x000000000802c184       0x28 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802c184                rtc_getClockAdjustement
  .text.rtc_adjustTime
-                0x000000000802c1a4       0x54 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802c1a4                rtc_adjustTime
+                0x000000000802c1ac       0x54 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802c1ac                rtc_adjustTime
  .text.rtc_calcClockRatio
-                0x000000000802c1f8        0xe stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                0x000000000802c1f8                rtc_calcClockRatio
- *fill*         0x000000000802c206        0x2 
+                0x000000000802c200        0xe stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                0x000000000802c200                rtc_calcClockRatio
+ *fill*         0x000000000802c20e        0x2 
  .text.HAL_IncTick
-                0x000000000802c208       0x58 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
-                0x000000000802c208                HAL_IncTick
+                0x000000000802c210       0x58 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
+                0x000000000802c210                HAL_IncTick
  .text.systick_adjustTime
-                0x000000000802c260       0xec stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
-                0x000000000802c260                systick_adjustTime
+                0x000000000802c268       0xec stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
+                0x000000000802c268                systick_adjustTime
  .text.spi_rwRegister
-                0x000000000802c34c       0x32 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
-                0x000000000802c34c                spi_rwRegister
- *fill*         0x000000000802c37e        0x2 
+                0x000000000802c354       0x32 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
+                0x000000000802c354                spi_rwRegister
+ *fill*         0x000000000802c386        0x2 
  .text.wdg_setupWithMaxMs
-                0x000000000802c380       0xb8 stm32-it-sdk/Src/stm32l_sdk/wdg/watchdog.o
-                0x000000000802c380                wdg_setupWithMaxMs
+                0x000000000802c388       0xb8 stm32-it-sdk/Src/stm32l_sdk/wdg/watchdog.o
+                0x000000000802c388                wdg_setupWithMaxMs
  .text.wdg_refresh
-                0x000000000802c438       0x18 stm32-it-sdk/Src/stm32l_sdk/wdg/watchdog.o
-                0x000000000802c438                wdg_refresh
- .text.bcopy    0x000000000802c450        0xe /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-bcopy.o)
-                0x000000000802c450                bcopy
- .text.bzero    0x000000000802c45e        0xc /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-bzero.o)
-                0x000000000802c45e                bzero
- *fill*         0x000000000802c46a        0x2 
- .text.__errno  0x000000000802c46c        0xc /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
-                0x000000000802c46c                __errno
+                0x000000000802c440       0x18 stm32-it-sdk/Src/stm32l_sdk/wdg/watchdog.o
+                0x000000000802c440                wdg_refresh
+ .text.bcopy    0x000000000802c458        0xe /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-bcopy.o)
+                0x000000000802c458                bcopy
+ .text.bzero    0x000000000802c466        0xc /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-bzero.o)
+                0x000000000802c466                bzero
+ *fill*         0x000000000802c472        0x2 
+ .text.__errno  0x000000000802c474        0xc /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-errno.o)
+                0x000000000802c474                __errno
  .text.__libc_init_array
-                0x000000000802c478       0x48 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
-                0x000000000802c478                __libc_init_array
- .text.memcpy   0x000000000802c4c0       0x12 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
-                0x000000000802c4c0                memcpy
- .text.memmove  0x000000000802c4d2       0x26 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memmove.o)
-                0x000000000802c4d2                memmove
- .text.memset   0x000000000802c4f8       0x10 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
-                0x000000000802c4f8                memset
+                0x000000000802c480       0x48 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+                0x000000000802c480                __libc_init_array
+ .text.memcpy   0x000000000802c4c8       0x12 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memcpy-stub.o)
+                0x000000000802c4c8                memcpy
+ .text.memmove  0x000000000802c4da       0x26 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memmove.o)
+                0x000000000802c4da                memmove
+ .text.memset   0x000000000802c500       0x10 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memset.o)
+                0x000000000802c500                memset
  .text._vsnprintf_r
-                0x000000000802c508       0x56 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-vsnprintf.o)
-                0x000000000802c508                _vsnprintf_r
-                0x000000000802c508                _vsniprintf_r
- *fill*         0x000000000802c55e        0x2 
+                0x000000000802c510       0x56 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-vsnprintf.o)
+                0x000000000802c510                _vsnprintf_r
+                0x000000000802c510                _vsniprintf_r
+ *fill*         0x000000000802c566        0x2 
  .text.vsnprintf
-                0x000000000802c560       0x18 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-vsnprintf.o)
-                0x000000000802c560                vsnprintf
-                0x000000000802c560                vsniprintf
+                0x000000000802c568       0x18 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-vsnprintf.o)
+                0x000000000802c568                vsnprintf
+                0x000000000802c568                vsniprintf
  .text.__ssputs_r
-                0x000000000802c578       0xc4 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfprintf.o)
-                0x000000000802c578                __ssputs_r
+                0x000000000802c580       0xc4 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfprintf.o)
+                0x000000000802c580                __ssputs_r
  .text._svfprintf_r
-                0x000000000802c63c      0x1fc /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfprintf.o)
-                0x000000000802c63c                _svfprintf_r
-                0x000000000802c63c                _svfiprintf_r
+                0x000000000802c644      0x1fc /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfprintf.o)
+                0x000000000802c644                _svfprintf_r
+                0x000000000802c644                _svfiprintf_r
  .text._printf_common
-                0x000000000802c838       0xda /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x000000000802c838                _printf_common
- *fill*         0x000000000802c912        0x2 
+                0x000000000802c840       0xda /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000000802c840                _printf_common
+ *fill*         0x000000000802c91a        0x2 
  .text._printf_i
-                0x000000000802c914      0x210 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x000000000802c914                _printf_i
- .text.memchr   0x000000000802cb24       0x16 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memchr-stub.o)
-                0x000000000802cb24                memchr
- *fill*         0x000000000802cb3a        0x2 
- .text._free_r  0x000000000802cb3c       0x94 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-freer.o)
-                0x000000000802cb3c                _free_r
+                0x000000000802c91c      0x210 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000000802c91c                _printf_i
+ .text.memchr   0x000000000802cb2c       0x16 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-memchr-stub.o)
+                0x000000000802cb2c                memchr
+ *fill*         0x000000000802cb42        0x2 
+ .text._free_r  0x000000000802cb44       0x94 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-freer.o)
+                0x000000000802cb44                _free_r
  .text._malloc_r
-                0x000000000802cbd0       0xbc /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o)
-                0x000000000802cbd0                _malloc_r
+                0x000000000802cbd8       0xbc /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000000000802cbd8                _malloc_r
  .text._realloc_r
-                0x000000000802cc8c       0x4c /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-reallocr.o)
-                0x000000000802cc8c                _realloc_r
- .text._sbrk_r  0x000000000802ccd8       0x24 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sbrkr.o)
-                0x000000000802ccd8                _sbrk_r
+                0x000000000802cc94       0x4c /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-reallocr.o)
+                0x000000000802cc94                _realloc_r
+ .text._sbrk_r  0x000000000802cce0       0x24 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-sbrkr.o)
+                0x000000000802cce0                _sbrk_r
  .text.__malloc_lock
-                0x000000000802ccfc        0x2 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
-                0x000000000802ccfc                __malloc_lock
+                0x000000000802cd04        0x2 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
+                0x000000000802cd04                __malloc_lock
  .text.__malloc_unlock
-                0x000000000802ccfe        0x2 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
-                0x000000000802ccfe                __malloc_unlock
+                0x000000000802cd06        0x2 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-mlock.o)
+                0x000000000802cd06                __malloc_unlock
  .text._malloc_usable_size_r
-                0x000000000802cd00       0x10 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-msizer.o)
-                0x000000000802cd00                _malloc_usable_size_r
- .text.ceil     0x000000000802cd10      0x104 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_ceil.o)
-                0x000000000802cd10                ceil
- .text.floor    0x000000000802ce14      0x104 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_floor.o)
-                0x000000000802ce14                floor
- .text.round    0x000000000802cf18       0x94 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_round.o)
-                0x000000000802cf18                round
+                0x000000000802cd08       0x10 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-msizer.o)
+                0x000000000802cd08                _malloc_usable_size_r
+ .text.ceil     0x000000000802cd18      0x104 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_ceil.o)
+                0x000000000802cd18                ceil
+ .text.floor    0x000000000802ce1c      0x104 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_floor.o)
+                0x000000000802ce1c                floor
+ .text.round    0x000000000802cf20       0x94 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_round.o)
+                0x000000000802cf20                round
  *(.glue_7)
- .glue_7        0x000000000802cfac        0x0 linker stubs
+ .glue_7        0x000000000802cfb4        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x000000000802cfac        0x0 linker stubs
+ .glue_7t       0x000000000802cfb4        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x000000000802cfac        0x0 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+ .eh_frame      0x000000000802cfb4        0x0 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
  *(.init)
- .init          0x000000000802cfac        0x4 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
-                0x000000000802cfac                _init
- .init          0x000000000802cfb0        0x8 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+ .init          0x000000000802cfb4        0x4 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+                0x000000000802cfb4                _init
+ .init          0x000000000802cfb8        0x8 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
  *(.fini)
- .fini          0x000000000802cfb8        0x4 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
-                0x000000000802cfb8                _fini
- .fini          0x000000000802cfbc        0x8 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
-                0x000000000802cfc4                . = ALIGN (0x4)
-                0x000000000802cfc4                _etext = .
+ .fini          0x000000000802cfc0        0x4 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+                0x000000000802cfc0                _fini
+ .fini          0x000000000802cfc4        0x8 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+                0x000000000802cfcc                . = ALIGN (0x4)
+                0x000000000802cfcc                _etext = .
 
-.vfp11_veneer   0x000000000802cfc4        0x0
- .vfp11_veneer  0x000000000802cfc4        0x0 linker stubs
+.vfp11_veneer   0x000000000802cfcc        0x0
+ .vfp11_veneer  0x000000000802cfcc        0x0 linker stubs
 
-.v4_bx          0x000000000802cfc4        0x0
- .v4_bx         0x000000000802cfc4        0x0 linker stubs
+.v4_bx          0x000000000802cfcc        0x0
+ .v4_bx         0x000000000802cfcc        0x0 linker stubs
 
-.iplt           0x000000000802cfc4        0x0
- .iplt          0x000000000802cfc4        0x0 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+.iplt           0x000000000802cfcc        0x0
+ .iplt          0x000000000802cfcc        0x0 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
 
-.rodata         0x000000000802cfc4     0x2c74
-                0x000000000802cfc4                . = ALIGN (0x4)
+.rodata         0x000000000802cfcc     0x2c74
+                0x000000000802cfcc                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x000000000802cfc4       0x8a Core/Src/project_main.o
- *fill*         0x000000000802d04e        0x2 
- .rodata        0x000000000802d050       0x18 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
- .rodata        0x000000000802d068       0x24 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
- .rodata        0x000000000802d08c       0x24 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
- .rodata        0x000000000802d0b0       0x24 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
- .rodata        0x000000000802d0d4       0x24 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
- .rodata        0x000000000802d0f8       0x24 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
- .rodata        0x000000000802d11c       0x18 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
- .rodata        0x000000000802d134      0x37c stm32-it-sdk/Src/it_sdk/console/console.o
- .rodata        0x000000000802d4b0      0x381 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
- *fill*         0x000000000802d831        0x3 
- .rodata        0x000000000802d834       0x5b stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o
- *fill*         0x000000000802d88f        0x1 
- .rodata        0x000000000802d890      0x247 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
- *fill*         0x000000000802dad7        0x1 
- .rodata        0x000000000802dad8       0xd5 stm32-it-sdk/Src/it_sdk/logger/error.o
- *fill*         0x000000000802dbad        0x3 
- .rodata        0x000000000802dbb0       0x20 stm32-it-sdk/Src/it_sdk/lorawan/lorawan.o
- .rodata        0x000000000802dbd0       0x1b stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
- *fill*         0x000000000802dbeb        0x1 
- .rodata        0x000000000802dbec       0x40 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divdf3.o)
- .rodata        0x000000000802dc2c       0x40 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(muldf3.o)
+ .rodata        0x000000000802cfcc       0x8a Core/Src/project_main.o
+ *fill*         0x000000000802d056        0x2 
+ .rodata        0x000000000802d058       0x18 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
+ .rodata        0x000000000802d070       0x24 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
+ .rodata        0x000000000802d094       0x24 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
+ .rodata        0x000000000802d0b8       0x24 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
+ .rodata        0x000000000802d0dc       0x24 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
+ .rodata        0x000000000802d100       0x24 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
+ .rodata        0x000000000802d124       0x18 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
+ .rodata        0x000000000802d13c      0x37c stm32-it-sdk/Src/it_sdk/console/console.o
+ .rodata        0x000000000802d4b8      0x381 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
+ *fill*         0x000000000802d839        0x3 
+ .rodata        0x000000000802d83c       0x5b stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o
+ *fill*         0x000000000802d897        0x1 
+ .rodata        0x000000000802d898      0x247 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
+ *fill*         0x000000000802dadf        0x1 
+ .rodata        0x000000000802dae0       0xd5 stm32-it-sdk/Src/it_sdk/logger/error.o
+ *fill*         0x000000000802dbb5        0x3 
+ .rodata        0x000000000802dbb8       0x20 stm32-it-sdk/Src/it_sdk/lorawan/lorawan.o
+ .rodata        0x000000000802dbd8       0x1b stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
+ *fill*         0x000000000802dbf3        0x1 
+ .rodata        0x000000000802dbf4       0x40 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divdf3.o)
+ .rodata        0x000000000802dc34       0x40 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(muldf3.o)
  *(.rodata*)
  .rodata.AHBPrescTable
-                0x000000000802dc6c       0x10 Core/Src/system_stm32l0xx.o
-                0x000000000802dc6c                AHBPrescTable
+                0x000000000802dc74       0x10 Core/Src/system_stm32l0xx.o
+                0x000000000802dc74                AHBPrescTable
  .rodata.APBPrescTable
-                0x000000000802dc7c        0x8 Core/Src/system_stm32l0xx.o
-                0x000000000802dc7c                APBPrescTable
+                0x000000000802dc84        0x8 Core/Src/system_stm32l0xx.o
+                0x000000000802dc84                APBPrescTable
  .rodata.PLLMulTable
-                0x000000000802dc84        0x9 Core/Src/system_stm32l0xx.o
-                0x000000000802dc84                PLLMulTable
- *fill*         0x000000000802dc8d        0x3 
+                0x000000000802dc8c        0x9 Core/Src/system_stm32l0xx.o
+                0x000000000802dc8c                PLLMulTable
+ *fill*         0x000000000802dc95        0x3 
  .rodata.UART_SetConfig
-                0x000000000802dc90       0x48 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+                0x000000000802dc98       0x48 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
  .rodata.certif_rx
-                0x000000000802dcd8       0x20 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+                0x000000000802dce0       0x20 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
  .rodata.__convertDR
-                0x000000000802dcf8       0x5c stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
+                0x000000000802dd00       0x5c stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
  .rodata.lorawan_driver_LORA_Send
-                0x000000000802dd54       0x20 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
- .rodata.sbox   0x000000000802dd74      0x100 stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
+                0x000000000802dd5c       0x20 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
+ .rodata.sbox   0x000000000802dd7c      0x100 stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
  .rodata.gfm2_sbox
-                0x000000000802de74      0x100 stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
+                0x000000000802de7c      0x100 stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
  .rodata.gfm3_sbox
-                0x000000000802df74      0x100 stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
+                0x000000000802df7c      0x100 stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
  .rodata.LoRaMacMaxEirpTable
-                0x000000000802e074       0x10 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
+                0x000000000802e07c       0x10 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
  .rodata.ProcessMacCommands
-                0x000000000802e084       0x50 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
+                0x000000000802e08c       0x50 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
  .rodata.LoRaMacMibGetRequestConfirm
-                0x000000000802e0d4       0xc0 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
+                0x000000000802e0dc       0xc0 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
  .rodata.LoRaMacMibSetRequestConfirm
-                0x000000000802e194       0xc4 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
+                0x000000000802e19c       0xc4 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
  .rodata.LoRaMacMlmeRequest
-                0x000000000802e258       0x38 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
+                0x000000000802e260       0x38 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
  .rodata.CIDsStickyAnsCmds
-                0x000000000802e290        0x3 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCommands.o
-                0x000000000802e290                CIDsStickyAnsCmds
- *fill*         0x000000000802e293        0x1 
+                0x000000000802e298        0x3 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCommands.o
+                0x000000000802e298                CIDsStickyAnsCmds
+ *fill*         0x000000000802e29b        0x1 
  .rodata.CheckFCntDown
-                0x000000000802e294       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
+                0x000000000802e29c       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
  .rodata.UpdateFCntDown
-                0x000000000802e2b4       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
+                0x000000000802e2bc       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
  .rodata.LoRaMacGetFCntDown
-                0x000000000802e2d4       0x14 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
+                0x000000000802e2dc       0x14 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
  .rodata.LoRaMacSetFCntDown
-                0x000000000802e2e8       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
+                0x000000000802e2f0       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
  .rodata.RegionIsActive
-                0x000000000802e308       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e310       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionGetPhyParam
-                0x000000000802e330       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e338       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionSetBandTxDone
-                0x000000000802e358       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e360       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionInitDefaults
-                0x000000000802e380       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e388       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionGetNvmCtx
-                0x000000000802e3a8       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e3b0       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionVerify
-                0x000000000802e3d0       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e3d8       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionApplyCFList
-                0x000000000802e3f8       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e400       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionChanMaskSet
-                0x000000000802e420       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e428       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionComputeRxWindowParameters
-                0x000000000802e448       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e450       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionRxConfig
-                0x000000000802e470       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e478       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionTxConfig
-                0x000000000802e498       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e4a0       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionLinkAdrReq
-                0x000000000802e4c0       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e4c8       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionRxParamSetupReq
-                0x000000000802e4e8       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e4f0       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionNewChannelReq
-                0x000000000802e510       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e518       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionTxParamSetupReq
-                0x000000000802e538       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e540       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionDlChannelReq
-                0x000000000802e560       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e568       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionAlternateDr
-                0x000000000802e588       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e590       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionCalcBackOff
-                0x000000000802e5b0       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e5b8       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionNextChannel
-                0x000000000802e5d8       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e5e0       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionChannelAdd
-                0x000000000802e600       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e608       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionSetContinuousWave
-                0x000000000802e628       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e630       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.RegionApplyDrOffset
-                0x000000000802e650       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                0x000000000802e658       0x28 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
  .rodata.DataratesAS923
-                0x000000000802e678        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
+                0x000000000802e680        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
  .rodata.BandwidthsAS923
-                0x000000000802e680       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
+                0x000000000802e688       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
  .rodata.MaxPayloadOfDatarateDwell0AS923
-                0x000000000802e6a0        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
- .rodata.MaxPayloadOfDatarateRepeaterDwell0AS923
                 0x000000000802e6a8        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
- .rodata.MaxPayloadOfDatarateDwell1UpAS923
+ .rodata.MaxPayloadOfDatarateRepeaterDwell0AS923
                 0x000000000802e6b0        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
- .rodata.EffectiveRx1DrOffsetAS923
+ .rodata.MaxPayloadOfDatarateDwell1UpAS923
                 0x000000000802e6b8        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
+ .rodata.EffectiveRx1DrOffsetAS923
+                0x000000000802e6c0        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
  .rodata.RegionAS923GetPhyParam
-                0x000000000802e6c0       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
+                0x000000000802e6c8       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
  .rodata.RegionAS923Verify
-                0x000000000802e794       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
+                0x000000000802e79c       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
  .rodata.DataratesAU915
-                0x000000000802e7c0       0x10 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
+                0x000000000802e7c8       0x10 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
  .rodata.BandwidthsAU915
-                0x000000000802e7d0       0x40 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
+                0x000000000802e7d8       0x40 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
  .rodata.DatarateOffsetsAU915
-                0x000000000802e810       0x2a stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
- *fill*         0x000000000802e83a        0x2 
+                0x000000000802e818       0x2a stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
+ *fill*         0x000000000802e842        0x2 
  .rodata.MaxPayloadOfDatarateDwell0AU915
-                0x000000000802e83c        0xf stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
- *fill*         0x000000000802e84b        0x1 
+                0x000000000802e844        0xf stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
+ *fill*         0x000000000802e853        0x1 
  .rodata.MaxPayloadOfDatarateRepeaterDwell0AU915
-                0x000000000802e84c        0xe stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
- *fill*         0x000000000802e85a        0x2 
+                0x000000000802e854        0xe stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
+ *fill*         0x000000000802e862        0x2 
  .rodata.MaxPayloadOfDatarateDwell1AU915
-                0x000000000802e85c        0xf stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
- *fill*         0x000000000802e86b        0x1 
+                0x000000000802e864        0xf stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
+ *fill*         0x000000000802e873        0x1 
  .rodata.MaxPayloadOfDatarateRepeaterDwell1AU915
-                0x000000000802e86c        0xf stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
- *fill*         0x000000000802e87b        0x1 
+                0x000000000802e874        0xf stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
+ *fill*         0x000000000802e883        0x1 
  .rodata.RegionAU915GetPhyParam
-                0x000000000802e87c       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
+                0x000000000802e884       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
  .rodata.RegionAU915Verify
-                0x000000000802e950       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
+                0x000000000802e958       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
  .rodata.DataratesCN470
-                0x000000000802e97c        0x6 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
- *fill*         0x000000000802e982        0x2 
+                0x000000000802e984        0x6 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
+ *fill*         0x000000000802e98a        0x2 
  .rodata.BandwidthsCN470
-                0x000000000802e984       0x18 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
+                0x000000000802e98c       0x18 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
  .rodata.MaxPayloadOfDatarateCN470
-                0x000000000802e99c        0x6 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
- *fill*         0x000000000802e9a2        0x2 
- .rodata.MaxPayloadOfDatarateRepeaterCN470
                 0x000000000802e9a4        0x6 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
  *fill*         0x000000000802e9aa        0x2 
+ .rodata.MaxPayloadOfDatarateRepeaterCN470
+                0x000000000802e9ac        0x6 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
+ *fill*         0x000000000802e9b2        0x2 
  .rodata.RegionCN470GetPhyParam
-                0x000000000802e9ac       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
+                0x000000000802e9b4       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
  .rodata.RegionCN470Verify
-                0x000000000802ea80       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
+                0x000000000802ea88       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
  .rodata.DataratesCN779
-                0x000000000802eaac        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
+                0x000000000802eab4        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
  .rodata.BandwidthsCN779
-                0x000000000802eab4       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
+                0x000000000802eabc       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
  .rodata.MaxPayloadOfDatarateCN779
-                0x000000000802ead4        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
- .rodata.MaxPayloadOfDatarateRepeaterCN779
                 0x000000000802eadc        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
+ .rodata.MaxPayloadOfDatarateRepeaterCN779
+                0x000000000802eae4        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
  .rodata.RegionCN779GetPhyParam
-                0x000000000802eae4       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
+                0x000000000802eaec       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
  .rodata.RegionCN779Verify
-                0x000000000802ebb8       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
+                0x000000000802ebc0       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
  .rodata.DataratesEU433
-                0x000000000802ebe4        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
+                0x000000000802ebec        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
  .rodata.BandwidthsEU433
-                0x000000000802ebec       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
+                0x000000000802ebf4       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
  .rodata.MaxPayloadOfDatarateEU433
-                0x000000000802ec0c        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
- .rodata.MaxPayloadOfDatarateRepeaterEU433
                 0x000000000802ec14        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
+ .rodata.MaxPayloadOfDatarateRepeaterEU433
+                0x000000000802ec1c        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
  .rodata.RegionEU433GetPhyParam
-                0x000000000802ec1c       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
+                0x000000000802ec24       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
  .rodata.RegionEU433Verify
-                0x000000000802ecf0       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
+                0x000000000802ecf8       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
  .rodata.DataratesEU868
-                0x000000000802ed1c        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
+                0x000000000802ed24        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
  .rodata.BandwidthsEU868
-                0x000000000802ed24       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
+                0x000000000802ed2c       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
  .rodata.MaxPayloadOfDatarateEU868
-                0x000000000802ed44        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
- .rodata.MaxPayloadOfDatarateRepeaterEU868
                 0x000000000802ed4c        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
+ .rodata.MaxPayloadOfDatarateRepeaterEU868
+                0x000000000802ed54        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
  .rodata.RegionEU868GetPhyParam
-                0x000000000802ed54       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
+                0x000000000802ed5c       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
  .rodata.RegionEU868Verify
-                0x000000000802ee28       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
+                0x000000000802ee30       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
  .rodata.DataratesIN865
-                0x000000000802ee54        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
+                0x000000000802ee5c        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
  .rodata.BandwidthsIN865
-                0x000000000802ee5c       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
+                0x000000000802ee64       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
  .rodata.MaxPayloadOfDatarateIN865
-                0x000000000802ee7c        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
- .rodata.MaxPayloadOfDatarateRepeaterIN865
                 0x000000000802ee84        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
- .rodata.EffectiveRx1DrOffsetIN865
+ .rodata.MaxPayloadOfDatarateRepeaterIN865
                 0x000000000802ee8c        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
+ .rodata.EffectiveRx1DrOffsetIN865
+                0x000000000802ee94        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
  .rodata.RegionIN865GetPhyParam
-                0x000000000802ee94       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
+                0x000000000802ee9c       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
  .rodata.RegionIN865Verify
-                0x000000000802ef68       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
+                0x000000000802ef70       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
  .rodata.DataratesKR920
-                0x000000000802ef94        0x6 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
- *fill*         0x000000000802ef9a        0x2 
+                0x000000000802ef9c        0x6 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
+ *fill*         0x000000000802efa2        0x2 
  .rodata.BandwidthsKR920
-                0x000000000802ef9c       0x18 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
+                0x000000000802efa4       0x18 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
  .rodata.MaxPayloadOfDatarateKR920
-                0x000000000802efb4        0x6 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
- *fill*         0x000000000802efba        0x2 
- .rodata.MaxPayloadOfDatarateRepeaterKR920
                 0x000000000802efbc        0x6 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
  *fill*         0x000000000802efc2        0x2 
+ .rodata.MaxPayloadOfDatarateRepeaterKR920
+                0x000000000802efc4        0x6 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
+ *fill*         0x000000000802efca        0x2 
  .rodata.RegionKR920GetPhyParam
-                0x000000000802efc4       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
+                0x000000000802efcc       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
  .rodata.RegionKR920Verify
-                0x000000000802f098       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
+                0x000000000802f0a0       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
  .rodata.DataratesRU864
-                0x000000000802f0c4        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
+                0x000000000802f0cc        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
  .rodata.BandwidthsRU864
-                0x000000000802f0cc       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
+                0x000000000802f0d4       0x20 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
  .rodata.MaxPayloadOfDatarateRU864
-                0x000000000802f0ec        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
- .rodata.MaxPayloadOfDatarateRepeaterRU864
                 0x000000000802f0f4        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
+ .rodata.MaxPayloadOfDatarateRepeaterRU864
+                0x000000000802f0fc        0x8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
  .rodata.RegionRU864GetPhyParam
-                0x000000000802f0fc       0xc8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
+                0x000000000802f104       0xc8 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
  .rodata.RegionRU864Verify
-                0x000000000802f1c4       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
+                0x000000000802f1cc       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
  .rodata.DataratesUS915
-                0x000000000802f1f0       0x10 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
+                0x000000000802f1f8       0x10 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
  .rodata.BandwidthsUS915
-                0x000000000802f200       0x40 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
+                0x000000000802f208       0x40 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
  .rodata.DatarateOffsetsUS915
-                0x000000000802f240       0x14 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
+                0x000000000802f248       0x14 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
  .rodata.MaxPayloadOfDatarateUS915
-                0x000000000802f254       0x10 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
+                0x000000000802f25c       0x10 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
  .rodata.MaxPayloadOfDatarateRepeaterUS915
-                0x000000000802f264       0x10 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
+                0x000000000802f26c       0x10 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
  .rodata.RegionUS915GetPhyParam
-                0x000000000802f274       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
+                0x000000000802f27c       0xd4 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
  .rodata.RegionUS915Verify
-                0x000000000802f348       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
- .rodata.Radio  0x000000000802f374       0x74 stm32-it-sdk/Src/drivers/sx1276/murata_cmwx1zzabz.o
-                0x000000000802f374                Radio
+                0x000000000802f350       0x2c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
+ .rodata.Radio  0x000000000802f37c       0x74 stm32-it-sdk/Src/drivers/sx1276/murata_cmwx1zzabz.o
+                0x000000000802f37c                Radio
  .rodata.RadioRegsInit
-                0x000000000802f3e8       0x30 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
-                0x000000000802f3e8                RadioRegsInit
+                0x000000000802f3f0       0x30 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
+                0x000000000802f3f0                RadioRegsInit
  .rodata.FskBandwidths
-                0x000000000802f418       0xb0 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
-                0x000000000802f418                FskBandwidths
+                0x000000000802f420       0xb0 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
+                0x000000000802f420                FskBandwidths
  .rodata.SX1276SetRx
-                0x000000000802f4c8       0x24 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
+                0x000000000802f4d0       0x24 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
  .rodata._itsdk_console_private
-                0x000000000802f4ec       0xf4 stm32-it-sdk/Src/it_sdk/console/console.o
+                0x000000000802f4f4       0xf4 stm32-it-sdk/Src/it_sdk/console/console.o
  .rodata._itsdk_config_consolePriv
-                0x000000000802f5e0       0x8c stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
+                0x000000000802f5e8       0x8c stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
  .rodata._itsdk_secstore_getOffset
-                0x000000000802f66c       0x50 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
+                0x000000000802f674       0x50 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
  .rodata._itsdk_secStore_consolePriv
-                0x000000000802f6bc      0x174 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
- .rodata.sbox   0x000000000802f830      0x100 stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
- .rodata.rsbox  0x000000000802f930      0x100 stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
- .rodata.Rcon   0x000000000802fa30        0xb stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
- *fill*         0x000000000802fa3b        0x1 
+                0x000000000802f6c4      0x174 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
+ .rodata.sbox   0x000000000802f838      0x100 stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
+ .rodata.rsbox  0x000000000802f938      0x100 stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
+ .rodata.Rcon   0x000000000802fa38        0xb stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
+ *fill*         0x000000000802fa43        0x1 
  .rodata.adc_getValue
-                0x000000000802fa3c      0x138 stm32-it-sdk/Src/stm32l_sdk/adc/adc.o
+                0x000000000802fa44      0x138 stm32-it-sdk/Src/stm32l_sdk/adc/adc.o
  .rodata.getPortFromBankId
-                0x000000000802fb74       0x20 stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
+                0x000000000802fb7c       0x20 stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
  .rodata.gpio_configure_ext
-                0x000000000802fb94       0x70 stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
+                0x000000000802fb9c       0x70 stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
  .rodata._svfprintf_r.str1.1
-                0x000000000802fc04       0x11 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfprintf.o)
+                0x000000000802fc0c       0x11 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-svfprintf.o)
  .rodata._printf_i.str1.1
-                0x000000000802fc15       0x22 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x000000000802fc38                . = ALIGN (0x4)
- *fill*         0x000000000802fc37        0x1 
+                0x000000000802fc1d       0x22 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000000802fc40                . = ALIGN (0x4)
+ *fill*         0x000000000802fc3f        0x1 
 
-.ARM.extab      0x000000000802fc38        0x0
-                0x000000000802fc38                . = ALIGN (0x4)
+.ARM.extab      0x000000000802fc40        0x0
+                0x000000000802fc40                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000000802fc38                . = ALIGN (0x4)
+                0x000000000802fc40                . = ALIGN (0x4)
 
-.ARM            0x000000000802fc38        0x8
-                0x000000000802fc38                . = ALIGN (0x4)
-                0x000000000802fc38                __exidx_start = .
+.ARM            0x000000000802fc40        0x8
+                0x000000000802fc40                . = ALIGN (0x4)
+                0x000000000802fc40                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x000000000802fc38        0x8 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_udivmoddi4.o)
- .ARM.exidx     0x000000000802fc40        0x0 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_divdi3.o)
+ .ARM.exidx     0x000000000802fc40        0x8 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x000000000802fc48        0x0 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_divdi3.o)
                                           0x8 (size before relaxing)
-                0x000000000802fc40                __exidx_end = .
-                0x000000000802fc40                . = ALIGN (0x4)
+                0x000000000802fc48                __exidx_end = .
+                0x000000000802fc48                . = ALIGN (0x4)
 
-.rel.dyn        0x000000000802fc40        0x0
- .rel.iplt      0x000000000802fc40        0x0 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+.rel.dyn        0x000000000802fc48        0x0
+ .rel.iplt      0x000000000802fc48        0x0 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
 
-.preinit_array  0x000000000802fc40        0x0
-                0x000000000802fc40                . = ALIGN (0x4)
-                0x000000000802fc40                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x000000000802fc48        0x0
+                0x000000000802fc48                . = ALIGN (0x4)
+                0x000000000802fc48                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x000000000802fc40                PROVIDE (__preinit_array_end = .)
-                0x000000000802fc40                . = ALIGN (0x4)
+                0x000000000802fc48                PROVIDE (__preinit_array_end = .)
+                0x000000000802fc48                . = ALIGN (0x4)
 
-.init_array     0x000000000802fc40        0x4
-                0x000000000802fc40                . = ALIGN (0x4)
-                0x000000000802fc40                PROVIDE (__init_array_start = .)
+.init_array     0x000000000802fc48        0x4
+                0x000000000802fc48                . = ALIGN (0x4)
+                0x000000000802fc48                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x000000000802fc40        0x4 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
-                0x000000000802fc44                PROVIDE (__init_array_end = .)
-                0x000000000802fc44                . = ALIGN (0x4)
+ .init_array    0x000000000802fc48        0x4 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+                0x000000000802fc4c                PROVIDE (__init_array_end = .)
+                0x000000000802fc4c                . = ALIGN (0x4)
 
-.fini_array     0x000000000802fc44        0x4
-                0x000000000802fc44                . = ALIGN (0x4)
+.fini_array     0x000000000802fc4c        0x4
+                0x000000000802fc4c                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000802fc44        0x4 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+ .fini_array    0x000000000802fc4c        0x4 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x000000000802fc48                . = ALIGN (0x4)
-                0x000000000802fc48                _sidata = LOADADDR (.data)
+                0x000000000802fc50                . = ALIGN (0x4)
+                0x000000000802fc50                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x114 load address 0x000000000802fc48
+.data           0x0000000020000000      0x114 load address 0x000000000802fc50
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -20776,11 +20776,11 @@ LOAD /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.g
                 0x0000000020000114                . = ALIGN (0x4)
                 0x0000000020000114                _edata = .
 
-.igot.plt       0x0000000020000114        0x0 load address 0x000000000802fd5c
+.igot.plt       0x0000000020000114        0x0 load address 0x000000000802fd64
  .igot.plt      0x0000000020000114        0x0 /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
                 0x0000000020000114                . = ALIGN (0x4)
 
-.bss            0x0000000020000118     0x249c load address 0x000000000802fd5c
+.bss            0x0000000020000118     0x249c load address 0x000000000802fd64
                 0x0000000020000118                _sbss = .
                 0x0000000020000118                __bss_start__ = _sbss
  *(.bss)
@@ -20973,7 +20973,7 @@ LOAD /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.g
                 0x00000000200025b4                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x00000000200025b4      0x604 load address 0x000000000802fd5c
+                0x00000000200025b4      0x604 load address 0x000000000802fd64
                 0x00000000200025b8                . = ALIGN (0x8)
  *fill*         0x00000000200025b4        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -21956,7 +21956,7 @@ OUTPUT(itsdk-example-murata-lora.elf elf32-littlearm)
  .debug_macro   0x000000000002a9e4      0x2ad stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
  .debug_macro   0x000000000002ac91      0x2f4 stm32-it-sdk/Src/stm32l_sdk/wdg/watchdog.o
 
-.debug_line     0x0000000000000000    0x474f6
+.debug_line     0x0000000000000000    0x474f7
  .debug_line    0x0000000000000000      0x76f Core/Src/adc.o
  .debug_line    0x000000000000076f      0x8ff Core/Src/gpio.o
  .debug_line    0x000000000000106e      0x739 Core/Src/iwdg.o
@@ -22042,193 +22042,193 @@ OUTPUT(itsdk-example-murata-lora.elf elf32-littlearm)
  .debug_line    0x0000000000041a62      0xa68 stm32-it-sdk/Src/stm32l_sdk/misc_wrapper.o
  .debug_line    0x00000000000424ca      0xc3c stm32-it-sdk/Src/stm32l_sdk/uart_wrapper.o
  .debug_line    0x0000000000043106      0xae3 stm32-it-sdk/Src/stm32l_sdk/eeprom/eeprom.o
- .debug_line    0x0000000000043be9      0xb30 stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
- .debug_line    0x0000000000044719      0xe0c stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
- .debug_line    0x0000000000045525      0xae5 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
- .debug_line    0x000000000004600a      0xaf7 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
- .debug_line    0x0000000000046b01      0x9f5 stm32-it-sdk/Src/stm32l_sdk/wdg/watchdog.o
+ .debug_line    0x0000000000043be9      0xb31 stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
+ .debug_line    0x000000000004471a      0xe0c stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+ .debug_line    0x0000000000045526      0xae5 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
+ .debug_line    0x000000000004600b      0xaf7 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
+ .debug_line    0x0000000000046b02      0x9f5 stm32-it-sdk/Src/stm32l_sdk/wdg/watchdog.o
 
-.debug_str      0x0000000000000000    0xb6a4d
+.debug_str      0x0000000000000000    0xb6a23
  .debug_str     0x0000000000000000    0x85a13 Core/Src/adc.o
                                       0x85d96 (size before relaxing)
- .debug_str     0x0000000000085a13     0x4593 Core/Src/gpio.o
-                                      0x8a1a8 (size before relaxing)
- .debug_str     0x0000000000089fa6       0x66 Core/Src/iwdg.o
+ .debug_str     0x0000000000085a13     0x4569 Core/Src/gpio.o
+                                      0x8a17e (size before relaxing)
+ .debug_str     0x0000000000089f7c       0x66 Core/Src/iwdg.o
                                       0x8591f (size before relaxing)
- .debug_str     0x000000000008a00c      0x447 Core/Src/main.o
-                                      0x8a3b2 (size before relaxing)
- .debug_str     0x000000000008a453     0x881b Core/Src/project_main.o
-                                      0x92801 (size before relaxing)
- .debug_str     0x0000000000092c6e      0x12a Core/Src/rtc.o
+ .debug_str     0x0000000000089fe2      0x447 Core/Src/main.o
+                                      0x8a388 (size before relaxing)
+ .debug_str     0x000000000008a429     0x881b Core/Src/project_main.o
+                                      0x927d7 (size before relaxing)
+ .debug_str     0x0000000000092c44      0x12a Core/Src/rtc.o
                                       0x85df1 (size before relaxing)
- .debug_str     0x0000000000092d98       0x58 Core/Src/spi.o
+ .debug_str     0x0000000000092d6e       0x58 Core/Src/spi.o
                                       0x85dd6 (size before relaxing)
- .debug_str     0x0000000000092df0       0x2c Core/Src/stm32l0xx_hal_msp.o
+ .debug_str     0x0000000000092dc6       0x2c Core/Src/stm32l0xx_hal_msp.o
                                       0x85931 (size before relaxing)
- .debug_str     0x0000000000092e1c       0xbe Core/Src/stm32l0xx_it.o
+ .debug_str     0x0000000000092df2       0xbe Core/Src/stm32l0xx_it.o
                                       0x85e72 (size before relaxing)
- .debug_str     0x0000000000092eda     0x1fb2 Core/Src/sysmem.o
+ .debug_str     0x0000000000092eb0     0x1fb2 Core/Src/sysmem.o
                                        0x5ecc (size before relaxing)
- .debug_str     0x0000000000094e8c       0x9c Core/Src/system_stm32l0xx.o
+ .debug_str     0x0000000000094e62       0x9c Core/Src/system_stm32l0xx.o
                                       0x854de (size before relaxing)
- .debug_str     0x0000000000094f28       0xe9 Core/Src/tim.o
+ .debug_str     0x0000000000094efe       0xe9 Core/Src/tim.o
                                       0x85df8 (size before relaxing)
- .debug_str     0x0000000000095011       0x57 Core/Src/usart.o
+ .debug_str     0x0000000000094fe7       0x57 Core/Src/usart.o
                                       0x85f8c (size before relaxing)
- .debug_str     0x0000000000095068       0x36 Core/Startup/startup_stm32l072czyx.o
+ .debug_str     0x000000000009503e       0x36 Core/Startup/startup_stm32l072czyx.o
                                          0x7e (size before relaxing)
- .debug_str     0x000000000009509e      0x41f Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+ .debug_str     0x0000000000095074      0x41f Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
                                       0x85b52 (size before relaxing)
- .debug_str     0x00000000000954bd      0x34e Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o
+ .debug_str     0x0000000000095493      0x34e Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o
                                       0x85b9a (size before relaxing)
- .debug_str     0x000000000009580b      0x1cb Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o
+ .debug_str     0x00000000000957e1      0x1cb Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o
                                       0x859d3 (size before relaxing)
- .debug_str     0x00000000000959d6      0x28d Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+ .debug_str     0x00000000000959ac      0x28d Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
                                       0x85943 (size before relaxing)
- .debug_str     0x0000000000095c63      0x267 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+ .debug_str     0x0000000000095c39      0x267 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
                                       0x8584b (size before relaxing)
- .debug_str     0x0000000000095eca      0x242 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+ .debug_str     0x0000000000095ea0      0x242 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
                                       0x8578e (size before relaxing)
- .debug_str     0x000000000009610c       0x75 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.o
+ .debug_str     0x00000000000960e2       0x75 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_iwdg.o
                                       0x854bf (size before relaxing)
- .debug_str     0x0000000000096181      0x2a0 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+ .debug_str     0x0000000000096157      0x2a0 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
                                       0x8575a (size before relaxing)
- .debug_str     0x0000000000096421      0x138 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+ .debug_str     0x00000000000963f7      0x138 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
                                       0x8551c (size before relaxing)
- .debug_str     0x0000000000096559      0x2d2 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+ .debug_str     0x000000000009652f      0x2d2 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
                                       0x859b4 (size before relaxing)
- .debug_str     0x000000000009682b      0x348 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+ .debug_str     0x0000000000096801      0x348 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
                                       0x85968 (size before relaxing)
- .debug_str     0x0000000000096b73      0x1ac Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.o
+ .debug_str     0x0000000000096b49      0x1ac Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.o
                                       0x858a8 (size before relaxing)
- .debug_str     0x0000000000096d1f      0x769 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.o
+ .debug_str     0x0000000000096cf5      0x769 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.o
                                       0x85ddc (size before relaxing)
- .debug_str     0x0000000000097488      0x52e Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+ .debug_str     0x000000000009745e      0x52e Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
                                       0x85d3b (size before relaxing)
- .debug_str     0x00000000000979b6      0xce0 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
+ .debug_str     0x000000000009798c      0xce0 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o
                                       0x865e1 (size before relaxing)
- .debug_str     0x0000000000098696       0x77 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
+ .debug_str     0x000000000009866c       0x77 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o
                                       0x8586c (size before relaxing)
- .debug_str     0x000000000009870d      0x7bf Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+ .debug_str     0x00000000000986e3      0x7bf Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
                                       0x860a3 (size before relaxing)
- .debug_str     0x0000000000098ecc      0x185 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+ .debug_str     0x0000000000098ea2      0x185 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
                                       0x85979 (size before relaxing)
- .debug_str     0x0000000000099051     0x4cdc stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
-                                      0x90c28 (size before relaxing)
- .debug_str     0x000000000009dd2d     0x2d58 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
-                                      0x93258 (size before relaxing)
- .debug_str     0x00000000000a0a85     0x1fba stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
+ .debug_str     0x0000000000099027     0x4cdc stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+                                      0x90bfe (size before relaxing)
+ .debug_str     0x000000000009dd03     0x2d58 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
+                                      0x9322e (size before relaxing)
+ .debug_str     0x00000000000a0a5b     0x1fba stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
                                        0x8d7e (size before relaxing)
- .debug_str     0x00000000000a2a3f      0x1b1 stm32-it-sdk/Src/drivers/lorawan/crypto/cmac.o
-                                      0x8e417 (size before relaxing)
- .debug_str     0x00000000000a2bf0      0x5a7 stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
-                                      0x8ed7f (size before relaxing)
- .debug_str     0x00000000000a3197     0x2933 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
-                                      0x9347d (size before relaxing)
- .debug_str     0x00000000000a5aca       0x7c stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacAdr.o
-                                      0x8ef74 (size before relaxing)
- .debug_str     0x00000000000a5b46      0x6bc stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacClassB.o
-                                      0x913cd (size before relaxing)
- .debug_str     0x00000000000a6202      0x368 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCommands.o
-                                      0x8ed60 (size before relaxing)
- .debug_str     0x00000000000a656a      0x33b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacConfirmQueue.o
-                                      0x8f1f0 (size before relaxing)
- .debug_str     0x00000000000a68a5      0x77b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
-                                      0x8f748 (size before relaxing)
- .debug_str     0x00000000000a7020      0x1d6 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
-                                      0x8ec20 (size before relaxing)
- .debug_str     0x00000000000a71f6       0x78 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacParser.o
-                                      0x8e6f3 (size before relaxing)
- .debug_str     0x00000000000a726e       0xd6 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacSerializer.o
-                                      0x8e7a4 (size before relaxing)
- .debug_str     0x00000000000a7344     0x9179 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
-                                      0x989c2 (size before relaxing)
- .debug_str     0x00000000000b04bd      0x61c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
-                                      0x90453 (size before relaxing)
- .debug_str     0x00000000000b0ad9      0x313 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
-                                      0x90431 (size before relaxing)
- .debug_str     0x00000000000b0dec      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
-                                      0x902fa (size before relaxing)
- .debug_str     0x00000000000b107b      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
-                                      0x9038a (size before relaxing)
- .debug_str     0x00000000000b130a      0x30d stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCommon.o
-                                      0x8f8cf (size before relaxing)
- .debug_str     0x00000000000b1617      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
-                                      0x9038a (size before relaxing)
- .debug_str     0x00000000000b18a6      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
-                                      0x90456 (size before relaxing)
- .debug_str     0x00000000000b1b35      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
-                                      0x903a3 (size before relaxing)
- .debug_str     0x00000000000b1dc4      0x2aa stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
-                                      0x90401 (size before relaxing)
- .debug_str     0x00000000000b206e      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
-                                      0x90323 (size before relaxing)
- .debug_str     0x00000000000b22fd      0x377 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
-                                      0x90439 (size before relaxing)
- .debug_str     0x00000000000b2674      0xa52 stm32-it-sdk/Src/drivers/lorawan/systime.o
-                                      0x8e70c (size before relaxing)
- .debug_str     0x00000000000b30c6      0x216 stm32-it-sdk/Src/drivers/lorawan/timeServer.o
-                                      0x902f0 (size before relaxing)
- .debug_str     0x00000000000b32dc       0x7f stm32-it-sdk/Src/drivers/lorawan/utilities.o
-                                      0x8e9a7 (size before relaxing)
- .debug_str     0x00000000000b335b      0x377 stm32-it-sdk/Src/drivers/sx1276/murata_cmwx1zzabz.o
-                                      0x95b9d (size before relaxing)
- .debug_str     0x00000000000b36d2      0x49b stm32-it-sdk/Src/drivers/sx1276/sx1276.o
-                                      0x972da (size before relaxing)
- .debug_str     0x00000000000b3b6d      0x527 stm32-it-sdk/Src/it_sdk/console/console.o
-                                      0x906a9 (size before relaxing)
- .debug_str     0x00000000000b4094      0x169 stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o
-                                      0x8bf70 (size before relaxing)
- .debug_str     0x00000000000b41fd      0x283 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
-                                      0x8f219 (size before relaxing)
- .debug_str     0x00000000000b4480       0x51 stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o
-                                      0x89f32 (size before relaxing)
- .debug_str     0x00000000000b44d1      0x420 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
-                                      0x8d7b3 (size before relaxing)
- .debug_str     0x00000000000b48f1       0xe0 stm32-it-sdk/Src/it_sdk/encrypt/aes128ctr.o
-                                      0x8cfac (size before relaxing)
- .debug_str     0x00000000000b49d1      0x147 stm32-it-sdk/Src/it_sdk/encrypt/tools.o
-                                      0x8f12d (size before relaxing)
- .debug_str     0x00000000000b4b18      0x259 stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
+ .debug_str     0x00000000000a2a15      0x1b1 stm32-it-sdk/Src/drivers/lorawan/crypto/cmac.o
+                                      0x8e3ed (size before relaxing)
+ .debug_str     0x00000000000a2bc6      0x5a7 stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
+                                      0x8ed55 (size before relaxing)
+ .debug_str     0x00000000000a316d     0x2933 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
+                                      0x93453 (size before relaxing)
+ .debug_str     0x00000000000a5aa0       0x7c stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacAdr.o
+                                      0x8ef4a (size before relaxing)
+ .debug_str     0x00000000000a5b1c      0x6bc stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacClassB.o
+                                      0x913a3 (size before relaxing)
+ .debug_str     0x00000000000a61d8      0x368 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCommands.o
+                                      0x8ed36 (size before relaxing)
+ .debug_str     0x00000000000a6540      0x33b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacConfirmQueue.o
+                                      0x8f1c6 (size before relaxing)
+ .debug_str     0x00000000000a687b      0x77b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
+                                      0x8f71e (size before relaxing)
+ .debug_str     0x00000000000a6ff6      0x1d6 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
+                                      0x8ebf6 (size before relaxing)
+ .debug_str     0x00000000000a71cc       0x78 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacParser.o
+                                      0x8e6c9 (size before relaxing)
+ .debug_str     0x00000000000a7244       0xd6 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacSerializer.o
+                                      0x8e77a (size before relaxing)
+ .debug_str     0x00000000000a731a     0x9179 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+                                      0x98998 (size before relaxing)
+ .debug_str     0x00000000000b0493      0x61c stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAS923.o
+                                      0x90429 (size before relaxing)
+ .debug_str     0x00000000000b0aaf      0x313 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionAU915.o
+                                      0x90407 (size before relaxing)
+ .debug_str     0x00000000000b0dc2      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN470.o
+                                      0x902d0 (size before relaxing)
+ .debug_str     0x00000000000b1051      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCN779.o
+                                      0x90360 (size before relaxing)
+ .debug_str     0x00000000000b12e0      0x30d stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCommon.o
+                                      0x8f8a5 (size before relaxing)
+ .debug_str     0x00000000000b15ed      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU433.o
+                                      0x90360 (size before relaxing)
+ .debug_str     0x00000000000b187c      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
+                                      0x9042c (size before relaxing)
+ .debug_str     0x00000000000b1b0b      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionIN865.o
+                                      0x90379 (size before relaxing)
+ .debug_str     0x00000000000b1d9a      0x2aa stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionKR920.o
+                                      0x903d7 (size before relaxing)
+ .debug_str     0x00000000000b2044      0x28f stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o
+                                      0x902f9 (size before relaxing)
+ .debug_str     0x00000000000b22d3      0x377 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionUS915.o
+                                      0x9040f (size before relaxing)
+ .debug_str     0x00000000000b264a      0xa52 stm32-it-sdk/Src/drivers/lorawan/systime.o
+                                      0x8e6e2 (size before relaxing)
+ .debug_str     0x00000000000b309c      0x216 stm32-it-sdk/Src/drivers/lorawan/timeServer.o
+                                      0x902c6 (size before relaxing)
+ .debug_str     0x00000000000b32b2       0x7f stm32-it-sdk/Src/drivers/lorawan/utilities.o
+                                      0x8e97d (size before relaxing)
+ .debug_str     0x00000000000b3331      0x377 stm32-it-sdk/Src/drivers/sx1276/murata_cmwx1zzabz.o
+                                      0x95b73 (size before relaxing)
+ .debug_str     0x00000000000b36a8      0x49b stm32-it-sdk/Src/drivers/sx1276/sx1276.o
+                                      0x972b0 (size before relaxing)
+ .debug_str     0x00000000000b3b43      0x527 stm32-it-sdk/Src/it_sdk/console/console.o
+                                      0x9067f (size before relaxing)
+ .debug_str     0x00000000000b406a      0x169 stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o
+                                      0x8bf46 (size before relaxing)
+ .debug_str     0x00000000000b41d3      0x283 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
+                                      0x8f1ef (size before relaxing)
+ .debug_str     0x00000000000b4456       0x51 stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o
+                                      0x89f08 (size before relaxing)
+ .debug_str     0x00000000000b44a7      0x420 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
+                                      0x8d789 (size before relaxing)
+ .debug_str     0x00000000000b48c7       0xe0 stm32-it-sdk/Src/it_sdk/encrypt/aes128ctr.o
+                                      0x8cf82 (size before relaxing)
+ .debug_str     0x00000000000b49a7      0x147 stm32-it-sdk/Src/it_sdk/encrypt/tools.o
+                                      0x8f103 (size before relaxing)
+ .debug_str     0x00000000000b4aee      0x259 stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
                                        0x7130 (size before relaxing)
- .debug_str     0x00000000000b4d71      0x189 stm32-it-sdk/Src/it_sdk/logger/error.o
-                                      0x90248 (size before relaxing)
- .debug_str     0x00000000000b4efa      0x143 stm32-it-sdk/Src/it_sdk/logger/logger.o
-                                      0x8e1a1 (size before relaxing)
- .debug_str     0x00000000000b503d      0x346 stm32-it-sdk/Src/it_sdk/lorawan/lorawan.o
-                                      0x91894 (size before relaxing)
- .debug_str     0x00000000000b5383      0x1fe stm32-it-sdk/Src/it_sdk/lowpower/lowpower.o
-                                      0x8a150 (size before relaxing)
- .debug_str     0x00000000000b5581       0x47 stm32-it-sdk/Src/it_sdk/main.o
-                                      0x8c3f1 (size before relaxing)
- .debug_str     0x00000000000b55c8      0x1f5 stm32-it-sdk/Src/it_sdk/tool.o
-                                      0x89e97 (size before relaxing)
- .debug_str     0x00000000000b57bd       0xe8 stm32-it-sdk/Src/it_sdk/sched/scheduler.o
-                                      0x8be93 (size before relaxing)
- .debug_str     0x00000000000b58a5      0x21c stm32-it-sdk/Src/it_sdk/time/time.o
-                                      0x89eda (size before relaxing)
- .debug_str     0x00000000000b5ac1      0x181 stm32-it-sdk/Src/it_sdk/time/timer.o
-                                      0x8bf2f (size before relaxing)
- .debug_str     0x00000000000b5c42      0x1aa stm32-it-sdk/Src/stm32l_sdk/adc/adc.o
-                                      0x8c2ef (size before relaxing)
- .debug_str     0x00000000000b5dec      0x240 stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
-                                      0x8f396 (size before relaxing)
- .debug_str     0x00000000000b602c      0x19f stm32-it-sdk/Src/stm32l_sdk/misc_wrapper.o
-                                      0x89fab (size before relaxing)
- .debug_str     0x00000000000b61cb      0x23c stm32-it-sdk/Src/stm32l_sdk/uart_wrapper.o
-                                      0x8d13d (size before relaxing)
- .debug_str     0x00000000000b6407       0xf9 stm32-it-sdk/Src/stm32l_sdk/eeprom/eeprom.o
-                                      0x8be06 (size before relaxing)
- .debug_str     0x00000000000b6500       0xbd stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
-                                      0x8a1d6 (size before relaxing)
- .debug_str     0x00000000000b65bd      0x226 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
-                                      0x8fc50 (size before relaxing)
- .debug_str     0x00000000000b67e3       0xa9 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
-                                      0x8bde2 (size before relaxing)
- .debug_str     0x00000000000b688c      0x16a stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
-                                      0x89e1b (size before relaxing)
- .debug_str     0x00000000000b69f6       0x57 stm32-it-sdk/Src/stm32l_sdk/wdg/watchdog.o
-                                      0x8bdb1 (size before relaxing)
+ .debug_str     0x00000000000b4d47      0x189 stm32-it-sdk/Src/it_sdk/logger/error.o
+                                      0x9021e (size before relaxing)
+ .debug_str     0x00000000000b4ed0      0x143 stm32-it-sdk/Src/it_sdk/logger/logger.o
+                                      0x8e177 (size before relaxing)
+ .debug_str     0x00000000000b5013      0x346 stm32-it-sdk/Src/it_sdk/lorawan/lorawan.o
+                                      0x9186a (size before relaxing)
+ .debug_str     0x00000000000b5359      0x1fe stm32-it-sdk/Src/it_sdk/lowpower/lowpower.o
+                                      0x8a126 (size before relaxing)
+ .debug_str     0x00000000000b5557       0x47 stm32-it-sdk/Src/it_sdk/main.o
+                                      0x8c3c7 (size before relaxing)
+ .debug_str     0x00000000000b559e      0x1f5 stm32-it-sdk/Src/it_sdk/tool.o
+                                      0x89e6d (size before relaxing)
+ .debug_str     0x00000000000b5793       0xe8 stm32-it-sdk/Src/it_sdk/sched/scheduler.o
+                                      0x8be69 (size before relaxing)
+ .debug_str     0x00000000000b587b      0x21c stm32-it-sdk/Src/it_sdk/time/time.o
+                                      0x89eb0 (size before relaxing)
+ .debug_str     0x00000000000b5a97      0x181 stm32-it-sdk/Src/it_sdk/time/timer.o
+                                      0x8bf05 (size before relaxing)
+ .debug_str     0x00000000000b5c18      0x1aa stm32-it-sdk/Src/stm32l_sdk/adc/adc.o
+                                      0x8c2c5 (size before relaxing)
+ .debug_str     0x00000000000b5dc2      0x240 stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
+                                      0x8f36c (size before relaxing)
+ .debug_str     0x00000000000b6002      0x19f stm32-it-sdk/Src/stm32l_sdk/misc_wrapper.o
+                                      0x89f81 (size before relaxing)
+ .debug_str     0x00000000000b61a1      0x23c stm32-it-sdk/Src/stm32l_sdk/uart_wrapper.o
+                                      0x8d113 (size before relaxing)
+ .debug_str     0x00000000000b63dd       0xf9 stm32-it-sdk/Src/stm32l_sdk/eeprom/eeprom.o
+                                      0x8bddc (size before relaxing)
+ .debug_str     0x00000000000b64d6       0xbd stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
+                                      0x8a1ac (size before relaxing)
+ .debug_str     0x00000000000b6593      0x226 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+                                      0x8fc26 (size before relaxing)
+ .debug_str     0x00000000000b67b9       0xa9 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
+                                      0x8bdb8 (size before relaxing)
+ .debug_str     0x00000000000b6862      0x16a stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
+                                      0x89df1 (size before relaxing)
+ .debug_str     0x00000000000b69cc       0x57 stm32-it-sdk/Src/stm32l_sdk/wdg/watchdog.o
+                                      0x8bd87 (size before relaxing)
 
 .comment        0x0000000000000000       0x7b
  .comment       0x0000000000000000       0x7b Core/Src/adc.o
