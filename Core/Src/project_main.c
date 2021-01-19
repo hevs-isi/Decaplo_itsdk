@@ -42,7 +42,7 @@
 #include <drivers/sx1276/sx1276.h>
 
 
-#define COMFREQS	(1*60*1000)
+#define COMFREQS	(1*60*1000) 		// app dutycycle
 #define TASKDELAYMS	(1000)
 
 struct state {
