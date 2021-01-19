@@ -52,7 +52,7 @@ struct state {
 
 
 
-#define LEDGreen_PORT 	__BANK_B
+#define LEDGreen_PORT 	__BANK_B		//while not connected : 1, if message has been sent : blink one time
 #define LEDGreen_PIN 	__LP_GPIO_7
 
 
@@ -141,8 +141,6 @@ void project_setup() {
 	SX1276InitLowPower();
 	log_info("Starting up\r\n");				// print a message on the USART2
 	itsdk_delayMs(2000);
-
-
 
 	s_state.lastComMS = COMFREQS;
 	s_state.setup = BOOL_FALSE;
