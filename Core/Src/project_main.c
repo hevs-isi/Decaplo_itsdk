@@ -33,6 +33,12 @@
  * Capacity : 8000mAH
  * Consumption sleep mode : 70uA
  * #year = (8000mAH/70uA)/24/365 = 13 years
+ *
+ * taking into account the consumption during a shipment :
+ * send time : 5s
+ * consumption : 10mA
+ * send periode : 600s
+ * #years : 5.9
  * ***********************************************************
  */
 #include <it_sdk/config.h>
