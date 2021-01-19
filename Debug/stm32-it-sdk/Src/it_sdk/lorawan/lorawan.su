@@ -1,4 +1,4 @@
-lorawan.c:63:22:itsdk_lorawan_setup	104	static
+lorawan.c:63:22:itsdk_lorawan_setup	120	static
 lorawan.c:185:22:itsdk_lorawan_join_sync	8	static
 lorawan.c:192:6:lorawan_driver_onJoinSuccess	8	static
 lorawan.c:198:6:lorawan_driver_onJoinFailed	8	static
