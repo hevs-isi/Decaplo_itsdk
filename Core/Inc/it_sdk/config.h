@@ -105,11 +105,12 @@
 
 #define ITSDK_LOWPOWER_MOD			( __LOWPWR_MODE_STOP           \
 									| __LOWPWR_MODE_WAKE_RTC       \
-									| __LOWPWR_MODE_WAKE_GPIO      \
+								/*	| __LOWPWR_MODE_WAKE_GPIO   */   \
 								/*	| __LOWPWR_MODE_WAKE_LPUART */ \
 								/*	| __LOWPWR_MODE_WAKE_UART1  */ \
-									| __LOWPWR_MODE_WAKE_UART2  \
-									)										// Mode Stop + wakeup RTC + GPIO
+								/*	| __LOWPWR_MODE_WAKE_UART2  */\
+									)										// uncomment : __LOWPWR_MODE_WAKE_GPIO, __LOWPWR_MODE_WAKE_UART2
+																			// Mode Stop + wakeup RTC + GPIO
 		                                                                    // UARTS WAKE Requires clk HSE/LSE and WakeInt Activated
 #define ITSDK_LOWPOWER_MINDUR_MS	5										// Under 5 ms sleep request, no need to sleep
 #define ITSDK_LOWPOWER_RTC_MS		500										// RTC wake up after 500ms
