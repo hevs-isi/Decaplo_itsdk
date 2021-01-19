@@ -73,7 +73,7 @@
 #define ITSDK_HW_TIMER1_FREQ		32000000								// Primary timer base frequency
 #define ITSDK_HW_TIMER1_MAX			65536									// Timer's counter max value ( 2^size )
 #define ITSDK_TIMER_SLOTS			5										// Maximum number of SOFT TIMER available in parallel - 0 disable SOFT TIMER code
-#define ITSDK_WITH_WDG				__WDG_IWDG								// Allows to disable the watchdog
+#define ITSDK_WITH_WDG				__WDG_IWDG								// Allows to disable the watchdog __WDG_IWDG
 #define ITSDK_WDG_MS				16000									// WatchDog time out in ms 1 --> 28000 / 0 to disable
 #define ITSDK_WDG_CLKFREQ			37000									// Watchdog clock source frequency
 #define ITSDK_CORE_CLKFREQ			32000000								// Core Frequency of the chip
@@ -113,7 +113,7 @@
 																			// Mode Stop + wakeup RTC + GPIO
 		                                                                    // UARTS WAKE Requires clk HSE/LSE and WakeInt Activated
 #define ITSDK_LOWPOWER_MINDUR_MS	5										// Under 5 ms sleep request, no need to sleep
-#define ITSDK_LOWPOWER_RTC_MS		500										// RTC wake up after 500ms
+#define ITSDK_LOWPOWER_RTC_MS		10000									// RTC wake up after 500ms
 #define ITSDK_LOWPOWER_MISC_HALT    (  __LP_HALT_NONE					\
 								/*	 | __LP_HALT_I2C1	*/				\
 								/*	 | __LP_HALT_I2C2	*/				\

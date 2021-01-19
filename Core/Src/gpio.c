@@ -60,6 +60,7 @@ void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, RADIO_ANT_SWITCH_TX_BOOST_Pin|RADIO_RESET_Pin|RADIO_ANT_SWITCH_TX_RFO_Pin, GPIO_PIN_RESET);
 
+
   /*Configure GPIO pins : PAPin PAPin PAPin */
   GPIO_InitStruct.Pin = RADIO_NSS_Pin|RADIO_TCXO_VCC_Pin|RADIO_ANT_SWITCH_RX_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;

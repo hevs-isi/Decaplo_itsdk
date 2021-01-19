@@ -56,11 +56,14 @@ struct state {
 #define LEDGreen_PIN 	__LP_GPIO_7
 
 
+
+
 void task() {
 
 	if(!itsdk_lorawan_hasjoined()){
 		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 	}
+
 
 
 	// wait for the board configuration
