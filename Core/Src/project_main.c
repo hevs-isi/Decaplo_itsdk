@@ -105,7 +105,7 @@ void task() {
 		}
 		if ( s_state.setup == BOOL_TRUE && s_state.lastComMS > COMFREQS) {
 			// Send a LoRaWan Frame
-			uint8_t t[20] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19};
+			uint8_t t[10] = {0,1,2,3,4,5,6,7,8,9};
 			if ( !itsdk_lorawan_hasjoined() ) {
 				log_info("Connecting LoRaWAN ");
 				if ( itsdk_lorawan_join_sync() == LORAWAN_JOIN_SUCCESS ) {
@@ -119,12 +119,11 @@ void task() {
 				log_info("Fire a LoRaWAN message ");
 				uint8_t port;
 				uint8_t size=16;
-				uint8_t rx[16];
-				//itsdk_lorawan_send_sync
+				uint8_t rx[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 				itsdk_lorawan_send_t r = itsdk_lorawan_send_sync(
 						t,							// Payload
-						16,							// Payload size
+						10,							// Payload size
 						1,							// Port
 						__LORAWAN_DR_5,				// Speed
 						LORAWAN_SEND_CONFIRMED,		// With a ack
@@ -146,12 +145,6 @@ void task() {
 				}else {
 					log_info("failed (%d)\r\n",r);
 				}
-
-
-
-
-
-
 
 				s_state.lastComMS = 0;
 			}
