@@ -120,17 +120,19 @@ void task() {
 				uint8_t port;
 				uint8_t size=16;
 				uint8_t rx[16];
+				//itsdk_lorawan_send_sync
+
 				itsdk_lorawan_send_t r = itsdk_lorawan_send_sync(
-						t,						// Payload
-						16,						// Payload size
-						1,						// Port
-						__LORAWAN_DR_5,			// Speed
-						LORAWAN_SEND_UNCONFIRMED,	// With a ack
-						ITSDK_LORAWAN_CNF_RETRY,// And default retry
-						&port,					// In case of reception - Port (uint8_t)
-						&size,					// In case of reception - Size (uint8_t) - init with buffer max size
-						rx,						// In case of recpetion - Data (uint8_t[] bcopied)
-						PAYLOAD_ENCRYPT_NONE	// End to End encryption mode
+						t,							// Payload
+						16,							// Payload size
+						1,							// Port
+						__LORAWAN_DR_5,				// Speed
+						LORAWAN_SEND_CONFIRMED,		// With a ack
+						ITSDK_LORAWAN_CNF_RETRY,	// And default retry
+						&port,						// In case of reception - Port (uint8_t)
+						&size,						// In case of reception - Size (uint8_t) - init with buffer max size
+						rx,							// In case of reception - Data (uint8_t[] bcopied)
+						PAYLOAD_ENCRYPT_NONE		// End to End encryption mode
 				);
 				if ( r == LORAWAN_SEND_SENT || r == LORAWAN_SEND_ACKED ) {
 					gpio_set(LEDGreen_PORT,LEDGreen_PIN);
@@ -138,9 +140,16 @@ void task() {
 					itsdk_delayMs(500);
 					gpio_reset(LEDGreen_PORT,LEDGreen_PIN);
 
-				} else {
+				}else if(r == LORAWAN_SEND_ACKED_WITH_DOWNLINK || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK_PENDING){
+					log_info("Port : %d\n\r", port);
+					log_info_array("RX : ",rx, 16);
+				}else {
 					log_info("failed (%d)\r\n",r);
 				}
+
+
+
+
 
 
 
@@ -152,7 +161,6 @@ void task() {
 	}
 
 }
-
 
 
 

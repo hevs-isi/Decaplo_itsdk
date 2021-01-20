@@ -50,7 +50,7 @@
 #define ITSDK_LORAWAN_DEVEUI_SRC	__LORAWAN_DEVEUI_STATIC				   // Device EUI is static / generated
 #define ITSDK_LORAWAN_ADR			__LORAWAN_ADR_OFF					   // Adaptative Data Rate
 #define ITSDK_LORAWAN_DEFAULT_DR	__LORAWAN_DR_0						   // Default data rate (SF12 125KHz)
-#define ITSDK_LORAWAN_CNF_RETRY		3									   // Number of retry when Confirm mode is applied
+#define ITSDK_LORAWAN_CNF_RETRY		0									   // Number of retry when Confirm mode is applied
 #ifndef ITSDK_MURATA_TCXO_WARMUP
 #define ITSDK_MURATA_TCXO_WARMUP	50									   // Warmup time for TCXO
 #define ITSDK_MURATA_WAKEUP_TIME    53 									   // WakeUp time correction for RX window start at least TCXO Time [ms]
