@@ -133,17 +133,14 @@ void task() {
 						rx,							// In case of reception - Data (uint8_t[] bcopied)
 						PAYLOAD_ENCRYPT_NONE		// End to End encryption mode
 				);
-				log_info("\n\rSend State : %d\n\r", r);
-				if ( r == LORAWAN_SEND_SENT || r == LORAWAN_SEND_ACKED ) {
+				//log_info("\n\rSend State : %d\n\r", r);
+				if ( r == LORAWAN_SEND_SENT || r == LORAWAN_SEND_ACKED || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK_PENDING) {
 					gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 					log_info("success\r\n",r);
 					itsdk_delayMs(500);
 					gpio_reset(LEDGreen_PORT,LEDGreen_PIN);
-					log_info("Port : %d\n\r", port);
-					log_info_array("RX : ",rx, 16);
-				}else if(r == LORAWAN_SEND_ACKED_WITH_DOWNLINK || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK_PENDING){
-					log_info("Port : %d\n\r", port);
-					log_info_array("RX : ",rx, 16);
+					process_downlink(port, rx);
+					port = 0;
 				}else {
 					log_info("failed (%d)\r\n",r);
 				}
@@ -158,6 +155,17 @@ void task() {
 }
 
 
+
+
+
+void process_downlink(uint8_t port, uint8_t rx[]){
+	if(port != 0 && rx[0] != 0){
+		log_info("Downlink received \n\r");
+		log_info("Port : %d\n\r", port);
+		log_info_array("RX : ",rx, 16);
+
+	}
+}
 
 // =====================================================================
 // Setup
