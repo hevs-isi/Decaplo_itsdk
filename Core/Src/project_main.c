@@ -57,7 +57,7 @@
 #include <drivers/sx1276/sx1276.h>
 
 
-#define COMFREQS	(1*30*1000) 		// app dutycycle
+#define COMFREQS	(3*60*1000) 		// app dutycycle
 #define TASKDELAYMS	(1000)
 
 struct state {
@@ -125,20 +125,22 @@ void task() {
 						t,							// Payload
 						10,							// Payload size
 						1,							// Port
-						__LORAWAN_DR_5,				// Speed
-						LORAWAN_SEND_CONFIRMED,		// With a ack
+						__LORAWAN_DR_0,				// Speed 0 to have downlink
+						LORAWAN_SEND_UNCONFIRMED,		// With a ack
 						ITSDK_LORAWAN_CNF_RETRY,	// And default retry
 						&port,						// In case of reception - Port (uint8_t)
 						&size,						// In case of reception - Size (uint8_t) - init with buffer max size
 						rx,							// In case of reception - Data (uint8_t[] bcopied)
 						PAYLOAD_ENCRYPT_NONE		// End to End encryption mode
 				);
+				log_info("\n\rSend State : %d\n\r", r);
 				if ( r == LORAWAN_SEND_SENT || r == LORAWAN_SEND_ACKED ) {
 					gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 					log_info("success\r\n",r);
 					itsdk_delayMs(500);
 					gpio_reset(LEDGreen_PORT,LEDGreen_PIN);
-
+					log_info("Port : %d\n\r", port);
+					log_info_array("RX : ",rx, 16);
 				}else if(r == LORAWAN_SEND_ACKED_WITH_DOWNLINK || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK_PENDING){
 					log_info("Port : %d\n\r", port);
 					log_info_array("RX : ",rx, 16);
