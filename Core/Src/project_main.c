@@ -58,7 +58,7 @@
 
 
 #define COMFREQS	(3*60*1000) 		// app dutycycle
-#define TASKDELAYMS	(1000)
+#define TASKDELAYMS	3*(1000)
 
 struct state {
 	int32_t			lastComMS;
@@ -67,7 +67,7 @@ struct state {
 
 
 
-#define LEDGreen_PORT 	__BANK_B		//while not connected : 1, if message has been sent : blink one time
+#define LEDGreen_PORT 	__BANK_B		//while not connected : light on, if message has been sent : blink one time
 #define LEDGreen_PIN 	__LP_GPIO_7
 
 
@@ -195,4 +195,3 @@ void project_loop() {
     itsdk_lorawan_loop();
 
 }
-

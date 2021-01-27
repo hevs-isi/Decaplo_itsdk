@@ -117,10 +117,10 @@
 #define ITSDK_LOWPOWER_MISC_HALT    (  __LP_HALT_NONE					\
 								/*	 | __LP_HALT_I2C1	*/				\
 								/*	 | __LP_HALT_I2C2	*/				\
-									 | __LP_HALT_SPI1					\
+									 | __LP_HALT_SPI1				\
 								/*	 | __LP_HALT_SPI2	*/				\
-									 | __LP_HALT_TIM21 					\
-									 | __LP_HALT_ADC1 					\
+								/*	 | __LP_HALT_TIM21 	*/				\
+								/*	 | __LP_HALT_ADC1 	*/				\
 									)										// extra module to stop during low power phase
 
 																			//	ITSDK_LOWPOWER_GPIO_A_KEEP uncomment : __LP_GPIO_2, __LP_GPIO_3
@@ -153,7 +153,7 @@
 									/*	 | __LP_GPIO_4 */	/* LoRa Dio0 */ 	\
 									/*	 | __LP_GPIO_5 */	/* Led 1 */ 		\
 									/*	 | __LP_GPIO_6 */	/* Led 3 / Uart1 Tx */ 		\
-										 | __LP_GPIO_7  		/* Led 4 */ 		\
+										 | __LP_GPIO_7  	/* Green led */ 		\
 									/*	 | __LP_GPIO_8 */	/* i2c NA */		\
 									/*	 | __LP_GPIO_9 */	/* i2c NA */ 		\
 									/*	 | __LP_GPIO_10 */	/* Not Used */ 		\

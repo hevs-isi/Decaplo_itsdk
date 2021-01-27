@@ -109,8 +109,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
+	/* USER CODE BEGIN 3 */
 	itsdk_loop();
   }
   /* USER CODE END 3 */
