@@ -162,6 +162,14 @@ void stm32l_lowPowerRestoreGpioConfig() {
 	  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);
 	  HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
 
+	  /*re-init GPIO pins : LED4-green */
+/*	  GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+	  GPIO_InitStruct.Pin = LD4_Pin;
+	  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+	  GPIO_InitStruct.Pull = GPIO_NOPULL;
+	  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+	  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);*/
 }
 /* USER CODE END 2 */
 

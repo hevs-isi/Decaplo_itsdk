@@ -32,6 +32,7 @@
 #include <it_sdk/config.h>
 #include <it_sdk/itsdk.h>
 #include <it_sdk/logger/logger.h>
+#include <it_sdk/lowpower/lowpower.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -62,7 +63,19 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void main_dbg_disable(void)
+{
+    GPIO_InitTypeDef GPIO_InitStructure;
 
+    GPIO_InitStructure.Mode = GPIO_MODE_ANALOG;
+    GPIO_InitStructure.Pull = GPIO_NOPULL;
+    GPIO_InitStructure.Pin = (GPIO_PIN_13 | GPIO_PIN_14);
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+    __HAL_RCC_DBGMCU_CLK_ENABLE();
+    HAL_DBGMCU_DisableDBGStopMode();
+    __HAL_RCC_DBGMCU_CLK_DISABLE();
+}
 /* USER CODE END 0 */
 
 /**
@@ -106,11 +119,16 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  //desable debug module and pins (SWLCK & SWDIO)
+  main_dbg_disable();
+
   while (1)
   {
     /* USER CODE END WHILE */
 	/* USER CODE BEGIN 3 */
 	itsdk_loop();
+//	stm32l_lowPowerSetup(__INFINITE_32B,1);
+//	  HAL_PWR_EnterSTOPMode(PWR_LOWPOWERREGULATOR_ON, PWR_STOPENTRY_WFI);
   }
   /* USER CODE END 3 */
 }

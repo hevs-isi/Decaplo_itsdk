@@ -58,7 +58,7 @@
 
 
 #define COMFREQS	(3*60*1000) 		// app dutycycle
-#define TASKDELAYMS	3*(1000)
+#define TASKDELAYMS	10*(1000)
 
 struct state {
 	int32_t			lastComMS;
@@ -106,6 +106,7 @@ void task() {
 		if ( s_state.setup == BOOL_TRUE && s_state.lastComMS > COMFREQS) {
 			// Send a LoRaWan Frame
 			uint8_t t[10] = {0,1,2,3,4,5,6,7,8,9};
+
 			if ( !itsdk_lorawan_hasjoined() ) {
 				log_info("Connecting LoRaWAN ");
 				if ( itsdk_lorawan_join_sync() == LORAWAN_JOIN_SUCCESS ) {
@@ -153,7 +154,6 @@ void task() {
 	}
 
 }
-
 
 
 
