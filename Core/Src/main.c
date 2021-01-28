@@ -76,6 +76,7 @@ void main_dbg_disable(void)
     HAL_DBGMCU_DisableDBGStopMode();
     __HAL_RCC_DBGMCU_CLK_DISABLE();
 }
+
 /* USER CODE END 0 */
 
 /**
@@ -110,8 +111,8 @@ int main(void)
   MX_SPI1_Init();
   MX_SPI2_Init();
   MX_USART2_UART_Init();
-  MX_IWDG_Init();
-  MX_ADC_Init();
+//  MX_IWDG_Init();
+//  MX_ADC_Init();
   MX_TIM21_Init();
   /* USER CODE BEGIN 2 */
   itsdk_setup();

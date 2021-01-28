@@ -182,7 +182,8 @@ void project_setup() {
 	gpio_reset(LEDGreen_PORT,LEDGreen_PIN);
 
 	itdt_sched_registerSched(TASKDELAYMS,ITSDK_SCHED_CONF_IMMEDIATE, &task);
-	lowPower_enable();
+
+
 
 }
 

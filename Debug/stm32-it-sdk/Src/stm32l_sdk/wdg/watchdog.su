@@ -1,2 +1,0 @@
-watchdog.c:49:6:wdg_setupWithMaxMs	24	static
-watchdog.c:79:6:wdg_refresh	8	static

@@ -40,14 +40,7 @@ stm32-it-sdk/Src/stm32l_sdk/wdg/watchdog.o: \
  ../Core/Inc/gpio.h ../Core/Inc/main.h ../Core/Inc/usart.h \
  ../Core/Inc/rtc.h ../Core/Inc/tim.h ../Core/Inc/it_sdk/configLoRaWan.h \
  ../Core/Inc/spi.h ../Core/Inc/it_sdk/configDrivers.h \
- ../Core/Inc/it_sdk/configNvm.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/wrappers.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/itsdk.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/debug.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/logger/logger.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/stm32l_sdk/rtc/rtc.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/logger/error.h \
- ../Core/Inc/it_sdk/configError.h ../Core/Inc/iwdg.h
+ ../Core/Inc/it_sdk/configNvm.h
 
 ../Core/Inc/it_sdk/config.h:
 
@@ -140,19 +133,3 @@ stm32-it-sdk/Src/stm32l_sdk/wdg/watchdog.o: \
 ../Core/Inc/it_sdk/configDrivers.h:
 
 ../Core/Inc/it_sdk/configNvm.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/wrappers.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/itsdk.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/debug.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/logger/logger.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/stm32l_sdk/rtc/rtc.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/logger/error.h:
-
-../Core/Inc/it_sdk/configError.h:
-
-../Core/Inc/iwdg.h:
