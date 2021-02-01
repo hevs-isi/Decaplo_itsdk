@@ -57,8 +57,11 @@
 #include <drivers/sx1276/sx1276.h>
 
 
-#define COMFREQS	(3*60*1000) 		// app dutycycle
+int32_t COMFREQS = (3*60*1000); 		// app dutycycle
+//#define COMFREQS 3*60*1000
 #define TASKDELAYMS	10*(1000)
+uint8_t dataRate = __LORAWAN_DR_0;
+uint8_t setDataRate(uint8_t nbr);
 
 struct state {
 	int32_t			lastComMS;
@@ -128,7 +131,7 @@ void task() {
 						t,							// Payload
 						10,							// Payload size
 						1,							// Port
-						__LORAWAN_DR_0,				// Speed 0 to have downlink
+						dataRate,				// Speed 0 to have downlink __LORAWAN_DR_0
 						LORAWAN_SEND_UNCONFIRMED,		// With a ack
 						ITSDK_LORAWAN_CNF_RETRY,	// And default retry
 						&port,						// In case of reception - Port (uint8_t)
@@ -178,11 +181,13 @@ void process_downlink(uint8_t port, uint8_t rx[]){
 		switch(rx[0]){
 			case 1 :
 				//change app duty cycle
-
+				COMFREQS = ((rx[1]<<16) + (rx[2]<<8) + (rx[3]<<0))*1000;
 				break;
 			case 4:
 				// reset device
-
+				if(rx[1] == 15){
+					itsdk_reset();
+				}
 				break;
 			case 162:
 				//toggle adr
@@ -190,11 +195,35 @@ void process_downlink(uint8_t port, uint8_t rx[]){
 				break;
 			case 163:
 				//set datarate
-
+				dataRate = setDataRate(rx[1]);
 				break;
 			default:
 				break;
 		}
+
+	}
+}
+
+uint8_t setDataRate(uint8_t nbr){
+	switch(nbr){
+	case 0:
+		return __LORAWAN_DR_0;
+		break;
+	case 1:
+		return __LORAWAN_DR_1;
+		break;
+	case 2:
+		return __LORAWAN_DR_2;
+		break;
+	case 3:
+		return __LORAWAN_DR_3;
+		break;
+	case 4:
+		return __LORAWAN_DR_4;
+		break;
+	default :
+		return __LORAWAN_DR_0;
+		break;
 
 	}
 }

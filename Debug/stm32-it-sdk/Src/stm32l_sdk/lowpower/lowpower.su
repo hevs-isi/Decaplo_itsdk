@@ -1,5 +1,5 @@
 lowpower.c:63:57:stm32l_lowPowerSetup	8	static
-lowpower.c:206:57:stm32l_lowPowerResume	8	static
-lowpower.c:292:13:stm32l_lowPowerRestoreGpioConfig	8	static
-lowpower.c:299:6:__GpioAnalog	32	static
-lowpower.c:330:6:_stm32l_disableGpios	8	static
+lowpower.c:207:57:stm32l_lowPowerResume	8	static
+lowpower.c:293:13:stm32l_lowPowerRestoreGpioConfig	8	static
+lowpower.c:300:6:__GpioAnalog	32	static
+lowpower.c:331:6:_stm32l_disableGpios	8	static
