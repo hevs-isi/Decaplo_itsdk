@@ -68,13 +68,15 @@ struct state {
 
 
 #define LEDGreen_PORT 	__BANK_B		//while not connected : light on, if message has been sent : blink one time
-#define LEDGreen_PIN 	__LP_GPIO_7
+#define LEDGreen_PIN 	__LP_GPIO_7		//green led pin
 
 
 
 
 void task() {
-
+	/**
+	 * if not joined set the green led to 1
+	 */
 	if(!itsdk_lorawan_hasjoined()){
 		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 	}
@@ -147,6 +149,7 @@ void task() {
 				}
 
 				s_state.lastComMS = 0;
+
 			}
 		} else {
 			s_state.lastComMS += TASKDELAYMS;
@@ -157,12 +160,41 @@ void task() {
 
 
 
-
+/**
+ * function that make the treatment of a downlink message
+ *  rx begin :
+	* 0x01 : change app duty cycle
+	* 0x040F : reset device
+	* 0xA2 : toggle ADR
+	* 0xA3 : set Datarate
+ * Send on port 3
+ */
 void process_downlink(uint8_t port, uint8_t rx[]){
-	if(port != 0 && rx[0] != 0){
+
+	if(port == 3 && rx[0] != 0){
 		log_info("Downlink received \n\r");
 		log_info("Port : %d\n\r", port);
 		log_info_array("RX : ",rx, 16);
+		switch(rx[0]){
+			case 1 :
+				//change app duty cycle
+
+				break;
+			case 4:
+				// reset device
+
+				break;
+			case 162:
+				//toggle adr
+
+				break;
+			case 163:
+				//set datarate
+
+				break;
+			default:
+				break;
+		}
 
 	}
 }
@@ -179,7 +211,7 @@ void project_setup() {
 	s_state.lastComMS = COMFREQS;
 	s_state.setup = BOOL_FALSE;
 
-	gpio_reset(LEDGreen_PORT,LEDGreen_PIN);
+	gpio_reset(LEDGreen_PORT,LEDGreen_PIN);		//set led to 0
 
 	itdt_sched_registerSched(TASKDELAYMS,ITSDK_SCHED_CONF_IMMEDIATE, &task);
 

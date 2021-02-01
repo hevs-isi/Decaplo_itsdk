@@ -1,4 +1,4 @@
 project_main.c:76:6:task	96	static
-project_main.c:161:6:process_downlink	24	static
-project_main.c:173:6:project_setup	8	static
-project_main.c:195:6:project_loop	8	static
+project_main.c:166:6:process_downlink	24	static
+project_main.c:178:6:project_setup	8	static
+project_main.c:200:6:project_loop	8	static
