@@ -109,11 +109,11 @@ int main(void)
   MX_GPIO_Init();
   MX_RTC_Init();
   MX_SPI1_Init();
-//  MX_SPI2_Init();
-  MX_USART2_UART_Init();
-//  MX_IWDG_Init();
-//  MX_ADC_Init();
-//  MX_TIM21_Init();
+  	  //  MX_SPI2_Init();
+  MX_USART2_UART_Init(); //comment this line for LP
+  	  //  MX_IWDG_Init();
+ //  MX_ADC_Init();
+  	  //  MX_TIM21_Init();
 
   /* USER CODE BEGIN 2 */
   itsdk_setup();
@@ -128,9 +128,22 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	/* USER CODE BEGIN 3 */
-	itsdk_loop();
-//	stm32l_lowPowerSetup(__INFINITE_32B,1);
-//	  HAL_PWR_EnterSTOPMode(PWR_LOWPOWERREGULATOR_ON, PWR_STOPENTRY_WFI);
+	  itsdk_loop();
+
+
+	  /**
+	   * Laisser juste ces inits
+	   *   HAL_Init();
+	   *   SystemClock_Config();
+	   *   MX_GPIO_Init();
+  	   *   MX_RTC_Init();
+  	   *   MX_SPI1_Init();
+  	   *
+	   * elever activer ces deux lignes : -> 26uA
+	   */
+//	  stm32l_lowPowerSetup(__INFINITE_32B,1);
+//	  lowPower_switch();
+//	HAL_PWR_EnterSTOPMode(PWR_LOWPOWERREGULATOR_ON, PWR_STOPENTRY_WFI);
   }
   /* USER CODE END 3 */
 }

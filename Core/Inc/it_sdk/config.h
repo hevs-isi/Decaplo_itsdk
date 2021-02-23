@@ -115,12 +115,12 @@
 #define ITSDK_LOWPOWER_MINDUR_MS	5										// Under 5 ms sleep request, no need to sleep
 #define ITSDK_LOWPOWER_RTC_MS		10000									// RTC wake up after 500ms
 #define ITSDK_LOWPOWER_MISC_HALT    (  __LP_HALT_NONE					\
-								/*	 | __LP_HALT_I2C1	*/				\
-								/*	 | __LP_HALT_I2C2	*/				\
+									/* | __LP_HALT_I2C1*/					\
+									/* | __LP_HALT_I2C2	*/				\
 									 | __LP_HALT_SPI1				\
-								/*	 | __LP_HALT_SPI2	*/				\
-								/*	 | __LP_HALT_TIM21 	*/				\
-								/*	 | __LP_HALT_ADC1 	*/				\
+									 | __LP_HALT_SPI2					\
+									 | __LP_HALT_TIM21 					\
+									 | __LP_HALT_ADC1 					\
 									)										// extra module to stop during low power phase
 
 																			//	ITSDK_LOWPOWER_GPIO_A_KEEP uncomment : __LP_GPIO_2, __LP_GPIO_3

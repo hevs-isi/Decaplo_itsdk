@@ -1,5 +1,5 @@
 project_main.c:79:6:task	96	static
-project_main.c:175:6:process_downlink	24	static
-project_main.c:207:9:setDataRate	16	static
-project_main.c:234:6:project_setup	8	static
-project_main.c:256:6:project_loop	8	static
+project_main.c:177:6:process_downlink	24	static
+project_main.c:209:9:setDataRate	16	static
+project_main.c:236:6:project_setup	8	static
+project_main.c:258:6:project_loop	8	static
