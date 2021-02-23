@@ -115,10 +115,10 @@
 #define ITSDK_LOWPOWER_MINDUR_MS	5										// Under 5 ms sleep request, no need to sleep
 #define ITSDK_LOWPOWER_RTC_MS		10000									// RTC wake up after 500ms
 #define ITSDK_LOWPOWER_MISC_HALT    (  __LP_HALT_NONE					\
-									/* | __LP_HALT_I2C1*/					\
-									/* | __LP_HALT_I2C2	*/				\
+								/*	 | __LP_HALT_I2C1	*/				\
+								/*	 | __LP_HALT_I2C2	*/				\
 									 | __LP_HALT_SPI1				\
-									 | __LP_HALT_SPI2					\
+								/*	 | __LP_HALT_SPI2	*/				\
 									 | __LP_HALT_TIM21 					\
 									 | __LP_HALT_ADC1 					\
 									)										// extra module to stop during low power phase
@@ -134,11 +134,11 @@
 									/*	 | __LP_GPIO_5 */  /* Led2 / DIO4 */	\
 									/*	 | __LP_GPIO_6 */  /* spi1 */		\
 									/*	 | __LP_GPIO_7 */  /* spi1 */		\
-									/*	 | __LP_GPIO_8 */  /* not used */	\
+										 | __LP_GPIO_8     /* not used */	\
 									/*	 | __LP_GPIO_9 */  /* not used */	\
 									/*	 | __LP_GPIO_10 */ /* Uart1 Rx */	\
-									/*	 | __LP_GPIO_11 */ /* not used */	\
-									/*	 | __LP_GPIO_12 */ /* LoRa Tcxo */	\
+										 | __LP_GPIO_11    /* not used */	\
+										 | __LP_GPIO_12    /* LoRa Tcxo */	\
 									/*	 | __LP_GPIO_13 */ /* lpuart NA */	\
 									/*	 | __LP_GPIO_14	*/ /* lpuart NA */	\
 									/*	 | __LP_GPIO_15	*/ /* LoRa Nss */	\
@@ -148,7 +148,7 @@
 #define ITSDK_LOWPOWER_GPIO_B_KEEP	(  __LP_GPIO_NONE \
 									/*   | __LP_GPIO_0 */   /* LoRa Dio2 */ 	\
 									/*   | __LP_GPIO_1 */ 	/* LoRa Dio1 */ 	\
-									/*	 | __LP_GPIO_2 */	/* User button */  	\
+										 | __LP_GPIO_2   	/* User button */  	\
 									/*	 | __LP_GPIO_3 */   /* spi1 */ 			\
 									/*	 | __LP_GPIO_4 */	/* LoRa Dio0 */ 	\
 									/*	 | __LP_GPIO_5 */	/* Led 1 */ 		\
@@ -158,7 +158,7 @@
 									/*	 | __LP_GPIO_9 */	/* i2c NA */ 		\
 									/*	 | __LP_GPIO_10 */	/* Not Used */ 		\
 									/*	 | __LP_GPIO_11 */	/* Not Used */ 		\
-									/*	 | __LP_GPIO_12*/ 	/* spi2 NA */		\
+										 | __LP_GPIO_12 	/* spi2 NA */		\
 									/*	 | __LP_GPIO_13*/	/* spi2 NA */		\
 									/*	 | __LP_GPIO_14*/	/* spi2 NA */		\
 									/*	 | __LP_GPIO_15*/	/* spi2 */			\

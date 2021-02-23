@@ -72,7 +72,7 @@ struct state {
 
 #define LEDGreen_PORT 	__BANK_B		//while not connected : light on, if message has been sent : blink one time
 #define LEDGreen_PIN 	__LP_GPIO_7		//green led pin
-#define RX_PORT			3
+
 
 
 
@@ -157,9 +157,7 @@ void task() {
 		} else {
 			s_state.lastComMS += TASKDELAYMS;
 		}
-
 	}
-
 
 }
 
@@ -176,7 +174,7 @@ void task() {
  */
 void process_downlink(uint8_t port, uint8_t rx[]){
 
-	if(port == RX_PORT && rx[0] != 0){
+	if(port == 3 && rx[0] != 0){
 		log_info("Downlink received \n\r");
 		log_info("Port : %d\n\r", port);
 		log_info_array("RX : ",rx, 16);
@@ -257,6 +255,5 @@ void project_setup() {
  */
 void project_loop() {
     itsdk_lorawan_loop();
-
 
 }

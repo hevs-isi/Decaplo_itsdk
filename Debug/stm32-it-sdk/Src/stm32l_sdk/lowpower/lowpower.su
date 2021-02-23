@@ -1,4 +1,4 @@
-lowpower.c:63:57:stm32l_lowPowerSetup	16	static
+lowpower.c:63:57:stm32l_lowPowerSetup	8	static
 lowpower.c:207:57:stm32l_lowPowerResume	8	static
 lowpower.c:293:13:stm32l_lowPowerRestoreGpioConfig	8	static
 lowpower.c:300:6:__GpioAnalog	32	static
