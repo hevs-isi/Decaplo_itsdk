@@ -1,5 +1,9 @@
-project_main.c:79:6:task	96	static
-project_main.c:175:6:process_downlink	24	static
-project_main.c:207:9:setDataRate	16	static
-project_main.c:234:6:project_setup	8	static
-project_main.c:256:6:project_loop	8	static
+project_main.c:81:6:task	96	static
+project_main.c:182:6:process_downlink	24	static
+project_main.c:214:9:setDataRate	16	static
+project_main.c:241:6:project_setup	8	static
+project_main.c:263:6:project_loop	8	static
+project_main.c:272:10:getBatteryLevel	24	static
+project_main.c:291:6:MX_I2C1_Init	8	static
+project_main.c:330:6:HAL_I2C_MspInit	40	static
+project_main.c:363:6:HAL_I2C_MspDeInit	16	static

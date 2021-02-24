@@ -55,7 +55,8 @@ Core/Src/project_main.o: ../Core/Src/project_main.c \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/sx1276/sx1276.h \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/phy/radio.h \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/sx1276/sx1276Regs-Fsk.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/sx1276/sx1276Regs-LoRa.h
+ /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/sx1276/sx1276Regs-LoRa.h \
+ ../Core/Inc/pressureSensorDecaplo.h
 
 ../Core/Inc/it_sdk/config.h:
 
@@ -180,3 +181,5 @@ Core/Src/project_main.o: ../Core/Src/project_main.c \
 /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/sx1276/sx1276Regs-Fsk.h:
 
 /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/sx1276/sx1276Regs-LoRa.h:
+
+../Core/Inc/pressureSensorDecaplo.h:
