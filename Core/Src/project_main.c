@@ -66,6 +66,10 @@ struct state {
 #define VBAT_DIV2_PIN	__LP_GPIO_2
 
 
+//***** send *******
+void sendUplink();
+
+
 //***** get battery level******
 uint16_t getBatteryLevel();
 
@@ -86,9 +90,6 @@ void task() {
 	if(!itsdk_lorawan_hasjoined()){
 		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 	}
-
-
-
 
 	// wait for the board configuration
 	uint8_t i = 0;
@@ -113,9 +114,7 @@ void task() {
 			}
 		}
 		if ( s_state.setup == BOOL_TRUE && s_state.lastComMS > COMFREQS) {
-			// Send a LoRaWan Frame
-			uint8_t t[10] = {0,1,2,3,4,5,6,7,8,9};
-
+			//check if joined
 			if ( !itsdk_lorawan_hasjoined() ) {
 				log_info("Connecting LoRaWAN ");
 				if ( itsdk_lorawan_join_sync() == LORAWAN_JOIN_SUCCESS ) {
@@ -126,49 +125,59 @@ void task() {
 					s_state.lastComMS = COMFREQS - 30*1000; // retry in 30 seconds
 				}
 			} else {
-				log_info("Fire a LoRaWAN message ");
-
-				getBatteryLevel();
-
-				uint8_t port;
-				uint8_t size=16;
-				uint8_t rx[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-
-				itsdk_lorawan_send_t r = itsdk_lorawan_send_sync(
-						t,							// Payload
-						10,							// Payload size
-						1,							// Port
-						dataRate,				// Speed 0 to have downlink __LORAWAN_DR_0
-						LORAWAN_SEND_UNCONFIRMED,		// With a ack
-						ITSDK_LORAWAN_CNF_RETRY,	// And default retry
-						&port,						// In case of reception - Port (uint8_t)
-						&size,						// In case of reception - Size (uint8_t) - init with buffer max size
-						rx,							// In case of reception - Data (uint8_t[] bcopied)
-						PAYLOAD_ENCRYPT_NONE		// End to End encryption mode
-				);
-				//log_info("\n\rSend State : %d\n\r", r);
-				if ( r == LORAWAN_SEND_SENT || r == LORAWAN_SEND_ACKED || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK_PENDING) {
-					gpio_set(LEDGreen_PORT,LEDGreen_PIN);
-					log_info("success\r\n",r);
-					itsdk_delayMs(500);
-					gpio_reset(LEDGreen_PORT,LEDGreen_PIN);
-					process_downlink(port, rx);
-					port = 0;
-				}else {
-					log_info("failed (%d)\r\n",r);
-				}
-
+				// Send a LoRaWan Frame
+				sendUplink();
 				s_state.lastComMS = 0;
-
 			}
 		} else {
 			s_state.lastComMS += TASKDELAYMS;
 		}
 	}
-
 }
 
+/**
+ * SendUplink packet
+ */
+void sendUplink(){
+	log_info("Fire a LoRaWAN message ");
 
+	uint8_t t[10] = {0,1,2,3,4,5,6,7,8,9};
+	uint16_t vbat = getBatteryLevel();
+	uint8_t port;
+	uint8_t size=16;
+	uint8_t rx[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+
+
+	
+	
+	
+	
+	
+	
+	itsdk_lorawan_send_t r = itsdk_lorawan_send_sync(
+			t,								// Payload
+			10,								// Payload size
+			1,								// Port
+			dataRate,						// Speed 0 to have downlink __LORAWAN_DR_0
+			LORAWAN_SEND_UNCONFIRMED,		// With a ack
+			ITSDK_LORAWAN_CNF_RETRY,		// And default retry
+			&port,							// In case of reception - Port (uint8_t)
+			&size,							// In case of reception - Size (uint8_t) - init with buffer max size
+			rx,								// In case of reception - Data (uint8_t[] bcopied)
+			PAYLOAD_ENCRYPT_NONE			// End to End encryption mode
+	);
+	//log_info("\n\rSend State : %d\n\r", r);
+	if ( r == LORAWAN_SEND_SENT || r == LORAWAN_SEND_ACKED || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK_PENDING) {
+		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
+		log_info("success\r\n",r);
+		itsdk_delayMs(500);
+		gpio_reset(LEDGreen_PORT,LEDGreen_PIN);
+		process_downlink(port, rx);
+		port = 0;
+	}else {
+		log_info("failed (%d)\r\n",r);
+	}
+}
 
 /**
  * function that make the treatment of a downlink message
@@ -210,7 +219,9 @@ void process_downlink(uint8_t port, uint8_t rx[]){
 
 	}
 }
-
+/**
+ * return datarate in Function of a number
+ */
 uint8_t setDataRate(uint8_t nbr){
 	switch(nbr){
 	case 0:
@@ -233,6 +244,22 @@ uint8_t setDataRate(uint8_t nbr){
 		break;
 
 	}
+}
+
+
+/**
+ *	Get the Battery level and print it on console
+ */
+uint16_t getBatteryLevel(){
+	HAL_Delay(8);			//recommended by DISK91
+	uint16_t battery=0;
+	gpio_set(__BANK_B, __LP_GPIO_2);
+	battery = adc_getVBat();
+
+	gpio_reset(VBAT_DIV2_PORT, VBAT_DIV2_PIN);
+
+	log_info("ADC value get vbat: %d\n\r", battery);
+	return battery;
 }
 
 // =====================================================================
@@ -266,20 +293,7 @@ void project_loop() {
 }
 // =====================================================================
 
-/**
- *	Get the Battery level and print it on console
- */
-uint16_t getBatteryLevel(){
-	HAL_Delay(8);			//recommended by DISK91
-	uint16_t battery=0;
-	gpio_set(__BANK_B, __LP_GPIO_2);
-	battery = adc_getVBat();
 
-	gpio_reset(VBAT_DIV2_PORT, VBAT_DIV2_PIN);
-
-	log_info("ADC value get vbat: %d\n\r", battery);
-	return battery;
-}
 
 
 
