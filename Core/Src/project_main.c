@@ -139,24 +139,26 @@ void task() {
  * SendUplink packet
  */
 void sendUplink(){
-	log_info("Fire a LoRaWAN message ");
+	log_info("Fire a LoRaWAN message \n\r");
 
-	uint8_t t[10] = {0,1,2,3,4,5,6,7,8,9};
 	uint16_t vbat = getBatteryLevel();
 	uint8_t port;
 	uint8_t size=16;
 	uint8_t rx[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-
-
+	uint8_t sendBuff[64];
+	uint32_t sendBuffIndex = 0;
 	
+	sendBuff[sendBuffIndex++] = (vbat >> 8 ) & 0xFF;
+	sendBuff[sendBuffIndex++] = vbat & 0xFF;
+
 	
 	
 	
 	
 	
 	itsdk_lorawan_send_t r = itsdk_lorawan_send_sync(
-			t,								// Payload
-			10,								// Payload size
+			sendBuff,								// Payload
+			sendBuffIndex,								// Payload size
 			1,								// Port
 			dataRate,						// Speed 0 to have downlink __LORAWAN_DR_0
 			LORAWAN_SEND_UNCONFIRMED,		// With a ack
@@ -169,13 +171,13 @@ void sendUplink(){
 	//log_info("\n\rSend State : %d\n\r", r);
 	if ( r == LORAWAN_SEND_SENT || r == LORAWAN_SEND_ACKED || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK_PENDING) {
 		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
-		log_info("success\r\n",r);
+		log_info("Send Success\r\n",r);
 		itsdk_delayMs(500);
 		gpio_reset(LEDGreen_PORT,LEDGreen_PIN);
 		process_downlink(port, rx);
 		port = 0;
 	}else {
-		log_info("failed (%d)\r\n",r);
+		log_info("Send Failed (%d)\r\n",r);
 	}
 }
 
