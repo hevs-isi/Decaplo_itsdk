@@ -233,7 +233,7 @@
 #define ITSDK_CONSOLE_SERIAL		__UART_USART2							// Serial port to be used for console
 #define ITSDK_CONSOLE_LINEBUFFER	40										// Max Size of a line in the console. Dropped after.
 #define ITSDK_CONSOLE_EXPIRE_S		300										// After 300 Seconds the console will lock automatically
-#define ITSKD_CONSOLE_COPYRIGHT		"(c) 2019 Paul Pinault\r\n"				// CHANGE ME : copyright string
+#define ITSKD_CONSOLE_COPYRIGHT		"(c) 2021 Jerome Amos\r\n"				// CHANGE ME : copyright string
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Communication layer

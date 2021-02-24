@@ -135,9 +135,9 @@ void task() {
 	}
 }
 
-/**
+/****************************************************************************************
  * SendUplink packet
- */
+ ****************************************************************************************/
 void sendUplink(){
 	log_info("Fire a LoRaWAN message \n\r");
 
@@ -157,8 +157,8 @@ void sendUplink(){
 	
 	
 	itsdk_lorawan_send_t r = itsdk_lorawan_send_sync(
-			sendBuff,								// Payload
-			sendBuffIndex,								// Payload size
+			sendBuff,						// Payload
+			sendBuffIndex,					// Payload size
 			1,								// Port
 			dataRate,						// Speed 0 to have downlink __LORAWAN_DR_0
 			LORAWAN_SEND_UNCONFIRMED,		// With a ack
@@ -168,7 +168,6 @@ void sendUplink(){
 			rx,								// In case of reception - Data (uint8_t[] bcopied)
 			PAYLOAD_ENCRYPT_NONE			// End to End encryption mode
 	);
-	//log_info("\n\rSend State : %d\n\r", r);
 	if ( r == LORAWAN_SEND_SENT || r == LORAWAN_SEND_ACKED || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK || r == LORAWAN_SEND_ACKED_WITH_DOWNLINK_PENDING) {
 		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 		log_info("Send Success\r\n",r);
@@ -181,15 +180,17 @@ void sendUplink(){
 	}
 }
 
-/**
+/****************************************************************************************
  * function that make the treatment of a downlink message
  *  rx begin :
 	* 0x01 : change app duty cycle
 	* 0x040F : reset device
 	* 0xA2 : toggle ADR
+	*	A201 : adr on
+	*	A202 : adr off
 	* 0xA3 : set Datarate
  * Send on port 3
- */
+ ****************************************************************************************/
 void process_downlink(uint8_t port, uint8_t rx[]){
 
 	if(port == 3 && rx[0] != 0){
@@ -209,7 +210,11 @@ void process_downlink(uint8_t port, uint8_t rx[]){
 				break;
 			case 162:
 				//toggle adr
-
+				if(rx[1]==01){
+					itsdk_config_shadow.sdk.lorawan.adrMode = __LORAWAN_ADR_ON;
+				}else if(rx[1]==02){
+					itsdk_config_shadow.sdk.lorawan.adrMode = __LORAWAN_ADR_OFF;
+				}
 				break;
 			case 163:
 				//set datarate
@@ -221,9 +226,9 @@ void process_downlink(uint8_t port, uint8_t rx[]){
 
 	}
 }
-/**
+/****************************************************************************************
  * return datarate in Function of a number
- */
+ ****************************************************************************************/
 uint8_t setDataRate(uint8_t nbr){
 	switch(nbr){
 	case 0:
@@ -249,9 +254,9 @@ uint8_t setDataRate(uint8_t nbr){
 }
 
 
-/**
+/****************************************************************************************
  *	Get the Battery level and print it on console
- */
+ ****************************************************************************************/
 uint16_t getBatteryLevel(){
 	HAL_Delay(8);			//recommended by DISK91
 	uint16_t battery=0;
@@ -264,39 +269,33 @@ uint16_t getBatteryLevel(){
 	return battery;
 }
 
-// =====================================================================
-// Setup
-
+/****************************************************************************************
+ * Setup
+ ****************************************************************************************/
 void project_setup() {
-
 	SX1276InitLowPower();
 	log_info("Starting up\r\n");				// print a message on the USART2
 	itsdk_delayMs(2000);
-
 	s_state.lastComMS = COMFREQS;
 	s_state.setup = BOOL_FALSE;
-
 	gpio_reset(LEDGreen_PORT,LEDGreen_PIN);		//set led to 0
-
 	itdt_sched_registerSched(TASKDELAYMS,ITSDK_SCHED_CONF_IMMEDIATE, &task);
-
-
-
 }
 
 
-/**
+/****************************************************************************************
  * Project loop may not contain functional stuff
  * Keep in this loop only really short operations
- */
+ ****************************************************************************************/
 void project_loop() {
     itsdk_lorawan_loop();
 
 }
-// =====================================================================
 
 
-
+//========================================================================================
+//Test part
+//========================================================================================
 
 
 /**

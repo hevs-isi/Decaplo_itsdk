@@ -49,6 +49,7 @@
 #define ITSDK_LORAWAN_NETWORKTYPE   __LORAWAN_NWK_PUBLIC				   // type of network - public / private
 #define ITSDK_LORAWAN_DEVEUI_SRC	__LORAWAN_DEVEUI_STATIC				   // Device EUI is static / generated
 #define ITSDK_LORAWAN_ADR			__LORAWAN_ADR_OFF					   // Adaptative Data Rate
+
 #define ITSDK_LORAWAN_DEFAULT_DR	__LORAWAN_DR_0						   // Default data rate (SF12 125KHz)
 #define ITSDK_LORAWAN_CNF_RETRY		0									   // Number of retry when Confirm mode is applied
 #ifndef ITSDK_MURATA_TCXO_WARMUP
