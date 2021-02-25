@@ -131,10 +131,17 @@ void MX_GPIO_Init(void)
   /* pim testing low power */
 
 
-  GPIO_InitStruct.Pin = GPIO_PIN_14 | GPIO_PIN_13 | GPIO_PIN_10 | GPIO_PIN_9 | GPIO_PIN_8 | GPIO_PIN_5| GPIO_PIN_4 | GPIO_PIN_3| GPIO_PIN_2| GPIO_PIN_0;
+  GPIO_InitStruct.Pin = GPIO_PIN_14 | GPIO_PIN_13 | GPIO_PIN_10 | GPIO_PIN_9 | GPIO_PIN_8 | GPIO_PIN_5| GPIO_PIN_4 | GPIO_PIN_2| GPIO_PIN_0;
   GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  GPIO_InitStruct.Pin = GPIO_PIN_3;
+  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+
 
   // disable power supply & relay
   GPIO_InitStruct.Pin = GPIO_PIN_11 | GPIO_PIN_8;

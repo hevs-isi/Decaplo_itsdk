@@ -108,7 +108,7 @@
 								/*	| __LOWPWR_MODE_WAKE_GPIO   */   \
 								/*	| __LOWPWR_MODE_WAKE_LPUART */ \
 								/*	| __LOWPWR_MODE_WAKE_UART1  */ \
-								/*	| __LOWPWR_MODE_WAKE_UART2  */\
+									| __LOWPWR_MODE_WAKE_UART2  \
 									)										// uncomment : __LOWPWR_MODE_WAKE_GPIO, __LOWPWR_MODE_WAKE_UART2
 																			// Mode Stop + wakeup RTC + GPIO
 		                                                                    // UARTS WAKE Requires clk HSE/LSE and WakeInt Activated
@@ -128,8 +128,8 @@
 #define ITSDK_LOWPOWER_GPIO_A_KEEP	(  __LP_GPIO_NONE  \
 								    /*   | __LP_GPIO_0 */  /* Not Used */ \
 								    /*   | __LP_GPIO_1 */  /* LoRa RF Sw */ \
-									/*	 | __LP_GPIO_2 */   /* Uart2 */ 	\
-									/*	 | __LP_GPIO_3 */   /* Uart2 */ 	\
+										 | __LP_GPIO_2   /* Uart2 */ 	\
+										 | __LP_GPIO_3    /* Uart2 */ 	\
 									/*	 | __LP_GPIO_4 */  /* not used */	\
 									/*	 | __LP_GPIO_5 */  /* Led2 / DIO4 */	\
 									/*	 | __LP_GPIO_6 */  /* spi1 */		\
