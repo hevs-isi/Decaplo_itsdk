@@ -84,7 +84,8 @@ UART_HandleTypeDef huart1;
 #define rxBuf_size 						650	//150 -> 247 R0000\n + 50 intro = 310 //650
 uint8_t rxBuf[rxBuf_size];
 HAL_StatusTypeDef UART1status;
-
+extern uint8_t byte;
+extern uint8_t tabToPrint[5];
 void readUart();
 
 void task() {
@@ -95,7 +96,7 @@ void task() {
 		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 	}
 
-//	readUart();
+	readUart();
 
 	// wait for the board configuration
 	uint8_t i = 0;
@@ -319,12 +320,18 @@ void readUart(){
 	/****** ultrasound : uart read *****/
 	  log_info("uart start");
 	  HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, 1);
-	  if(HAL_UART_Receive(&huart1, rxBuf, rxBuf_size, 1000)!= HAL_OK){ //1000
+	/*  if(HAL_UART_Receive(&huart1, rxBuf, rxBuf_size, 1000)!= HAL_OK){ //1000
 		  log_info("reception error \n\r");
 	  }else{
 		  log_info("%s\n\r",&rxBuf[0]);
 		  log_info("%s\n\r",&rxBuf[1]);
-	  }
+	  }*/
+	  HAL_Delay(2500);
+	  HAL_UART_Receive_IT(&huart1, &byte, 1);
+	  HAL_Delay(2500);
+
+		HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);
+
 	  HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, 0);
 	  /****** ultrasound : END *****/
 }
