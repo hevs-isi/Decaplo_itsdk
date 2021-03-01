@@ -107,7 +107,7 @@
 									| __LOWPWR_MODE_WAKE_RTC       \
 								/*	| __LOWPWR_MODE_WAKE_GPIO   */   \
 								/*	| __LOWPWR_MODE_WAKE_LPUART */ \
-								/*	| __LOWPWR_MODE_WAKE_UART1  */ \
+									| __LOWPWR_MODE_WAKE_UART1   \
 									| __LOWPWR_MODE_WAKE_UART2  \
 									)										// uncomment : __LOWPWR_MODE_WAKE_GPIO, __LOWPWR_MODE_WAKE_UART2
 																			// Mode Stop + wakeup RTC + GPIO
@@ -135,8 +135,8 @@
 									/*	 | __LP_GPIO_6 */  /* spi1 */		\
 									/*	 | __LP_GPIO_7 */  /* spi1 */		\
 										 | __LP_GPIO_8     /* not used */	\
-									/*	 | __LP_GPIO_9 */  /* not used */	\
-									/*	 | __LP_GPIO_10 */ /* Uart1 Rx */	\
+										 | __LP_GPIO_9   /* Uart1 Tx */	\
+										 | __LP_GPIO_10  /* Uart1 Rx */	\
 										 | __LP_GPIO_11    /* not used */	\
 										 | __LP_GPIO_12    /* LoRa Tcxo */	\
 									/*	 | __LP_GPIO_13 */ /* lpuart NA */	\

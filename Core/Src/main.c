@@ -33,6 +33,8 @@
 #include <it_sdk/itsdk.h>
 #include <it_sdk/logger/logger.h>
 #include <it_sdk/lowpower/lowpower.h>
+#include "i2c.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -83,6 +85,8 @@ void main_dbg_disable(void)
   * @brief  The application entry point.
   * @retval int
   */
+
+
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -111,6 +115,10 @@ int main(void)
   MX_SPI1_Init();
 //  MX_SPI2_Init();
   MX_USART2_UART_Init();
+  MX_USART1_UART_Init();
+
+
+
 
 
 
@@ -131,6 +139,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	/* USER CODE BEGIN 3 */
+
 	itsdk_loop();
 
 //	  stm32l_lowPowerSetup(__INFINITE_32B,1);
@@ -196,6 +205,16 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+
+  /**
+   * Templier1994 test I2C
+   */
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_I2C1;
+    PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_PCLK1;
+    if(HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK){
+  	  Error_Handler();
+    }
+
 }
 
 /* USER CODE BEGIN 4 */

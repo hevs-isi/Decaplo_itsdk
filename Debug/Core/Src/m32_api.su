@@ -1,0 +1,3 @@
+m32_api.c:22:5:m32_read_value	48	static
+m32_api.c:63:10:extract_pressure	24	static
+m32_api.c:75:9:extract_temp	24	static

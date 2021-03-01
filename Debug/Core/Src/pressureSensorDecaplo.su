@@ -1,0 +1,7 @@
+pressureSensorDecaplo.c:27:5:read_pressure	32	static
+pressureSensorDecaplo.c:36:6:wakeup	8	static
+pressureSensorDecaplo.c:43:6:suspend	8	static
+pressureSensorDecaplo.c:49:13:enable_i2c	40	static
+pressureSensorDecaplo.c:61:13:disable_i2c	32	static
+pressureSensorDecaplo.c:71:13:enable_vcc_sensor	32	static
+pressureSensorDecaplo.c:81:13:disable_vcc_sensor	32	static
