@@ -45,8 +45,8 @@
 #define ITSDK_WITH_DRIVERS			__ENABLE								// Includes configDrivers.h
 #define ITSDK_RAM_SIZE				(20*1024)								// RAM Memory size
 #define ITSDK_EPROM_SIZE			(6*1024)								// EEPROM size
-#define ITSDK_WITH_UART				( __UART_USART1_USART2 )				// Use USART2 for debug and console : __UART_USART2
-#define ITSDK_WITH_UART_RXIRQ		__UART_USART1_SART2						// Setup some of the UART with IRQ enabled for RX : __UART_USART2
+#define ITSDK_WITH_UART				( __UART_USART2 )				// Use USART2 for debug and console : __UART_USART2
+#define ITSDK_WITH_UART_RXIRQ		__UART_USART1_USART2						// Setup some of the UART with IRQ enabled for RX : __UART_USART2
 #define ITSDK_WITH_UART_RXIRQ_BUFSZ 64										// Size of the UART IRQ RX circular buffer (power of 2)
 #define ITSDK_WITH_RTC				__RTC_ENABLED							// The Rtc is usd in the firmware
 #define ITSDK_WITH_CLK_ADJUST		__ENABLE								// The RTC (and wtachdog) is calibrated

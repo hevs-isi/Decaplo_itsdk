@@ -81,22 +81,22 @@ uint8_t temperature;
 
 //***** UART MEASURE ******
 UART_HandleTypeDef huart1;
-#define rxBuf_size 						650	//150 -> 247 R0000\n + 50 intro = 310 //650
-uint8_t rxBuf[rxBuf_size];
 HAL_StatusTypeDef UART1status;
 extern uint8_t byte;
 extern uint8_t tabToPrint[5];
 void readUart();
+void resetMeasureUart(uint8_t * array, uint8_t size);
 
 void task() {
+
+	readUart();
 	/**
 	 * if not joined set the green led to 1
 	 */
-	if(!itsdk_lorawan_hasjoined()){
+/*	if(!itsdk_lorawan_hasjoined()){
 		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 	}
 
-	readUart();
 
 	// wait for the board configuration
 	uint8_t i = 0;
@@ -139,7 +139,7 @@ void task() {
 		} else {
 			s_state.lastComMS += TASKDELAYMS;
 		}
-	}
+	}*/
 }
 
 
@@ -310,29 +310,55 @@ void project_loop() {
 //========================================================================================
 //Test part
 //========================================================================================
+#define rxBuf_size 						650
+uint8_t rxBuf[rxBuf_size];
+HAL_StatusTypeDef UART1status;
 
 void readUart(){
+	//resetMeasureUart(&tabToPrint[0], 4);
+
 	 GPIO_InitTypeDef POWER_ACTIVE;
 	  POWER_ACTIVE.Pin   = GPIO_PIN_11 ;
 	  POWER_ACTIVE.Mode  = GPIO_MODE_OUTPUT_PP;
 
 
 	/****** ultrasound : uart read *****/
-	  log_info("uart start");
-	  HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, 1);
-	/*  if(HAL_UART_Receive(&huart1, rxBuf, rxBuf_size, 1000)!= HAL_OK){ //1000
-		  log_info("reception error \n\r");
-	  }else{
-		  log_info("%s\n\r",&rxBuf[0]);
-		  log_info("%s\n\r",&rxBuf[1]);
-	  }*/
-	  HAL_Delay(2500);
-	  HAL_UART_Receive_IT(&huart1, &byte, 1);
-	  HAL_Delay(2500);
+	 log_info("uart start...\n\r");
+	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, 1);
 
+	 HAL_Delay(2500);
+	 HAL_UART_Receive_IT(&huart1, &byte, 1); //On lance une mesure
+
+ 	 HAL_Delay(1500);
+	 HAL_UART_Receive_IT(&huart1, &byte, 1); //On lance une mesure
+	 HAL_Delay(1500);
+
+/*	 if(HAL_UART_Receive(&huart1, rxBuf, rxBuf_size, 1000)!= HAL_OK){ //1000
+		 log_info("reception error \n\r");
+ 	 }else{
+	   log_info("%s\n\r",&rxBuf[0]);
+	   log_info("%s\n\r",&rxBuf[1]);
+	 }*/
+
+		log_info("Measure : ");
 		HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);
+	// log_info("%s",tabToPrint);
 
-	  HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, 0);
+
+
+//	 for(uint8_t i = 0; i<5;i++){
+//		 log_info("%d", tabToPrint[i]);
+//	 }
+
+	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, 0);
+
 	  /****** ultrasound : END *****/
 }
 
+
+
+void resetMeasureUart(uint8_t * array, uint8_t size){
+	for (int i = 0; i < size; i++){
+		array[i] = 0x30; //Set to 0
+	}
+}

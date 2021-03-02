@@ -202,6 +202,7 @@ void EXTI4_15_IRQHandler(void)
   /* USER CODE END EXTI4_15_IRQn 1 */
 }
 
+
 /**
   * @brief This function handles USART2 global interrupt / USART2 wake-up interrupt through EXTI line 26.
   */

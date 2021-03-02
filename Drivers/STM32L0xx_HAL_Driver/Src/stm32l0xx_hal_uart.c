@@ -1190,6 +1190,7 @@ HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, ui
     {
       if (UART_WaitOnFlagUntilTimeout(huart, UART_FLAG_RXNE, RESET, tickstart, Timeout) != HAL_OK)
       {
+    	  log_info("l1193");
         return HAL_TIMEOUT;
       }
       if (pdata8bits == NULL)
@@ -1215,6 +1216,7 @@ HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, ui
   }
   else
   {
+	  log_info("l1219");
     return HAL_BUSY;
   }
 }
@@ -1350,7 +1352,6 @@ HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData,
 
     /* Enable the UART Parity Error interrupt and Data Register Not Empty interrupt */
     SET_BIT(huart->Instance->CR1, USART_CR1_PEIE | USART_CR1_RXNEIE);
-
     return HAL_OK;
   }
   else

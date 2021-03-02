@@ -118,10 +118,6 @@ int main(void)
   MX_USART1_UART_Init();
 
 
-
-
-
-
 //  MX_IWDG_Init();
   MX_ADC_Init();
 //  MX_TIM21_Init();
@@ -131,8 +127,10 @@ int main(void)
   /* USER CODE END 2 */
 
   /* Infinite loop */
+
   /* USER CODE BEGIN WHILE */
-  //desable debug module and pins (SWLCK & SWDIO)
+  /********desable debug module and pins (SWLCK & SWDIO)*******/
+  /********         important for lowpower              ********/
   main_dbg_disable();
 
   while (1)
@@ -210,11 +208,11 @@ void SystemClock_Config(void)
   /**
    * Templier1994 test I2C
    */
-  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_I2C1;
+ /* PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_I2C1;
     PeriphClkInit.I2c1ClockSelection = RCC_I2C1CLKSOURCE_PCLK1;
     if(HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK){
   	  Error_Handler();
-    }
+    }*/
 
 }
 
