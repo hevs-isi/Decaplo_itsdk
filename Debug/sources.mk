@@ -36,6 +36,7 @@ stm32-it-sdk/Src/drivers/nfc/st25dv \
 stm32-it-sdk/Src/drivers/s2lp \
 stm32-it-sdk/Src/drivers/sx1276 \
 stm32-it-sdk/Src/drivers/temphygropressure/bosh_bme280 \
+stm32-it-sdk/Src/drivers/temphygropressure/infineon_dps422 \
 stm32-it-sdk/Src/drivers/temphygropressure/omron_2smpb-02b \
 stm32-it-sdk/Src/it_sdk/accel \
 stm32-it-sdk/Src/it_sdk/console \
@@ -48,6 +49,7 @@ stm32-it-sdk/Src/it_sdk/logger \
 stm32-it-sdk/Src/it_sdk/lorawan \
 stm32-it-sdk/Src/it_sdk/lowpower \
 stm32-it-sdk/Src/it_sdk \
+stm32-it-sdk/Src/it_sdk/radio \
 stm32-it-sdk/Src/it_sdk/sched \
 stm32-it-sdk/Src/it_sdk/sigfox \
 stm32-it-sdk/Src/it_sdk/statemachine \

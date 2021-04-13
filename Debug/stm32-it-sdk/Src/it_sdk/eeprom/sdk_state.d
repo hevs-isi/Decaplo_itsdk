@@ -45,7 +45,9 @@ stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o: \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/itsdk.h \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/eeprom/sdk_config.h \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/eeprom/sdk_state.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/console/console.h
+ /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/console/console.h \
+ /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/lorawan/lorawan.h \
+ /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/encrypt/encrypt.h
 
 ../Core/Inc/it_sdk/config.h:
 
@@ -148,3 +150,7 @@ stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o: \
 /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/eeprom/sdk_state.h:
 
 /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/console/console.h:
+
+/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/lorawan/lorawan.h:
+
+/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/encrypt/encrypt.h:

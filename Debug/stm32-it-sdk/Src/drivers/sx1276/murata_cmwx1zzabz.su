@@ -5,7 +5,7 @@ murata_cmwx1zzabz.c:176:6:SX1276IoInit	8	static
 murata_cmwx1zzabz.c:210:6:SX1276IoIrqInit	16	static
 murata_cmwx1zzabz.c:271:6:SX1276IoDeInit	8	static
 murata_cmwx1zzabz.c:308:6:SX1276SetRfTxPower	40	static
-murata_cmwx1zzabz.c:372:9:SX1276GetPaSelect	16	static
-murata_cmwx1zzabz.c:389:6:SX1276SetAntSwLowPower	16	static
-murata_cmwx1zzabz.c:415:6:SX1276SetAntSw	32	static
-murata_cmwx1zzabz.c:443:6:SX1276CheckRfFrequency	16	static
+murata_cmwx1zzabz.c:377:9:SX1276GetPaSelect	16	static
+murata_cmwx1zzabz.c:394:6:SX1276SetAntSwLowPower	16	static
+murata_cmwx1zzabz.c:420:6:SX1276SetAntSw	32	static
+murata_cmwx1zzabz.c:448:6:SX1276CheckRfFrequency	16	static

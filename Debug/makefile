@@ -21,6 +21,7 @@ RM := rm -rf
 -include stm32-it-sdk/Src/it_sdk/statemachine/subdir.mk
 -include stm32-it-sdk/Src/it_sdk/sigfox/subdir.mk
 -include stm32-it-sdk/Src/it_sdk/sched/subdir.mk
+-include stm32-it-sdk/Src/it_sdk/radio/subdir.mk
 -include stm32-it-sdk/Src/it_sdk/lowpower/subdir.mk
 -include stm32-it-sdk/Src/it_sdk/lorawan/subdir.mk
 -include stm32-it-sdk/Src/it_sdk/logger/subdir.mk
@@ -33,6 +34,7 @@ RM := rm -rf
 -include stm32-it-sdk/Src/it_sdk/accel/subdir.mk
 -include stm32-it-sdk/Src/it_sdk/subdir.mk
 -include stm32-it-sdk/Src/drivers/temphygropressure/omron_2smpb-02b/subdir.mk
+-include stm32-it-sdk/Src/drivers/temphygropressure/infineon_dps422/subdir.mk
 -include stm32-it-sdk/Src/drivers/temphygropressure/bosh_bme280/subdir.mk
 -include stm32-it-sdk/Src/drivers/sx1276/subdir.mk
 -include stm32-it-sdk/Src/drivers/s2lp/subdir.mk

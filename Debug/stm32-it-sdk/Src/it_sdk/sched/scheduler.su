@@ -1,6 +1,7 @@
 scheduler.c:46:9:itdt_sched_registerSched	40	static
 scheduler.c:67:6:itdt_sched_execute	48	static
 scheduler.c:89:6:itdt_sched_haltSched	16	static
-scheduler.c:97:6:itdt_sched_runSched	32	static
-scheduler.c:110:6:itdt_sched_clearNextRun	32	static
-scheduler.c:118:10:itdt_sched_nextRun	40	static
+scheduler.c:100:9:itdt_sched_changeSched	24	static
+scheduler.c:122:6:itdt_sched_runSched	32	static
+scheduler.c:135:6:itdt_sched_clearNextRun	32	static
+scheduler.c:143:10:itdt_sched_nextRun	40	static

@@ -85,7 +85,8 @@ void main_dbg_disable(void)
   * @brief  The application entry point.
   * @retval int
   */
-
+extern uint8_t byte;
+extern uint8_t tabToPrint[5];
 
 int main(void)
 {
@@ -133,16 +134,24 @@ int main(void)
   /********         important for lowpower              ********/
   main_dbg_disable();
 
+
+
+
   while (1)
   {
     /* USER CODE END WHILE */
 	/* USER CODE BEGIN 3 */
 
-	itsdk_loop();
 
-//	  stm32l_lowPowerSetup(__INFINITE_32B,1);
-//	  lowPower_switch();
-//	HAL_PWR_EnterSTOPMode(PWR_LOWPOWERREGULATOR_ON, PWR_STOPENTRY_WFI);
+	 itsdk_loop();
+
+//	HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);
+//	log_info("\n\r");
+
+
+//	 HAL_Delay(500);
+
+
 
 
   }

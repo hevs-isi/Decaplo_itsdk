@@ -85,7 +85,8 @@ HAL_StatusTypeDef UART1status;
 extern uint8_t byte;
 extern uint8_t tabToPrint[5];
 void readUart();
-void resetMeasureUart(uint8_t * array, uint8_t size);
+void resetMeasure(uint8_t * array, uint8_t size);
+int charArrayToInt(uint8_t* array, uint8_t n);
 
 void task() {
 
@@ -310,54 +311,84 @@ void project_loop() {
 //========================================================================================
 //Test part
 //========================================================================================
-#define rxBuf_size 						650
-uint8_t rxBuf[rxBuf_size];
+
 HAL_StatusTypeDef UART1status;
 
 void readUart(){
-	//resetMeasureUart(&tabToPrint[0], 4);
 
 	 GPIO_InitTypeDef POWER_ACTIVE;
 	  POWER_ACTIVE.Pin   = GPIO_PIN_11 ;
 	  POWER_ACTIVE.Mode  = GPIO_MODE_OUTPUT_PP;
 
+	  int measureAttempt = 0;
+	  	int mes1 = 0;
+	 resetMeasure(&tabToPrint[0], 4); //Reset the return array
+	 	HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_SET); //Set on the ultrasonic sensor
+	 	itsdk_delayMs(2500); //Warm up for ultrasonic sensor
 
-	/****** ultrasound : uart read *****/
-	 log_info("uart start...\n\r");
-	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, 1);
+	 	log_info("Start the measure !\r\n");
+	 	while(measureAttempt < 3){
+	 		HAL_UART_Receive_IT(&huart1, &byte, 1); //On lance une mesure, ca return dans tabToPrint
+	 		HAL_Delay(1500);
+	 		//tabToPrint[1]=0x34;
+	 		mes1 = charArrayToInt(&tabToPrint[0], 4);
+	 		log_info("Attempt %d ", measureAttempt);
+	 		if (mes1==0){
+	 			measureAttempt++;
+	 		}
+	 		else{
+	 			measureAttempt=4;
+	 		}
+	 	}
 
-	 HAL_Delay(2500);
-	 HAL_UART_Receive_IT(&huart1, &byte, 1); //On lance une mesure
+	 	log_info("We measure ");
+	 	HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);
+	 	log_info(" cm\r\n");
+	 	HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, 0);
+	 	if(mes1 == 0){
+	 			log_info("Measure is not valid\r\n");
+	 			return false;
+	 		}
+	 		else {
+	 			log_info("Measure is valid\r\n");
+	 			return true;
+	 		}
 
- 	 HAL_Delay(1500);
-	 HAL_UART_Receive_IT(&huart1, &byte, 1); //On lance une mesure
-	 HAL_Delay(1500);
-
-/*	 if(HAL_UART_Receive(&huart1, rxBuf, rxBuf_size, 1000)!= HAL_OK){ //1000
-		 log_info("reception error \n\r");
- 	 }else{
-	   log_info("%s\n\r",&rxBuf[0]);
-	   log_info("%s\n\r",&rxBuf[1]);
-	 }*/
-
-		log_info("Measure : ");
-		HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);
-	// log_info("%s",tabToPrint);
-
-
-
-//	 for(uint8_t i = 0; i<5;i++){
-//		 log_info("%d", tabToPrint[i]);
-//	 }
-
-	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, 0);
-
-	  /****** ultrasound : END *****/
 }
 
 
+int charArrayToInt(uint8_t* array, uint8_t n){
+    int number = 0;
+    int mult = 1;
 
-void resetMeasureUart(uint8_t * array, uint8_t size){
+    n = (int)n < 0 ? -n : n;       /* quick absolute value check  */
+
+    /* for each character in array */
+    while (n--)
+    {
+        /* if not digit or '-', check if number > 0, break or continue */
+        if ((array[n] < '0' || array[n] > '9') && array[n] != '-') {
+            if (number)
+                break;
+            else
+                continue;
+        }
+
+        if (array[n] == '-') {      /* if '-' if number, negate, break */
+            if (number) {
+                number = -number;
+                break;
+            }
+        }
+        else {                      /* convert digit to numeric value   */
+            number += (array[n] - '0') * mult;
+            mult *= 10;
+        }
+    }
+
+    return number;
+}
+void resetMeasure(uint8_t * array, uint8_t size){
 	for (int i = 0; i < size; i++){
 		array[i] = 0x30; //Set to 0
 	}

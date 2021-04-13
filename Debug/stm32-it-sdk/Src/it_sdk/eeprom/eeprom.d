@@ -46,6 +46,7 @@ stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o: \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/debug.h \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/logger/logger.h \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/eeprom/eeprom.h \
+ /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/eeprom/sdk_config.h \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/eeprom/securestore.h \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/logger/error.h \
  ../Core/Inc/it_sdk/configError.h
@@ -151,6 +152,8 @@ stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o: \
 /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/logger/logger.h:
 
 /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/eeprom/eeprom.h:
+
+/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/eeprom/sdk_config.h:
 
 /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/it_sdk/eeprom/securestore.h:
 

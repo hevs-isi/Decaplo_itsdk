@@ -1,6 +1,6 @@
-lowpower.c:63:57:stm32l_lowPowerSetup	24	static
-lowpower.c:207:57:stm32l_lowPowerResume	8	static
-lowpower.c:293:13:stm32l_lowPowerRestoreGpioConfig	8	static
-lowpower.c:300:6:__GpioAnalog	32	static
-lowpower.c:331:6:_stm32l_disableGpios	8	static
-lowpower.c:404:6:HAL_UARTEx_WakeupCallback	16	static
+lowpower.c:67:57:stm32l_lowPowerSetup	24	static
+lowpower.c:202:57:stm32l_lowPowerResume	8	static
+lowpower.c:288:13:stm32l_lowPowerRestoreGpioConfig	8	static
+lowpower.c:295:6:__GpioAnalog	32	static
+lowpower.c:326:6:_stm32l_disableGpios	8	static
+lowpower.c:399:6:HAL_UARTEx_WakeupCallback	16	static

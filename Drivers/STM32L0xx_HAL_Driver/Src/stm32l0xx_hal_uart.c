@@ -1190,7 +1190,7 @@ HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, ui
     {
       if (UART_WaitOnFlagUntilTimeout(huart, UART_FLAG_RXNE, RESET, tickstart, Timeout) != HAL_OK)
       {
-    	  log_info("l1193");
+    	  log_info(" hal timeout l1193");
         return HAL_TIMEOUT;
       }
       if (pdata8bits == NULL)
@@ -1216,7 +1216,7 @@ HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, ui
   }
   else
   {
-	  log_info("l1219");
+	  log_info("l1219 : stm32l0xx_hal_uart.c HAL_BUSY \n\r");
     return HAL_BUSY;
   }
 }
@@ -2233,6 +2233,7 @@ void HAL_UART_IRQHandler(UART_HandleTypeDef *huart)
     /* UART parity error interrupt occurred -------------------------------------*/
     if (((isrflags & USART_ISR_PE) != 0U) && ((cr1its & USART_CR1_PEIE) != 0U))
     {
+
       __HAL_UART_CLEAR_FLAG(huart, UART_CLEAR_PEF);
 
       huart->ErrorCode |= HAL_UART_ERROR_PE;
@@ -2241,6 +2242,8 @@ void HAL_UART_IRQHandler(UART_HandleTypeDef *huart)
     /* UART frame error interrupt occurred --------------------------------------*/
     if (((isrflags & USART_ISR_FE) != 0U) && ((cr3its & USART_CR3_EIE) != 0U))
     {
+    	 // log_info("error frame stm32l0xx_hal_uart L2245");
+
       __HAL_UART_CLEAR_FLAG(huart, UART_CLEAR_FEF);
 
       huart->ErrorCode |= HAL_UART_ERROR_FE;
@@ -2328,6 +2331,7 @@ void HAL_UART_IRQHandler(UART_HandleTypeDef *huart)
           huart->ErrorCallback(huart);
 #else
           /*Call legacy weak error callback*/
+
           HAL_UART_ErrorCallback(huart);
 #endif /* USE_HAL_UART_REGISTER_CALLBACKS */
         }

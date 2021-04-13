@@ -12,5 +12,5 @@ securestore.c:437:31:_itsk_secstore_rekey	72	static
 securestore.c:563:13:__checkAndConvert	32	static
 securestore.c:575:31:__updateField	40	static
 securestore.c:593:31:__updateField2	64	static
-securestore.c:619:31:_itsdk_secStore_consolePriv	64	static
-securestore.c:966:24:itsdk_secStore_RegisterConsole	8	static
+securestore.c:619:31:_itsdk_secStore_consolePriv	80	static
+securestore.c:976:24:itsdk_secStore_RegisterConsole	8	static

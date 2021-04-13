@@ -1,6 +1,9 @@
-eeprom.c:49:6:eeprom_write	48	static
-eeprom.c:77:6:eeprom_read	56	static
-eeprom.c:117:6:eeprom_getConfigOffset	32	static
-eeprom.c:136:6:eeprom_getConfigSize	48	static
-eeprom.c:155:6:eeprom_getPostConfigOffset	24	static
-eeprom.c:170:6:eeprom_clearAllEprom	16	static
+eeprom.c:50:14:eeprom_write_userland	56	static
+eeprom.c:96:14:eeprom_read_userland	56	static
+eeprom.c:135:14:eeprom_write_config	48	static
+eeprom.c:168:14:eeprom_read_config	56	static
+eeprom.c:212:14:eeprom_getUserLandOffset	16	static
+eeprom.c:223:14:eeprom_getConfigOffset	32	static
+eeprom.c:242:14:eeprom_getConfigSize	48	static
+eeprom.c:261:14:eeprom_getPostConfigOffset	24	static
+eeprom.c:276:6:eeprom_clearAllEprom	16	static
