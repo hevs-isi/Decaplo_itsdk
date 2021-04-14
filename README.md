@@ -26,7 +26,7 @@ The hardware configuration has been set with CubeMX and the project has been cre
 	```
 4. Clone the ItSDK repository
 	```sh
-	[itsdk-example-sigfox-sx1276]# git clone -b Version-1.6 https://github.com/disk91/stm32-it-sdk.git
+	[itsdk-example-sigfox-sx1276]# git clone -b Version-1.6 https://github.com/73jn/stm32-it-sdk/tree/devUart
 	``` 
 5. In CubeIDE go to File >> Import >> Existing Projects into Workspace. Select the _itsdk-example-murata-lora_ directory and import the project.
 6. Build the project in Release mode
