@@ -81,16 +81,17 @@ uint8_t temperature;
 
 //***** UART MEASURE ******
 UART_HandleTypeDef huart1;
-HAL_StatusTypeDef UART1status;
 extern uint8_t byte;
 extern uint8_t tabToPrint[5];
-void readUart();
+uint8_t readUart();
 void resetMeasure(uint8_t * array, uint8_t size);
-int charArrayToInt(uint8_t* array, uint8_t n);
+int measureUart;												//measure as int
+/**************************/
 
 void task() {
 
-	readUart();
+	int measureValidity = readUart();
+	log_info("task measure : %d, measure validity : %d\n\r",measureUart, measureValidity);
 	/**
 	 * if not joined set the green led to 1
 	 */
@@ -148,7 +149,7 @@ void task() {
 /****************************************************************************************
  * SendUplink packet
  ****************************************************************************************/
-void sendUplink(){
+void sendUplink(int uartMeasure, int measureValidity){
 	log_info("Fire a LoRaWAN message \n\r");
 
 	uint16_t vbat = getBatteryLevel();
@@ -312,82 +313,62 @@ void project_loop() {
 //Test part
 //========================================================================================
 
-HAL_StatusTypeDef UART1status;
+#define debugUart   1
+uint8_t readUart(){
 
-void readUart(){
-
-	 GPIO_InitTypeDef POWER_ACTIVE;
+	  GPIO_InitTypeDef POWER_ACTIVE;
 	  POWER_ACTIVE.Pin   = GPIO_PIN_11 ;
 	  POWER_ACTIVE.Mode  = GPIO_MODE_OUTPUT_PP;
 
-	  int measureAttempt = 0;
-	  	int mes1 = 0;
-	 resetMeasure(&tabToPrint[0], 4); //Reset the return array
-	 	HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_SET); //Set on the ultrasonic sensor
-	 	itsdk_delayMs(2500); //Warm up for ultrasonic sensor
 
-	 	log_info("Start the measure !\r\n");
-	 	while(measureAttempt < 3){
-	 		HAL_UART_Receive_IT(&huart1, &byte, 1); //On lance une mesure, ca return dans tabToPrint
-	 		HAL_Delay(1500);
-	 		//tabToPrint[1]=0x34;
-	 		mes1 = charArrayToInt(&tabToPrint[0], 4);
-	 		log_info("Attempt %d ", measureAttempt);
-	 		if (mes1==0){
-	 			measureAttempt++;
-	 		}
-	 		else{
-	 			measureAttempt=4;
-	 		}
-	 	}
+	 int measureAttempt = 0;
+	 resetMeasure(&tabToPrint[0], 4); 							//Reset the return array
+	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_SET);  //Set on the ultrasonic sensor
 
-	 	log_info("We measure ");
-	 	HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);
-	 	log_info(" cm\r\n");
-	 	HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, 0);
-	 	if(mes1 == 0){
-	 			log_info("Measure is not valid\r\n");
-	 			return false;
-	 		}
-	 		else {
-	 			log_info("Measure is valid\r\n");
-	 			return true;
-	 		}
+	 log_info("Start the measure !\r\n");
+	 while(measureAttempt < 90){
+	 	HAL_UART_Receive_IT(&huart1, &byte, 1); 				//start measure, result is into tabToPrint
+	 	HAL_Delay(50);											//
+
+		#if debugUart											//DEBUG
+	 	log_info("Measure #%d : ", measureAttempt);				//Print all 90 measure
+	 		HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500); //
+	 		log_info("\n\r");									//
+		#endif
+	 	measureAttempt++;
+	 }
+	 #if debugUart												//DEBUG
+	 	 log_info("\n\rWe measure ");							//Print final tabToPrin
+	 	 HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);	//
+	 	 log_info(" mm\r\n");									//
+	 #endif
+
+	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_RESET);//PowerOff the sensor
+
+	 uint8_t tabToConvert[4];									//remove first 'R' char
+	 tabToConvert[0] = tabToPrint[1];							//
+	 tabToConvert[1] = tabToPrint[2];							//
+	 tabToConvert[2] = tabToPrint[3];							//
+	 tabToConvert[3] = tabToPrint[4];							//
+
+
+	 sscanf(tabToConvert, "%d", &measureUart);					//convert char[] to int
+	 log_info("Final measure : %d", measureUart);				//print final measure
+
+	 if(measureUart==0 || measureUart==500 || measureUart==5000 || measureUart == 4999){	//check if the measure is valid or not
+		 	 log_info(" Measure is not valid\r\n");
+	 		return 0;
+	 }else{
+	 		log_info(" Measure is valid\r\n");
+	 		return 1;
+	 }
 
 }
 
 
-int charArrayToInt(uint8_t* array, uint8_t n){
-    int number = 0;
-    int mult = 1;
-
-    n = (int)n < 0 ? -n : n;       /* quick absolute value check  */
-
-    /* for each character in array */
-    while (n--)
-    {
-        /* if not digit or '-', check if number > 0, break or continue */
-        if ((array[n] < '0' || array[n] > '9') && array[n] != '-') {
-            if (number)
-                break;
-            else
-                continue;
-        }
-
-        if (array[n] == '-') {      /* if '-' if number, negate, break */
-            if (number) {
-                number = -number;
-                break;
-            }
-        }
-        else {                      /* convert digit to numeric value   */
-            number += (array[n] - '0') * mult;
-            mult *= 10;
-        }
-    }
-
-    return number;
-}
+/**
+ * Reset the Uart Buffer
+ */
 void resetMeasure(uint8_t * array, uint8_t size){
 	for (int i = 0; i < size; i++){
 		array[i] = 0x30; //Set to 0
