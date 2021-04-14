@@ -90,12 +90,12 @@ int measureUart;												//measure as int
 
 void task() {
 
-	int measureValidity = readUart();
-	log_info("task measure : %d, measure validity : %d\n\r",measureUart, measureValidity);
+//	int measureValidity = readUart();
+//	log_info("task measure : %d, measure validity : %d\n\r",measureUart, measureValidity);
 	/**
 	 * if not joined set the green led to 1
 	 */
-/*	if(!itsdk_lorawan_hasjoined()){
+	if(!itsdk_lorawan_hasjoined()){
 		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 	}
 
@@ -135,13 +135,15 @@ void task() {
 				}
 			} else {
 				// Send a LoRaWan Frame
-				sendUplink();
+				//int measureValidity = readUart();
+
+				//sendUplink(measureUart, measureValidity);
 				s_state.lastComMS = 0;
 			}
 		} else {
 			s_state.lastComMS += TASKDELAYMS;
 		}
-	}*/
+	}
 }
 
 
@@ -309,10 +311,9 @@ void project_loop() {
 }
 
 
-//========================================================================================
-//Test part
-//========================================================================================
-
+/****************************************************************************************
+ * UART sensor part
+ ****************************************************************************************/
 #define debugUart   1
 uint8_t readUart(){
 
@@ -338,7 +339,7 @@ uint8_t readUart(){
 	 	measureAttempt++;
 	 }
 	 #if debugUart												//DEBUG
-	 	 log_info("\n\rWe measure ");							//Print final tabToPrin
+	 	 log_info("\n\rWe measure ");							//Print final tabToPrint
 	 	 HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);	//
 	 	 log_info(" mm\r\n");									//
 	 #endif
@@ -374,3 +375,7 @@ void resetMeasure(uint8_t * array, uint8_t size){
 		array[i] = 0x30; //Set to 0
 	}
 }
+
+//========================================================================================
+//Test part
+//========================================================================================
