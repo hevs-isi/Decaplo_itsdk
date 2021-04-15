@@ -1,9 +1,0 @@
-i2c.c:35:13:i2c_memWrite	48	static
-i2c.c:62:13:i2c_write	40	static
-i2c.c:76:13:i2c_write8BRegister	40	static
-i2c.c:102:13:i2c_write16BRegister	40	static
-i2c.c:130:13:i2c_memRead	48	static
-i2c.c:159:13:i2c_read	40	static
-i2c.c:173:13:i2c_read8BRegister	40	static
-i2c.c:204:13:i2c_read16BRegister	48	static
-i2c.c:233:6:i2c_reset	16	static

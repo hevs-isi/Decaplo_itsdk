@@ -33,7 +33,6 @@
 #include <it_sdk/itsdk.h>
 #include <it_sdk/logger/logger.h>
 #include <it_sdk/lowpower/lowpower.h>
-#include "i2c.h"
 
 /* USER CODE END Includes */
 
@@ -144,15 +143,6 @@ int main(void)
 
 
 	 itsdk_loop();
-
-//	HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);
-//	log_info("\n\r");
-
-
-//	 HAL_Delay(500);
-
-
-
 
   }
   /* USER CODE END 3 */

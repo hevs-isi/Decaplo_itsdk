@@ -46,7 +46,7 @@
 
 #include "pressureSensorDecaplo.h"
 
-
+#include <stdio.h>
 
 int32_t COMFREQS = (3*60*1000); 		// app dutycycle
 //#define COMFREQS 3*60*1000
@@ -85,12 +85,12 @@ extern uint8_t byte;
 extern uint8_t tabToPrint[5];
 uint8_t readUart();
 void resetMeasure(uint8_t * array, uint8_t size);
-int measureUart;												//measure as int
+uint16_t measureUart;												//measure as int
 /**************************/
 
 void task() {
 
-//	int measureValidity = readUart();
+// readUart();
 //	log_info("task measure : %d, measure validity : %d\n\r",measureUart, measureValidity);
 	/**
 	 * if not joined set the green led to 1
@@ -135,9 +135,9 @@ void task() {
 				}
 			} else {
 				// Send a LoRaWan Frame
-				//int measureValidity = readUart();
+				readUart();
 
-				//sendUplink(measureUart, measureValidity);
+				sendUplink();
 				s_state.lastComMS = 0;
 			}
 		} else {
@@ -151,7 +151,7 @@ void task() {
 /****************************************************************************************
  * SendUplink packet
  ****************************************************************************************/
-void sendUplink(int uartMeasure, int measureValidity){
+void sendUplink(){
 	log_info("Fire a LoRaWAN message \n\r");
 
 	uint16_t vbat = getBatteryLevel();
@@ -159,7 +159,7 @@ void sendUplink(int uartMeasure, int measureValidity){
 	uint8_t size=16;
 	uint8_t rx[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 	uint8_t sendBuff[64];
-	uint32_t sendBuffIndex = 0;
+	uint32_t sendBuffIndex = 0; //uint32
 	
 	sendBuff[sendBuffIndex++] = (vbat >> 8 ) & 0xFF;
 	sendBuff[sendBuffIndex++] = vbat & 0xFF;
@@ -314,7 +314,7 @@ void project_loop() {
 /****************************************************************************************
  * UART sensor part
  ****************************************************************************************/
-#define debugUart   1
+//#define debugUart   1
 uint8_t readUart(){
 
 	  GPIO_InitTypeDef POWER_ACTIVE;
@@ -323,7 +323,7 @@ uint8_t readUart(){
 
 
 	 int measureAttempt = 0;
-	 resetMeasure(&tabToPrint[0], 4); 							//Reset the return array
+//	 resetMeasure(&tabToPrint[0], 4); 							//Reset the return array
 	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_SET);  //Set on the ultrasonic sensor
 
 	 log_info("Start the measure !\r\n");
@@ -331,22 +331,22 @@ uint8_t readUart(){
 	 	HAL_UART_Receive_IT(&huart1, &byte, 1); 				//start measure, result is into tabToPrint
 	 	HAL_Delay(50);											//
 
-		#if debugUart											//DEBUG
-	 	log_info("Measure #%d : ", measureAttempt);				//Print all 90 measure
-	 		HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500); //
-	 		log_info("\n\r");									//
-		#endif
+//		#if debugUart											//DEBUG
+//	 	log_info("Measure #%d : ", measureAttempt);				//Print all 90 measure
+//	 		HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500); //
+//	 		log_info("\n\r");									//
+//		#endif
 	 	measureAttempt++;
 	 }
-	 #if debugUart												//DEBUG
-	 	 log_info("\n\rWe measure ");							//Print final tabToPrint
-	 	 HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);	//
-	 	 log_info(" mm\r\n");									//
-	 #endif
+//	 	 #if debugUart												//DEBUG
+//	 	 log_info("\n\rWe measure ");							//Print final tabToPrint
+//	 	 HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);	//
+//	 	 log_info(" mm\r\n");									//
+//	 #endif
 
 	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_RESET);//PowerOff the sensor
 
-	 uint8_t tabToConvert[4];									//remove first 'R' char
+ /*    uint8_t tabToConvert[4];									//remove first 'R' char
 	 tabToConvert[0] = tabToPrint[1];							//
 	 tabToConvert[1] = tabToPrint[2];							//
 	 tabToConvert[2] = tabToPrint[3];							//
@@ -355,6 +355,9 @@ uint8_t readUart(){
 
 	 sscanf(tabToConvert, "%d", &measureUart);					//convert char[] to int
 	 log_info("Final measure : %d", measureUart);				//print final measure
+*/
+	 log_info("Final measure : %c%c%c%c\n\r", tabToPrint[1], tabToPrint[2], tabToPrint[3], tabToPrint[4]);
+/*
 
 	 if(measureUart==0 || measureUart==500 || measureUart==5000 || measureUart == 4999){	//check if the measure is valid or not
 		 	 log_info(" Measure is not valid\r\n");
@@ -363,6 +366,7 @@ uint8_t readUart(){
 	 		log_info(" Measure is valid\r\n");
 	 		return 1;
 	 }
+*/
 
 }
 
@@ -370,11 +374,11 @@ uint8_t readUart(){
 /**
  * Reset the Uart Buffer
  */
-void resetMeasure(uint8_t * array, uint8_t size){
+/*void resetMeasure(uint8_t * array, uint8_t size){
 	for (int i = 0; i < size; i++){
 		array[i] = 0x30; //Set to 0
 	}
-}
+}*/
 
 //========================================================================================
 //Test part
