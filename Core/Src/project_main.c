@@ -74,16 +74,13 @@ void sendUplink();						//method that prepare payload and send
 //***** get battery level******
 uint16_t getBatteryLevel();				//get the battery level with ADC
 
-//***** temp and pressure I2C *****
-I2C_HandleTypeDef hi2c1;
-uint32_t pressure;
-uint8_t temperature;
+
 
 //***** UART MEASURE ******
 UART_HandleTypeDef huart1;
 extern uint8_t byte;
 extern uint8_t tabToPrint[5];
-uint8_t readUart();
+void readUart();
 void resetMeasure(uint8_t * array, uint8_t size);
 uint16_t measureUart;												//measure as int
 /**************************/
@@ -156,18 +153,18 @@ void sendUplink(){
 
 	uint16_t vbat = getBatteryLevel();
 	uint8_t port;
-	uint8_t size=16;
+	uint32_t size=16;
 	uint8_t rx[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-	uint8_t sendBuff[64];
+	uint8_t sendBuff[20];
 	uint32_t sendBuffIndex = 0; //uint32
 	
 	sendBuff[sendBuffIndex++] = (vbat >> 8 ) & 0xFF;
 	sendBuff[sendBuffIndex++] = vbat & 0xFF;
 
-	
-	
-	
-	
+	sendBuff[sendBuffIndex++] = tabToPrint[1];
+//	sendBuff[sendBuffIndex++] = tabToPrint[2];
+//	sendBuff[sendBuffIndex++] = tabToPrint[3];
+//	sendBuff[sendBuffIndex++] = tabToPrint[4];
 	
 	itsdk_lorawan_send_t r = itsdk_lorawan_send_sync(
 			sendBuff,						// Payload
@@ -314,8 +311,8 @@ void project_loop() {
 /****************************************************************************************
  * UART sensor part
  ****************************************************************************************/
-//#define debugUart   1
-uint8_t readUart(){
+#define debugUart   0
+void readUart(){
 
 	  GPIO_InitTypeDef POWER_ACTIVE;
 	  POWER_ACTIVE.Pin   = GPIO_PIN_11 ;
@@ -331,18 +328,18 @@ uint8_t readUart(){
 	 	HAL_UART_Receive_IT(&huart1, &byte, 1); 				//start measure, result is into tabToPrint
 	 	HAL_Delay(50);											//
 
-//		#if debugUart											//DEBUG
-//	 	log_info("Measure #%d : ", measureAttempt);				//Print all 90 measure
-//	 		HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500); //
-//	 		log_info("\n\r");									//
-//		#endif
+		#if debugUart											//DEBUG
+	 	log_info("Measure #%d : ", measureAttempt);				//Print all 90 measure
+	 		HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500); //
+	 		log_info("\n\r");									//
+		#endif
 	 	measureAttempt++;
 	 }
-//	 	 #if debugUart												//DEBUG
-//	 	 log_info("\n\rWe measure ");							//Print final tabToPrint
-//	 	 HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);	//
-//	 	 log_info(" mm\r\n");									//
-//	 #endif
+	 	 #if debugUart												//DEBUG
+	 	 log_info("\n\rWe measure ");							//Print final tabToPrint
+	 	 HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);	//
+	 	 log_info(" mm\r\n");									//
+	 #endif
 
 	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_RESET);//PowerOff the sensor
 
@@ -357,8 +354,8 @@ uint8_t readUart(){
 	 log_info("Final measure : %d", measureUart);				//print final measure
 */
 	 log_info("Final measure : %c%c%c%c\n\r", tabToPrint[1], tabToPrint[2], tabToPrint[3], tabToPrint[4]);
-/*
 
+/*
 	 if(measureUart==0 || measureUart==500 || measureUart==5000 || measureUart == 4999){	//check if the measure is valid or not
 		 	 log_info(" Measure is not valid\r\n");
 	 		return 0;
@@ -366,8 +363,8 @@ uint8_t readUart(){
 	 		log_info(" Measure is valid\r\n");
 	 		return 1;
 	 }
-*/
 
+*/
 }
 
 

@@ -163,6 +163,19 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
+
+
+  //desable for lowpower
+  GPIO_InitTypeDef GPIO_InitStructure;
+
+  GPIO_InitStructure.Mode = GPIO_MODE_ANALOG;
+  GPIO_InitStructure.Pull = GPIO_NOPULL;
+  GPIO_InitStructure.Pin = (GPIO_PIN_13 | GPIO_PIN_14);
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+  __HAL_RCC_DBGMCU_CLK_ENABLE();
+  HAL_DBGMCU_DisableDBGStopMode();
+  __HAL_RCC_DBGMCU_CLK_DISABLE();
 }
 
 /* USER CODE BEGIN 2 */

@@ -64,19 +64,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void main_dbg_disable(void)
-{
-    GPIO_InitTypeDef GPIO_InitStructure;
 
-    GPIO_InitStructure.Mode = GPIO_MODE_ANALOG;
-    GPIO_InitStructure.Pull = GPIO_NOPULL;
-    GPIO_InitStructure.Pin = (GPIO_PIN_13 | GPIO_PIN_14);
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
-
-    __HAL_RCC_DBGMCU_CLK_ENABLE();
-    HAL_DBGMCU_DisableDBGStopMode();
-    __HAL_RCC_DBGMCU_CLK_DISABLE();
-}
 
 /* USER CODE END 0 */
 
@@ -130,8 +118,7 @@ int main(void)
 
   /* USER CODE BEGIN WHILE */
   /********desable debug module and pins (SWLCK & SWDIO)*******/
-  /********         important for lowpower              ********/
-  main_dbg_disable();
+
 
 
 
