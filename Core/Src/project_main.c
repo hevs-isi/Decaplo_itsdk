@@ -153,7 +153,7 @@ void sendUplink(){
 
 	uint16_t vbat = getBatteryLevel();
 	uint8_t port;
-	uint32_t size=16;
+	uint8_t size=16;
 	uint8_t rx[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 	uint8_t sendBuff[20];
 	uint32_t sendBuffIndex = 0; //uint32
@@ -162,7 +162,7 @@ void sendUplink(){
 	sendBuff[sendBuffIndex++] = vbat & 0xFF;
 
 	sendBuff[sendBuffIndex++] = tabToPrint[1];
-//	sendBuff[sendBuffIndex++] = tabToPrint[2];
+	sendBuff[sendBuffIndex++] = tabToPrint[2];
 //	sendBuff[sendBuffIndex++] = tabToPrint[3];
 //	sendBuff[sendBuffIndex++] = tabToPrint[4];
 	

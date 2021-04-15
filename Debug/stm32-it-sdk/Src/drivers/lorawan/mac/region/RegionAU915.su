@@ -13,7 +13,6 @@ RegionAU915.c:552:6:RegionAU915ChanMaskSet	24	static
 RegionAU915.c:580:6:RegionAU915ComputeRxWindowParameters	64	static
 RegionAU915.c:593:6:RegionAU915RxConfig	80	static
 RegionAU915.c:634:6:RegionAU915TxConfig	96	static
-RegionAU915.c:659:9:RegionAU915LinkAdrReq	104	static
 RegionAU915.c:820:9:RegionAU915RxParamSetupReq	24	static
 RegionAU915.c:850:9:RegionAU915NewChannelReq	16	static
 RegionAU915.c:856:8:RegionAU915TxParamSetupReq	16	static

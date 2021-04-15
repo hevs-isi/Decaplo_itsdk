@@ -1,5 +1,5 @@
 project_main.c:88:6:task	32	static
-project_main.c:151:6:sendUplink	104	static
+project_main.c:151:6:sendUplink	96	static
 project_main.c:204:6:process_downlink	24	static
 project_main.c:247:9:setDataRate	16	static
 project_main.c:275:10:getBatteryLevel	24	static
