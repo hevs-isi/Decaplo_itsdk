@@ -13,7 +13,6 @@ RegionAS923.c:541:6:RegionAS923ChanMaskSet	16	static
 RegionAS923.c:561:6:RegionAS923ComputeRxWindowParameters	64	static
 RegionAS923.c:581:6:RegionAS923RxConfig	88	static
 RegionAS923.c:639:6:RegionAS923TxConfig	96	static
-RegionAS923.c:673:9:RegionAS923LinkAdrReq	96	static
 RegionAS923.c:778:9:RegionAS923RxParamSetupReq	24	static
 RegionAS923.c:803:9:RegionAS923NewChannelReq	32	static
 RegionAS923.c:856:8:RegionAS923TxParamSetupReq	16	static

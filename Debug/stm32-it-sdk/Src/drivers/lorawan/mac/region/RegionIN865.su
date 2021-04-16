@@ -13,7 +13,6 @@ RegionIN865.c:506:6:RegionIN865ChanMaskSet	16	static
 RegionIN865.c:526:6:RegionIN865ComputeRxWindowParameters	64	static
 RegionIN865.c:546:6:RegionIN865RxConfig	88	static
 RegionIN865.c:602:6:RegionIN865TxConfig	96	static
-RegionIN865.c:637:9:RegionIN865LinkAdrReq	88	static
 RegionIN865.c:749:9:RegionIN865RxParamSetupReq	24	static
 RegionIN865.c:774:9:RegionIN865NewChannelReq	32	static
 RegionIN865.c:827:8:RegionIN865TxParamSetupReq	16	static

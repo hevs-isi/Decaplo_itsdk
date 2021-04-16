@@ -13,7 +13,6 @@ RegionRU864.c:478:6:RegionRU864ChanMaskSet	16	static
 RegionRU864.c:498:6:RegionRU864ComputeRxWindowParameters	64	static
 RegionRU864.c:518:6:RegionRU864RxConfig	88	static
 RegionRU864.c:575:6:RegionRU864TxConfig	96	static
-RegionRU864.c:609:9:RegionRU864LinkAdrReq	96	static
 RegionRU864.c:714:9:RegionRU864RxParamSetupReq	24	static
 RegionRU864.c:739:9:RegionRU864NewChannelReq	32	static
 RegionRU864.c:792:8:RegionRU864TxParamSetupReq	16	static

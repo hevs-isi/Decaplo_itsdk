@@ -13,7 +13,6 @@ RegionCN470.c:467:6:RegionCN470ChanMaskSet	16	static
 RegionCN470.c:487:6:RegionCN470ComputeRxWindowParameters	64	static
 RegionCN470.c:500:6:RegionCN470RxConfig	80	static
 RegionCN470.c:541:6:RegionCN470TxConfig	88	static
-RegionCN470.c:565:9:RegionCN470LinkAdrReq	104	static
 RegionCN470.c:662:9:RegionCN470RxParamSetupReq	24	static
 RegionCN470.c:687:9:RegionCN470NewChannelReq	16	static
 RegionCN470.c:693:8:RegionCN470TxParamSetupReq	16	static

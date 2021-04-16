@@ -15,7 +15,6 @@ RegionUS915.c:626:6:RegionUS915ChanMaskSet	32	static
 RegionUS915.c:670:6:RegionUS915ComputeRxWindowParameters	64	static
 RegionUS915.c:683:6:RegionUS915RxConfig	80	static
 RegionUS915.c:724:6:RegionUS915TxConfig	96	static
-RegionUS915.c:749:9:RegionUS915LinkAdrReq	104	static
 RegionUS915.c:910:9:RegionUS915RxParamSetupReq	24	static
 RegionUS915.c:940:9:RegionUS915NewChannelReq	16	static
 RegionUS915.c:946:8:RegionUS915TxParamSetupReq	16	static

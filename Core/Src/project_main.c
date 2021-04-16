@@ -163,8 +163,8 @@ void sendUplink(){
 
 	sendBuff[sendBuffIndex++] = tabToPrint[1];
 	sendBuff[sendBuffIndex++] = tabToPrint[2];
-//	sendBuff[sendBuffIndex++] = tabToPrint[3];
-//	sendBuff[sendBuffIndex++] = tabToPrint[4];
+	sendBuff[sendBuffIndex++] = tabToPrint[3];
+	sendBuff[sendBuffIndex++] = tabToPrint[4];
 	
 	itsdk_lorawan_send_t r = itsdk_lorawan_send_sync(
 			sendBuff,						// Payload

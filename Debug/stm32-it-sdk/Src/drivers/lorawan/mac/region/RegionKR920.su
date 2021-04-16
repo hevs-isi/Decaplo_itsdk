@@ -14,7 +14,6 @@ RegionKR920.c:511:6:RegionKR920ChanMaskSet	16	static
 RegionKR920.c:531:6:RegionKR920ComputeRxWindowParameters	64	static
 RegionKR920.c:544:6:RegionKR920RxConfig	80	static
 RegionKR920.c:582:6:RegionKR920TxConfig	96	static
-RegionKR920.c:612:9:RegionKR920LinkAdrReq	96	static
 RegionKR920.c:717:9:RegionKR920RxParamSetupReq	24	static
 RegionKR920.c:742:9:RegionKR920NewChannelReq	32	static
 RegionKR920.c:795:8:RegionKR920TxParamSetupReq	16	static

@@ -59,17 +59,8 @@ stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o: \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/utilities.h \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/Region.h \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/compiled_region.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionAS923.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/Region.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionAU915.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionCN470.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionCN779.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionEU433.h \
  /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionEU868.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionKR920.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionIN865.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionUS915.h \
- /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionRU864.h
+ /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/Region.h
 
 /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/LoRaMac.h:
 
@@ -199,24 +190,6 @@ stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o: \
 
 /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/compiled_region.h:
 
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionAS923.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/Region.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionAU915.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionCN470.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionCN779.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionEU433.h:
-
 /home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionEU868.h:
 
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionKR920.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionIN865.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionUS915.h:
-
-/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/RegionRU864.h:
+/home/amos/STM32CubeIDE/workspace_1.3.0/itsdk-example-murata-lora/stm32-it-sdk/Inc/drivers/lorawan/mac/region/Region.h:

@@ -65,15 +65,15 @@
 																		   // =============================
 #define ITSDK_LORAWAN_REGION_ALLOWED (								\
 										__LORAWAN_REGION_EU868	|	\
-										__LORAWAN_REGION_AS923	|	\
-										__LORAWAN_REGION_AU915	|	\
-										__LORAWAN_REGION_CN470	|	\
-										__LORAWAN_REGION_CN779	|	\
-										__LORAWAN_REGION_EU433	|	\
-										__LORAWAN_REGION_KR920	|	\
-										__LORAWAN_REGION_IN865	|	\
-										__LORAWAN_REGION_US915	|	\
-										__LORAWAN_REGION_RU864	|	\
+										/*__LORAWAN_REGION_AS923	|*/	\
+										/*__LORAWAN_REGION_AU915	|*/	\
+										/*__LORAWAN_REGION_CN470	|*/	\
+										/*__LORAWAN_REGION_CN779	|*/	\
+										/*__LORAWAN_REGION_EU433	|*/	\
+										/*__LORAWAN_REGION_KR920	|*/	\
+										/*__LORAWAN_REGION_IN865	|*/	\
+										/*__LORAWAN_REGION_US915	|*/	\
+										/*__LORAWAN_REGION_RU864	|*/	\
 										__LORAWAN_REGION_NONE		\
 									 )										// List of zone to be available as part
 																			// of the code compilation. Size optimization
