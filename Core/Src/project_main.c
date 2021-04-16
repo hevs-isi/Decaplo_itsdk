@@ -68,7 +68,7 @@ struct state {
 
 
 //***** send *******
-void sendUplink();						//method that prepare payload and send
+void sendUplink(uint16_t measure, uint8_t validity);						//method that prepare payload and send
 
 
 //***** get battery level******
@@ -80,7 +80,7 @@ uint16_t getBatteryLevel();				//get the battery level with ADC
 UART_HandleTypeDef huart1;
 extern uint8_t byte;
 extern uint8_t tabToPrint[5];
-void readUart();
+uint8_t readUart();
 void resetMeasure(uint8_t * array, uint8_t size);
 uint16_t measureUart;												//measure as int
 /**************************/
@@ -132,9 +132,9 @@ void task() {
 				}
 			} else {
 				// Send a LoRaWan Frame
-				readUart();
+				uint8_t measureValidity = readUart();
 
-				sendUplink();
+				sendUplink(measureUart, measureValidity);
 				s_state.lastComMS = 0;
 			}
 		} else {
@@ -148,7 +148,7 @@ void task() {
 /****************************************************************************************
  * SendUplink packet
  ****************************************************************************************/
-void sendUplink(){
+void sendUplink(uint16_t measure, uint8_t validity){
 	log_info("Fire a LoRaWAN message \n\r");
 
 	uint16_t vbat = getBatteryLevel();
@@ -161,10 +161,16 @@ void sendUplink(){
 	sendBuff[sendBuffIndex++] = (vbat >> 8 ) & 0xFF;
 	sendBuff[sendBuffIndex++] = vbat & 0xFF;
 
-	sendBuff[sendBuffIndex++] = tabToPrint[1];
-	sendBuff[sendBuffIndex++] = tabToPrint[2];
-	sendBuff[sendBuffIndex++] = tabToPrint[3];
-	sendBuff[sendBuffIndex++] = tabToPrint[4];
+	//sendBuff[sendBuffIndex++] = tabToPrint[1];
+	//sendBuff[sendBuffIndex++] = tabToPrint[2];
+	//sendBuff[sendBuffIndex++] = tabToPrint[3];
+	//sendBuff[sendBuffIndex++] = tabToPrint[4];
+
+	sendBuff[sendBuffIndex++] = (measure >> 8 ) & 0xFF;
+	sendBuff[sendBuffIndex++] = measure & 0xFF;
+	sendBuff[sendBuffIndex++] = validity;
+
+
 	
 	itsdk_lorawan_send_t r = itsdk_lorawan_send_sync(
 			sendBuff,						// Payload
@@ -312,7 +318,7 @@ void project_loop() {
  * UART sensor part
  ****************************************************************************************/
 #define debugUart   0
-void readUart(){
+uint8_t readUart(){
 
 	  GPIO_InitTypeDef POWER_ACTIVE;
 	  POWER_ACTIVE.Pin   = GPIO_PIN_11 ;
@@ -320,7 +326,7 @@ void readUart(){
 
 
 	 int measureAttempt = 0;
-//	 resetMeasure(&tabToPrint[0], 4); 							//Reset the return array
+	 resetMeasure(&tabToPrint[0], 4); 							//Reset the return array
 	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_SET);  //Set on the ultrasonic sensor
 
 	 log_info("Start the measure !\r\n");
@@ -335,15 +341,10 @@ void readUart(){
 		#endif
 	 	measureAttempt++;
 	 }
-	 	 #if debugUart												//DEBUG
-	 	 log_info("\n\rWe measure ");							//Print final tabToPrint
-	 	 HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500);	//
-	 	 log_info(" mm\r\n");									//
-	 #endif
 
 	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_RESET);//PowerOff the sensor
 
- /*    uint8_t tabToConvert[4];									//remove first 'R' char
+     uint8_t tabToConvert[4];									//remove first 'R' char
 	 tabToConvert[0] = tabToPrint[1];							//
 	 tabToConvert[1] = tabToPrint[2];							//
 	 tabToConvert[2] = tabToPrint[3];							//
@@ -352,11 +353,9 @@ void readUart(){
 
 	 sscanf(tabToConvert, "%d", &measureUart);					//convert char[] to int
 	 log_info("Final measure : %d", measureUart);				//print final measure
-*/
-	 log_info("Final measure : %c%c%c%c\n\r", tabToPrint[1], tabToPrint[2], tabToPrint[3], tabToPrint[4]);
 
-/*
-	 if(measureUart==0 || measureUart==500 || measureUart==5000 || measureUart == 4999){	//check if the measure is valid or not
+
+	 if(measureUart==0 || measureUart<=500 || measureUart>=5000 || measureUart == 4999){	//check if the measure is valid or not
 		 	 log_info(" Measure is not valid\r\n");
 	 		return 0;
 	 }else{
@@ -364,18 +363,18 @@ void readUart(){
 	 		return 1;
 	 }
 
-*/
+
 }
 
 
 /**
  * Reset the Uart Buffer
  */
-/*void resetMeasure(uint8_t * array, uint8_t size){
+void resetMeasure(uint8_t * array, uint8_t size){
 	for (int i = 0; i < size; i++){
 		array[i] = 0x30; //Set to 0
 	}
-}*/
+}
 
 //========================================================================================
 //Test part
