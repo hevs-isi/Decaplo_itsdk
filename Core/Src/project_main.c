@@ -83,12 +83,12 @@ extern uint8_t tabToPrint[5];
 uint8_t readUart();
 void resetMeasure(uint8_t * array, uint8_t size);
 uint16_t measureUart;												//measure as int
+uint8_t numberMeasure = 90;
 /**************************/
 
 void task() {
 
 // readUart();
-//	log_info("task measure : %d, measure validity : %d\n\r",measureUart, measureValidity);
 	/**
 	 * if not joined set the green led to 1
 	 */
@@ -156,19 +156,15 @@ void sendUplink(uint16_t measure, uint8_t validity){
 	uint8_t size=16;
 	uint8_t rx[16] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 	uint8_t sendBuff[20];
-	uint32_t sendBuffIndex = 0; //uint32
+	uint8_t sendBuffIndex = 0; //uint32
 	
-	sendBuff[sendBuffIndex++] = (vbat >> 8 ) & 0xFF;
-	sendBuff[sendBuffIndex++] = vbat & 0xFF;
+	sendBuff[sendBuffIndex++] = (vbat >> 8 ) & 0xFF; 	//send Vbat on 2bytes
+	sendBuff[sendBuffIndex++] = vbat & 0xFF;			//
 
-	//sendBuff[sendBuffIndex++] = tabToPrint[1];
-	//sendBuff[sendBuffIndex++] = tabToPrint[2];
-	//sendBuff[sendBuffIndex++] = tabToPrint[3];
-	//sendBuff[sendBuffIndex++] = tabToPrint[4];
 
-	sendBuff[sendBuffIndex++] = (measure >> 8 ) & 0xFF;
-	sendBuff[sendBuffIndex++] = measure & 0xFF;
-	sendBuff[sendBuffIndex++] = validity;
+	sendBuff[sendBuffIndex++] = (measure >> 8 ) & 0xFF;	//send uart measure on 2bytes
+	sendBuff[sendBuffIndex++] = measure & 0xFF;			//
+	sendBuff[sendBuffIndex++] = validity;				//send uart measure validity on 1byte
 
 
 	
@@ -328,9 +324,10 @@ uint8_t readUart(){
 	 int measureAttempt = 0;
 	 resetMeasure(&tabToPrint[0], 4); 							//Reset the return array
 	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_SET);  //Set on the ultrasonic sensor
+	 	HAL_Delay(50);											//
 
 	 log_info("Start the measure !\r\n");
-	 while(measureAttempt < 90){
+	 while(measureAttempt < numberMeasure){
 	 	HAL_UART_Receive_IT(&huart1, &byte, 1); 				//start measure, result is into tabToPrint
 	 	HAL_Delay(50);											//
 
@@ -356,11 +353,11 @@ uint8_t readUart(){
 
 
 	 if(measureUart==0 || measureUart<=500 || measureUart>=5000 || measureUart == 4999){	//check if the measure is valid or not
-		 	 log_info(" Measure is not valid\r\n");
-	 		return 0;
+		log_info(" Measure is not valid\r\n");
+	 	return 0;
 	 }else{
-	 		log_info(" Measure is valid\r\n");
-	 		return 1;
+	 	log_info(" Measure is valid\r\n");
+	 	return 1;
 	 }
 
 

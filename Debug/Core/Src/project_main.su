@@ -1,9 +1,9 @@
-project_main.c:88:6:task	32	static
+project_main.c:89:6:task	32	static
 project_main.c:151:6:sendUplink	104	static
-project_main.c:210:6:process_downlink	24	static
-project_main.c:253:9:setDataRate	16	static
-project_main.c:281:10:getBatteryLevel	24	static
-project_main.c:296:6:project_setup	8	static
-project_main.c:311:6:project_loop	8	static
-project_main.c:321:9:readUart	48	static
-project_main.c:378:6:resetMeasure	24	static
+project_main.c:206:6:process_downlink	24	static
+project_main.c:249:9:setDataRate	16	static
+project_main.c:277:10:getBatteryLevel	24	static
+project_main.c:292:6:project_setup	8	static
+project_main.c:307:6:project_loop	8	static
+project_main.c:317:9:readUart	48	static
+project_main.c:370:6:resetMeasure	24	static
