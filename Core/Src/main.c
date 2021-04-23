@@ -74,7 +74,20 @@ void SystemClock_Config(void);
   */
 extern uint8_t byte;
 extern uint8_t tabToPrint[5];
+/*test relay*/
+#define RELAY_PORT		GPIOB		//port for the relay
+#define RELAY_PIN       GPIO_PIN_8  	// Pin for the relay
+#define SPICS_PORT		GPIOB		//port for the relay
+#define SPICS_PIN       GPIO_PIN_12  	// Pin for the relay
+#define VCC_SENSOR_PIN      GPIO_PIN_11 // PA11
+int relay_state = 0;
+void test_relay();
+void enable_vcc_sensor();
+void disable_vcc_sensor();
 
+/**
+ * main loop
+ */
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -129,11 +142,83 @@ int main(void)
 	/* USER CODE BEGIN 3 */
 
 
-	 itsdk_loop();
+	// itsdk_loop();
+
+	  test_relay();
+
 
   }
   /* USER CODE END 3 */
 }
+
+void test_relay()
+{
+
+  GPIO_InitTypeDef gpRelay = {
+      .Pin  = RELAY_PIN,
+      .Mode = GPIO_MODE_OUTPUT_PP,
+  };
+  HAL_GPIO_Init(GPIOB, &gpRelay);
+
+  GPIO_InitTypeDef gpSPICS = {
+        .Pin  = SPICS_PIN,
+        .Mode = GPIO_MODE_OUTPUT_PP,
+  };
+  HAL_GPIO_Init(GPIOB, &gpSPICS);
+  HAL_Delay(1000);
+
+  log_info("test relay \n\r");
+  enable_vcc_sensor();
+  HAL_Delay(4);
+  if(relay_state == 0){
+	 // 0 on spi_cs 1 on relayopen
+	  relay_state = 1;
+
+	  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 1);
+	  HAL_GPIO_WritePin(SPICS_PORT, gpSPICS.Pin, 0);
+	  log_info("relay open\n\r");
+  }else{
+	  // 1 on spi_cs 0 on relayopen
+	  relay_state = 0;
+
+	  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 0);
+	  HAL_GPIO_WritePin(SPICS_PORT, gpSPICS.Pin, 1);
+	  log_info("relay close \n\r");
+  }
+  HAL_Delay(4);   // max commutating time is 4ms
+
+  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 0);
+  HAL_GPIO_WritePin(SPICS_PORT, gpSPICS.Pin, 0);
+
+  disable_vcc_sensor();
+
+
+  HAL_Delay(5000);
+
+}
+
+void enable_vcc_sensor()
+{
+  GPIO_InitTypeDef gp = {
+      .Pin  = VCC_SENSOR_PIN,
+      .Mode = GPIO_MODE_OUTPUT_PP,
+  };
+  HAL_GPIO_Init(GPIOA, &gp);
+  HAL_GPIO_WritePin(GPIOA, gp.Pin, 1);
+}
+
+void disable_vcc_sensor()
+{
+  GPIO_InitTypeDef gp = {
+      .Pin  = VCC_SENSOR_PIN,
+      .Mode = GPIO_MODE_OUTPUT_PP,
+  };
+  HAL_GPIO_Init(GPIOA, &gp);
+  HAL_GPIO_WritePin(GPIOA, gp.Pin, 0);
+}
+
+
+
 
 /**
   * @brief System Clock Configuration

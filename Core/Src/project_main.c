@@ -66,6 +66,9 @@ struct state {
 #define VBAT_DIV2_PORT  __BANK_B		//tension divider for ADC
 #define VBAT_DIV2_PIN	__LP_GPIO_2		//
 
+#define RELAY_PORT		__BANK_B		//port for the relay
+#define RELAY_PIN       GPIO_PIN_8  	// Pin for the relay
+
 
 //***** send *******
 void sendUplink(uint16_t measure, uint8_t validity);						//method that prepare payload and send
