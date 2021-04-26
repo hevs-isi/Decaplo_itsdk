@@ -78,8 +78,9 @@ void sendUplink(uint16_t measure, uint8_t validity);						//method that prepare 
 uint16_t getBatteryLevel();				//get the battery level with ADC
 
 
-
-//***** UART MEASURE ******
+/**************************
+******* UART MEASURE ******
+**************************/
 #define UART_SENSOR			1
 UART_HandleTypeDef huart1;
 extern uint8_t byte;
@@ -88,16 +89,19 @@ uint8_t readUart();
 void resetMeasure(uint8_t * array, uint8_t size);
 uint16_t measureUart;												//measure as int
 uint8_t numberMeasure = 90;
-/**************************/
 
-/***********RELAY**********/
-#define RELAY_PORT		GPIOA			//port for the relay
-#define RELAY_PIN       GPIO_PIN_8  	// Pin for the relay
-#define SPICS_PORT		GPIOB			//port for the relay
-#define SPICS_PIN       GPIO_PIN_12  	// Pin for the relay
-#define RELAY_TOGGLE	1
-uint8_t relay_state = 0;
-void toggle_relay();
+
+/***************************
+*************RELAY**********
+***************************/
+#define RELAY_PORT		GPIOA			//Port for the relay
+#define RELAY_PIN       GPIO_PIN_8  	//Pin for the relay
+#define SPICS_PORT		GPIOB			//Port for the relay
+#define SPICS_PIN       GPIO_PIN_12  	//Pin for the relay
+#define VALVE_TOGGLE_TIME 1000			//time for the valve to open/close
+#define VALVE_ACTIVE	1
+uint8_t bistable_valve_state = 0;
+void toggle_valve();
 
 void task() {
 
@@ -253,7 +257,7 @@ void process_downlink(uint8_t port, uint8_t rx[]){
 				break;
 
 			case 177: //B1 toggle relay
-				toggle_relay();
+				toggle_valve();
 				break;
 			default:
 				break;
@@ -391,7 +395,12 @@ void resetMeasure(uint8_t * array, uint8_t size){
 /****************************************************************************************
  * Relay part
  ****************************************************************************************/
-void toggle_relay(){
+
+/**
+ * change state of the valve through the relay
+ */
+void toggle_valve(){
+	//init related pins
 	GPIO_InitTypeDef gpRelay = {
 	      .Pin  = RELAY_PIN,
 	      .Mode = GPIO_MODE_OUTPUT_PP,
@@ -413,32 +422,29 @@ void toggle_relay(){
 
 	  HAL_Delay(1000);
 
-	  HAL_GPIO_WritePin(GPIOA, gpPowerActive.Pin, 1);
+	  HAL_GPIO_WritePin(GPIOA, gpPowerActive.Pin, 1);	//activate poweractive
 	  HAL_Delay(1000);
-	  if(relay_state == 0){
-		 // 0 on spi_cs 1 on relayopen
-		  relay_state = 1;
-
-		  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 1);
-		  HAL_GPIO_WritePin(SPICS_PORT, gpSPICS.Pin, 0);
-		  log_info("relay open\n\r");
-	  }else{
-		  // 1 on spi_cs 0 on relayopen
-		  relay_state = 0;
-
-		  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 0);
-		  HAL_GPIO_WritePin(SPICS_PORT, gpSPICS.Pin, 1);
-		  log_info("relay close \n\r");
-	  }
-	  HAL_Delay(4);   // max commutating time is 4ms
-
-	  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 0);
+	  //open relay
+	  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 1);
 	  HAL_GPIO_WritePin(SPICS_PORT, gpSPICS.Pin, 0);
 
-	  HAL_GPIO_WritePin(GPIOA, gpPowerActive.Pin, 0);
+	  //wait a while
+	  HAL_Delay(VALVE_TOGGLE_TIME);
+	  //close relay
+	  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 0);
+	  HAL_GPIO_WritePin(SPICS_PORT, gpSPICS.Pin, 1);
+
+	  HAL_Delay(4);   // max commutating time is 4ms
+
+	  //reset pin for lowpower
+	  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 0);	//set relay pin to 0
+	  HAL_GPIO_WritePin(SPICS_PORT, gpSPICS.Pin, 0);	//set spics pin to 0
+
+	  HAL_GPIO_WritePin(GPIOA, gpPowerActive.Pin, 0);	//set powerActve to 0
 
 
 }
+
 
 
 //========================================================================================
