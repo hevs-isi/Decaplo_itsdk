@@ -21783,83 +21783,83 @@ LOAD /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.g
                 0x000000000000193a       0x1e /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64_1.0.0.201904181610/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
 OUTPUT(itsdk-example-murata-lora.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x69fc2
+.debug_info     0x0000000000000000    0x69fc1
  .debug_info    0x0000000000000000      0x80d Core/Src/adc.o
  .debug_info    0x000000000000080d     0x12b3 Core/Src/gpio.o
- .debug_info    0x0000000000001ac0     0x1511 Core/Src/main.o
- .debug_info    0x0000000000002fd1     0x2601 Core/Src/project_main.o
- .debug_info    0x00000000000055d2      0x7ba Core/Src/rtc.o
- .debug_info    0x0000000000005d8c      0x93f Core/Src/spi.o
- .debug_info    0x00000000000066cb      0x2a4 Core/Src/stm32l0xx_hal_msp.o
- .debug_info    0x000000000000696f      0x972 Core/Src/stm32l0xx_it.o
- .debug_info    0x00000000000072e1      0x985 Core/Src/sysmem.o
- .debug_info    0x0000000000007c66      0x3d9 Core/Src/system_stm32l0xx.o
- .debug_info    0x000000000000803f      0x82e Core/Src/tim.o
- .debug_info    0x000000000000886d      0xa6d Core/Src/usart.o
- .debug_info    0x00000000000092da       0x22 Core/Startup/startup_stm32l072czyx.o
- .debug_info    0x00000000000092fc      0x8b5 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
- .debug_info    0x0000000000009bb1      0xd35 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o
- .debug_info    0x000000000000a8e6      0x837 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o
- .debug_info    0x000000000000b11d      0x928 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
- .debug_info    0x000000000000ba45      0x7c5 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
- .debug_info    0x000000000000c20a      0x723 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
- .debug_info    0x000000000000c92d      0x6b0 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
- .debug_info    0x000000000000cfdd      0x25f Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
- .debug_info    0x000000000000d23c      0x9e9 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
- .debug_info    0x000000000000dc25      0x861 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
- .debug_info    0x000000000000e486      0xaf4 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.o
- .debug_info    0x000000000000ef7a      0xe32 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.o
- .debug_info    0x000000000000fdac     0x15e6 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
- .debug_info    0x0000000000011392     0x15a1 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
- .debug_info    0x0000000000012933      0x8d8 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
- .debug_info    0x000000000001320b     0x2ddf stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_info    0x0000000000015fea     0x3951 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
- .debug_info    0x000000000001993b      0xc97 stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
- .debug_info    0x000000000001a5d2     0x187c stm32-it-sdk/Src/drivers/lorawan/crypto/cmac.o
- .debug_info    0x000000000001be4e     0x2148 stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
- .debug_info    0x000000000001df96     0x5c82 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
- .debug_info    0x0000000000023c18     0x207d stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacAdr.o
- .debug_info    0x0000000000025c95     0x2ff5 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacClassB.o
- .debug_info    0x0000000000028c8a     0x211f stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCommands.o
- .debug_info    0x000000000002ada9     0x23d6 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacConfirmQueue.o
- .debug_info    0x000000000002d17f     0x2b48 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
- .debug_info    0x000000000002fcc7     0x1cbb stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
- .debug_info    0x0000000000031982     0x1971 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacParser.o
- .debug_info    0x00000000000332f3     0x1a5b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacSerializer.o
- .debug_info    0x0000000000034d4e     0x2cee stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
- .debug_info    0x0000000000037a3c     0x251b stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCommon.o
- .debug_info    0x0000000000039f57     0x32dc stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
- .debug_info    0x000000000003d233     0x1a1f stm32-it-sdk/Src/drivers/lorawan/systime.o
- .debug_info    0x000000000003ec52     0x19e7 stm32-it-sdk/Src/drivers/lorawan/timeServer.o
- .debug_info    0x0000000000040639     0x178b stm32-it-sdk/Src/drivers/lorawan/utilities.o
- .debug_info    0x0000000000041dc4     0x219c stm32-it-sdk/Src/drivers/sx1276/murata_cmwx1zzabz.o
- .debug_info    0x0000000000043f60     0x2b78 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
- .debug_info    0x0000000000046ad8     0x1b91 stm32-it-sdk/Src/it_sdk/console/console.o
- .debug_info    0x0000000000048669     0x1264 stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o
- .debug_info    0x00000000000498cd     0x1a68 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
- .debug_info    0x000000000004b335      0xfcd stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o
- .debug_info    0x000000000004c302     0x1ebd stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
- .debug_info    0x000000000004e1bf     0x16d5 stm32-it-sdk/Src/it_sdk/encrypt/aes128ctr.o
- .debug_info    0x000000000004f894     0x18d3 stm32-it-sdk/Src/it_sdk/encrypt/tools.o
- .debug_info    0x0000000000051167      0xe8a stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
- .debug_info    0x0000000000051ff1     0x198e stm32-it-sdk/Src/it_sdk/logger/error.o
- .debug_info    0x000000000005397f     0x1885 stm32-it-sdk/Src/it_sdk/logger/logger.o
- .debug_info    0x0000000000055204     0x28e0 stm32-it-sdk/Src/it_sdk/lorawan/lorawan.o
- .debug_info    0x0000000000057ae4      0xfc2 stm32-it-sdk/Src/it_sdk/lowpower/lowpower.o
- .debug_info    0x0000000000058aa6     0x107a stm32-it-sdk/Src/it_sdk/main.o
- .debug_info    0x0000000000059b20     0x1424 stm32-it-sdk/Src/it_sdk/tool.o
- .debug_info    0x000000000005af44      0xfcf stm32-it-sdk/Src/it_sdk/sched/scheduler.o
- .debug_info    0x000000000005bf13     0x10ad stm32-it-sdk/Src/it_sdk/time/time.o
- .debug_info    0x000000000005cfc0     0x111f stm32-it-sdk/Src/it_sdk/time/timer.o
- .debug_info    0x000000000005e0df     0x162c stm32-it-sdk/Src/stm32l_sdk/adc/adc.o
- .debug_info    0x000000000005f70b     0x200e stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
- .debug_info    0x0000000000061719     0x1271 stm32-it-sdk/Src/stm32l_sdk/misc_wrapper.o
- .debug_info    0x000000000006298a     0x1ac9 stm32-it-sdk/Src/stm32l_sdk/uart_wrapper.o
- .debug_info    0x0000000000064453      0xfe6 stm32-it-sdk/Src/stm32l_sdk/eeprom/eeprom.o
- .debug_info    0x0000000000065439     0x1196 stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
- .debug_info    0x00000000000665cf     0x1af5 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
- .debug_info    0x00000000000680c4      0xe98 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
- .debug_info    0x0000000000068f5c     0x1066 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
+ .debug_info    0x0000000000001ac0     0x1510 Core/Src/main.o
+ .debug_info    0x0000000000002fd0     0x2601 Core/Src/project_main.o
+ .debug_info    0x00000000000055d1      0x7ba Core/Src/rtc.o
+ .debug_info    0x0000000000005d8b      0x93f Core/Src/spi.o
+ .debug_info    0x00000000000066ca      0x2a4 Core/Src/stm32l0xx_hal_msp.o
+ .debug_info    0x000000000000696e      0x972 Core/Src/stm32l0xx_it.o
+ .debug_info    0x00000000000072e0      0x985 Core/Src/sysmem.o
+ .debug_info    0x0000000000007c65      0x3d9 Core/Src/system_stm32l0xx.o
+ .debug_info    0x000000000000803e      0x82e Core/Src/tim.o
+ .debug_info    0x000000000000886c      0xa6d Core/Src/usart.o
+ .debug_info    0x00000000000092d9       0x22 Core/Startup/startup_stm32l072czyx.o
+ .debug_info    0x00000000000092fb      0x8b5 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+ .debug_info    0x0000000000009bb0      0xd35 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o
+ .debug_info    0x000000000000a8e5      0x837 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o
+ .debug_info    0x000000000000b11c      0x928 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+ .debug_info    0x000000000000ba44      0x7c5 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+ .debug_info    0x000000000000c209      0x723 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+ .debug_info    0x000000000000c92c      0x6b0 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+ .debug_info    0x000000000000cfdc      0x25f Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+ .debug_info    0x000000000000d23b      0x9e9 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+ .debug_info    0x000000000000dc24      0x861 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+ .debug_info    0x000000000000e485      0xaf4 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.o
+ .debug_info    0x000000000000ef79      0xe32 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.o
+ .debug_info    0x000000000000fdab     0x15e6 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+ .debug_info    0x0000000000011391     0x15a1 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+ .debug_info    0x0000000000012932      0x8d8 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+ .debug_info    0x000000000001320a     0x2ddf stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_info    0x0000000000015fe9     0x3951 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
+ .debug_info    0x000000000001993a      0xc97 stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
+ .debug_info    0x000000000001a5d1     0x187c stm32-it-sdk/Src/drivers/lorawan/crypto/cmac.o
+ .debug_info    0x000000000001be4d     0x2148 stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
+ .debug_info    0x000000000001df95     0x5c82 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
+ .debug_info    0x0000000000023c17     0x207d stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacAdr.o
+ .debug_info    0x0000000000025c94     0x2ff5 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacClassB.o
+ .debug_info    0x0000000000028c89     0x211f stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCommands.o
+ .debug_info    0x000000000002ada8     0x23d6 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacConfirmQueue.o
+ .debug_info    0x000000000002d17e     0x2b48 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
+ .debug_info    0x000000000002fcc6     0x1cbb stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
+ .debug_info    0x0000000000031981     0x1971 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacParser.o
+ .debug_info    0x00000000000332f2     0x1a5b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacSerializer.o
+ .debug_info    0x0000000000034d4d     0x2cee stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+ .debug_info    0x0000000000037a3b     0x251b stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCommon.o
+ .debug_info    0x0000000000039f56     0x32dc stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
+ .debug_info    0x000000000003d232     0x1a1f stm32-it-sdk/Src/drivers/lorawan/systime.o
+ .debug_info    0x000000000003ec51     0x19e7 stm32-it-sdk/Src/drivers/lorawan/timeServer.o
+ .debug_info    0x0000000000040638     0x178b stm32-it-sdk/Src/drivers/lorawan/utilities.o
+ .debug_info    0x0000000000041dc3     0x219c stm32-it-sdk/Src/drivers/sx1276/murata_cmwx1zzabz.o
+ .debug_info    0x0000000000043f5f     0x2b78 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
+ .debug_info    0x0000000000046ad7     0x1b91 stm32-it-sdk/Src/it_sdk/console/console.o
+ .debug_info    0x0000000000048668     0x1264 stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o
+ .debug_info    0x00000000000498cc     0x1a68 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
+ .debug_info    0x000000000004b334      0xfcd stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o
+ .debug_info    0x000000000004c301     0x1ebd stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
+ .debug_info    0x000000000004e1be     0x16d5 stm32-it-sdk/Src/it_sdk/encrypt/aes128ctr.o
+ .debug_info    0x000000000004f893     0x18d3 stm32-it-sdk/Src/it_sdk/encrypt/tools.o
+ .debug_info    0x0000000000051166      0xe8a stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
+ .debug_info    0x0000000000051ff0     0x198e stm32-it-sdk/Src/it_sdk/logger/error.o
+ .debug_info    0x000000000005397e     0x1885 stm32-it-sdk/Src/it_sdk/logger/logger.o
+ .debug_info    0x0000000000055203     0x28e0 stm32-it-sdk/Src/it_sdk/lorawan/lorawan.o
+ .debug_info    0x0000000000057ae3      0xfc2 stm32-it-sdk/Src/it_sdk/lowpower/lowpower.o
+ .debug_info    0x0000000000058aa5     0x107a stm32-it-sdk/Src/it_sdk/main.o
+ .debug_info    0x0000000000059b1f     0x1424 stm32-it-sdk/Src/it_sdk/tool.o
+ .debug_info    0x000000000005af43      0xfcf stm32-it-sdk/Src/it_sdk/sched/scheduler.o
+ .debug_info    0x000000000005bf12     0x10ad stm32-it-sdk/Src/it_sdk/time/time.o
+ .debug_info    0x000000000005cfbf     0x111f stm32-it-sdk/Src/it_sdk/time/timer.o
+ .debug_info    0x000000000005e0de     0x162c stm32-it-sdk/Src/stm32l_sdk/adc/adc.o
+ .debug_info    0x000000000005f70a     0x200e stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
+ .debug_info    0x0000000000061718     0x1271 stm32-it-sdk/Src/stm32l_sdk/misc_wrapper.o
+ .debug_info    0x0000000000062989     0x1ac9 stm32-it-sdk/Src/stm32l_sdk/uart_wrapper.o
+ .debug_info    0x0000000000064452      0xfe6 stm32-it-sdk/Src/stm32l_sdk/eeprom/eeprom.o
+ .debug_info    0x0000000000065438     0x1196 stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
+ .debug_info    0x00000000000665ce     0x1af5 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+ .debug_info    0x00000000000680c3      0xe98 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
+ .debug_info    0x0000000000068f5b     0x1066 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
 
 .debug_abbrev   0x0000000000000000     0xaa78
  .debug_abbrev  0x0000000000000000      0x194 Core/Src/adc.o
@@ -22171,7 +22171,7 @@ OUTPUT(itsdk-example-murata-lora.elf elf32-littlearm)
  .debug_ranges  0x00000000000024d0       0x20 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
  .debug_ranges  0x00000000000024f0       0x50 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
 
-.debug_macro    0x0000000000000000    0x27c77
+.debug_macro    0x0000000000000000    0x27c6b
  .debug_macro   0x0000000000000000      0x212 Core/Src/adc.o
  .debug_macro   0x0000000000000212      0xa48 Core/Src/adc.o
  .debug_macro   0x0000000000000c5a      0x137 Core/Src/adc.o
@@ -22229,158 +22229,158 @@ OUTPUT(itsdk-example-murata-lora.elf elf32-littlearm)
  .debug_macro   0x00000000000143d3      0x2cf Core/Src/main.o
  .debug_macro   0x00000000000146a2      0x15c Core/Src/main.o
  .debug_macro   0x00000000000147fe       0x4c Core/Src/main.o
- .debug_macro   0x000000000001484a      0x4f0 Core/Src/project_main.o
- .debug_macro   0x0000000000014d3a      0x112 Core/Src/project_main.o
- .debug_macro   0x0000000000014e4c       0x2e Core/Src/project_main.o
- .debug_macro   0x0000000000014e7a       0x3a Core/Src/project_main.o
- .debug_macro   0x0000000000014eb4       0x2e Core/Src/project_main.o
- .debug_macro   0x0000000000014ee2       0x16 Core/Src/project_main.o
- .debug_macro   0x0000000000014ef8       0x1c Core/Src/project_main.o
- .debug_macro   0x0000000000014f14       0x1c Core/Src/project_main.o
- .debug_macro   0x0000000000014f30       0x40 Core/Src/project_main.o
- .debug_macro   0x0000000000014f70     0x14bd Core/Src/project_main.o
- .debug_macro   0x000000000001642d      0x79c Core/Src/project_main.o
- .debug_macro   0x0000000000016bc9       0x5f Core/Src/project_main.o
- .debug_macro   0x0000000000016c28       0x46 Core/Src/project_main.o
- .debug_macro   0x0000000000016c6e       0x18 Core/Src/project_main.o
- .debug_macro   0x0000000000016c86       0x3c Core/Src/project_main.o
- .debug_macro   0x0000000000016cc2       0x34 Core/Src/project_main.o
- .debug_macro   0x0000000000016cf6       0x16 Core/Src/project_main.o
- .debug_macro   0x0000000000016d0c       0x35 Core/Src/project_main.o
- .debug_macro   0x0000000000016d41      0x330 Core/Src/project_main.o
- .debug_macro   0x0000000000017071       0x10 Core/Src/project_main.o
- .debug_macro   0x0000000000017081       0x52 Core/Src/project_main.o
- .debug_macro   0x00000000000170d3       0x1f Core/Src/project_main.o
- .debug_macro   0x00000000000170f2       0x43 Core/Src/project_main.o
- .debug_macro   0x0000000000017135       0x20 Core/Src/project_main.o
- .debug_macro   0x0000000000017155      0x1a3 Core/Src/project_main.o
- .debug_macro   0x00000000000172f8       0x10 Core/Src/project_main.o
- .debug_macro   0x0000000000017308       0x1c Core/Src/project_main.o
- .debug_macro   0x0000000000017324       0x52 Core/Src/project_main.o
- .debug_macro   0x0000000000017376       0x40 Core/Src/project_main.o
- .debug_macro   0x00000000000173b6       0x10 Core/Src/project_main.o
- .debug_macro   0x00000000000173c6       0x40 Core/Src/project_main.o
- .debug_macro   0x0000000000017406       0xd7 Core/Src/project_main.o
- .debug_macro   0x00000000000174dd       0x1c Core/Src/project_main.o
- .debug_macro   0x00000000000174f9       0x3d Core/Src/project_main.o
- .debug_macro   0x0000000000017536       0x16 Core/Src/project_main.o
- .debug_macro   0x000000000001754c      0x145 Core/Src/project_main.o
- .debug_macro   0x0000000000017691      0x212 Core/Src/rtc.o
- .debug_macro   0x00000000000178a3      0x212 Core/Src/spi.o
- .debug_macro   0x0000000000017ab5      0x208 Core/Src/stm32l0xx_hal_msp.o
- .debug_macro   0x0000000000017cbd      0x212 Core/Src/stm32l0xx_it.o
- .debug_macro   0x0000000000017ecf       0xee Core/Src/sysmem.o
- .debug_macro   0x0000000000017fbd      0x23b Core/Src/sysmem.o
- .debug_macro   0x00000000000181f8      0x1ff Core/Src/system_stm32l0xx.o
- .debug_macro   0x00000000000183f7      0x212 Core/Src/tim.o
- .debug_macro   0x0000000000018609      0x212 Core/Src/usart.o
- .debug_macro   0x000000000001881b      0x21d Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
- .debug_macro   0x0000000000018a38      0x208 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o
- .debug_macro   0x0000000000018c40      0x20b Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o
- .debug_macro   0x0000000000018e4b      0x1f9 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
- .debug_macro   0x0000000000019044      0x1f9 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
- .debug_macro   0x000000000001923d      0x231 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
- .debug_macro   0x000000000001946e      0x211 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
- .debug_macro   0x000000000001967f      0x1ff Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
- .debug_macro   0x000000000001987e      0x22f Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
- .debug_macro   0x0000000000019aad      0x1f9 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
- .debug_macro   0x0000000000019ca6      0x1fa Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.o
- .debug_macro   0x0000000000019ea0      0x1ff Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.o
- .debug_macro   0x000000000001a09f      0x201 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
- .debug_macro   0x000000000001a2a0      0x224 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
- .debug_macro   0x000000000001a4c4      0x1f9 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
- .debug_macro   0x000000000001a6bd      0x513 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001abd0      0x1e1 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001adb1       0x16 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001adc7       0x20 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001ade7       0x3a stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001ae21       0x55 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001ae76       0x16 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001ae8c       0xa6 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001af32       0x2e stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001af60       0x3a stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001af9a       0x4c stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001afe6       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001aff6       0x34 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001b02a       0xe7 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001b111       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001b121       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001b131       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
- .debug_macro   0x000000000001b141      0x532 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
- .debug_macro   0x000000000001b673       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
- .debug_macro   0x000000000001b683      0x218 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
- .debug_macro   0x000000000001b89b       0x16 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
- .debug_macro   0x000000000001b8b1       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
- .debug_macro   0x000000000001b8c1      0x1ba stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
- .debug_macro   0x000000000001ba7b      0x10e stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
- .debug_macro   0x000000000001bb89       0x8d stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
- .debug_macro   0x000000000001bc16       0x28 stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
- .debug_macro   0x000000000001bc3e      0x477 stm32-it-sdk/Src/drivers/lorawan/crypto/cmac.o
- .debug_macro   0x000000000001c0b5       0x10 stm32-it-sdk/Src/drivers/lorawan/crypto/cmac.o
- .debug_macro   0x000000000001c0c5      0x4fc stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
- .debug_macro   0x000000000001c5c1       0x28 stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
- .debug_macro   0x000000000001c5e9       0x46 stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
- .debug_macro   0x000000000001c62f      0x59b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
- .debug_macro   0x000000000001cbca      0x4b1 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacAdr.o
- .debug_macro   0x000000000001d07b      0x53b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacClassB.o
- .debug_macro   0x000000000001d5b6       0x64 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacClassB.o
- .debug_macro   0x000000000001d61a      0x4dd stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCommands.o
- .debug_macro   0x000000000001daf7      0x4c3 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacConfirmQueue.o
- .debug_macro   0x000000000001dfba      0x526 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
- .debug_macro   0x000000000001e4e0      0x4c4 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
- .debug_macro   0x000000000001e9a4      0x477 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacParser.o
- .debug_macro   0x000000000001ee1b      0x477 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacSerializer.o
- .debug_macro   0x000000000001f292      0xb39 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
- .debug_macro   0x000000000001fdcb      0x135 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
- .debug_macro   0x000000000001ff00      0x4ce stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCommon.o
- .debug_macro   0x00000000000203ce      0x4ca stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
- .debug_macro   0x0000000000020898      0x13b stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
- .debug_macro   0x00000000000209d3      0x4a2 stm32-it-sdk/Src/drivers/lorawan/systime.o
- .debug_macro   0x0000000000020e75       0x97 stm32-it-sdk/Src/drivers/lorawan/systime.o
- .debug_macro   0x0000000000020f0c       0xfd stm32-it-sdk/Src/drivers/lorawan/systime.o
- .debug_macro   0x0000000000021009      0x481 stm32-it-sdk/Src/drivers/lorawan/timeServer.o
- .debug_macro   0x000000000002148a       0xac stm32-it-sdk/Src/drivers/lorawan/timeServer.o
- .debug_macro   0x0000000000021536      0x4b8 stm32-it-sdk/Src/drivers/lorawan/utilities.o
- .debug_macro   0x00000000000219ee      0x3d4 stm32-it-sdk/Src/drivers/sx1276/murata_cmwx1zzabz.o
- .debug_macro   0x0000000000021dc2      0x4d5 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
- .debug_macro   0x0000000000022297      0x49d stm32-it-sdk/Src/it_sdk/console/console.o
- .debug_macro   0x0000000000022734       0x4c stm32-it-sdk/Src/it_sdk/console/console.o
- .debug_macro   0x0000000000022780      0x2fa stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o
- .debug_macro   0x0000000000022a7a       0x2e stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o
- .debug_macro   0x0000000000022aa8      0x3c2 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
- .debug_macro   0x0000000000022e6a      0x212 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
- .debug_macro   0x000000000002307c       0x28 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
- .debug_macro   0x00000000000230a4      0x2e1 stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o
- .debug_macro   0x0000000000023385      0x3a7 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
- .debug_macro   0x000000000002372c       0x22 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
- .debug_macro   0x000000000002374e      0x384 stm32-it-sdk/Src/it_sdk/encrypt/aes128ctr.o
- .debug_macro   0x0000000000023ad2       0x28 stm32-it-sdk/Src/it_sdk/encrypt/aes128ctr.o
- .debug_macro   0x0000000000023afa      0x39f stm32-it-sdk/Src/it_sdk/encrypt/tools.o
- .debug_macro   0x0000000000023e99      0x15f stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
- .debug_macro   0x0000000000023ff8      0x45d stm32-it-sdk/Src/it_sdk/logger/error.o
- .debug_macro   0x0000000000024455      0x410 stm32-it-sdk/Src/it_sdk/logger/logger.o
- .debug_macro   0x0000000000024865      0x539 stm32-it-sdk/Src/it_sdk/lorawan/lorawan.o
- .debug_macro   0x0000000000024d9e      0x2ef stm32-it-sdk/Src/it_sdk/lowpower/lowpower.o
- .debug_macro   0x000000000002508d       0x16 stm32-it-sdk/Src/it_sdk/lowpower/lowpower.o
- .debug_macro   0x00000000000250a3      0x334 stm32-it-sdk/Src/it_sdk/main.o
- .debug_macro   0x00000000000253d7      0x2ac stm32-it-sdk/Src/it_sdk/tool.o
- .debug_macro   0x0000000000025683      0x2f4 stm32-it-sdk/Src/it_sdk/sched/scheduler.o
- .debug_macro   0x0000000000025977       0x28 stm32-it-sdk/Src/it_sdk/sched/scheduler.o
- .debug_macro   0x000000000002599f       0x34 stm32-it-sdk/Src/it_sdk/sched/scheduler.o
- .debug_macro   0x00000000000259d3      0x2c2 stm32-it-sdk/Src/it_sdk/time/time.o
- .debug_macro   0x0000000000025c95      0x2ef stm32-it-sdk/Src/it_sdk/time/timer.o
- .debug_macro   0x0000000000025f84      0x323 stm32-it-sdk/Src/stm32l_sdk/adc/adc.o
- .debug_macro   0x00000000000262a7      0x391 stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
- .debug_macro   0x0000000000026638      0x2ba stm32-it-sdk/Src/stm32l_sdk/misc_wrapper.o
- .debug_macro   0x00000000000268f2      0x372 stm32-it-sdk/Src/stm32l_sdk/uart_wrapper.o
- .debug_macro   0x0000000000026c64       0x46 stm32-it-sdk/Src/stm32l_sdk/uart_wrapper.o
- .debug_macro   0x0000000000026caa      0x2ee stm32-it-sdk/Src/stm32l_sdk/eeprom/eeprom.o
- .debug_macro   0x0000000000026f98       0x1c stm32-it-sdk/Src/stm32l_sdk/eeprom/eeprom.o
- .debug_macro   0x0000000000026fb4      0x2ce stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
- .debug_macro   0x0000000000027282       0x10 stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
- .debug_macro   0x0000000000027292      0x443 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
- .debug_macro   0x00000000000276d5      0x2f0 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
- .debug_macro   0x00000000000279c5      0x2b2 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
+ .debug_macro   0x000000000001484a      0x4e4 Core/Src/project_main.o
+ .debug_macro   0x0000000000014d2e      0x112 Core/Src/project_main.o
+ .debug_macro   0x0000000000014e40       0x2e Core/Src/project_main.o
+ .debug_macro   0x0000000000014e6e       0x3a Core/Src/project_main.o
+ .debug_macro   0x0000000000014ea8       0x2e Core/Src/project_main.o
+ .debug_macro   0x0000000000014ed6       0x16 Core/Src/project_main.o
+ .debug_macro   0x0000000000014eec       0x1c Core/Src/project_main.o
+ .debug_macro   0x0000000000014f08       0x1c Core/Src/project_main.o
+ .debug_macro   0x0000000000014f24       0x40 Core/Src/project_main.o
+ .debug_macro   0x0000000000014f64     0x14bd Core/Src/project_main.o
+ .debug_macro   0x0000000000016421      0x79c Core/Src/project_main.o
+ .debug_macro   0x0000000000016bbd       0x5f Core/Src/project_main.o
+ .debug_macro   0x0000000000016c1c       0x46 Core/Src/project_main.o
+ .debug_macro   0x0000000000016c62       0x18 Core/Src/project_main.o
+ .debug_macro   0x0000000000016c7a       0x3c Core/Src/project_main.o
+ .debug_macro   0x0000000000016cb6       0x34 Core/Src/project_main.o
+ .debug_macro   0x0000000000016cea       0x16 Core/Src/project_main.o
+ .debug_macro   0x0000000000016d00       0x35 Core/Src/project_main.o
+ .debug_macro   0x0000000000016d35      0x330 Core/Src/project_main.o
+ .debug_macro   0x0000000000017065       0x10 Core/Src/project_main.o
+ .debug_macro   0x0000000000017075       0x52 Core/Src/project_main.o
+ .debug_macro   0x00000000000170c7       0x1f Core/Src/project_main.o
+ .debug_macro   0x00000000000170e6       0x43 Core/Src/project_main.o
+ .debug_macro   0x0000000000017129       0x20 Core/Src/project_main.o
+ .debug_macro   0x0000000000017149      0x1a3 Core/Src/project_main.o
+ .debug_macro   0x00000000000172ec       0x10 Core/Src/project_main.o
+ .debug_macro   0x00000000000172fc       0x1c Core/Src/project_main.o
+ .debug_macro   0x0000000000017318       0x52 Core/Src/project_main.o
+ .debug_macro   0x000000000001736a       0x40 Core/Src/project_main.o
+ .debug_macro   0x00000000000173aa       0x10 Core/Src/project_main.o
+ .debug_macro   0x00000000000173ba       0x40 Core/Src/project_main.o
+ .debug_macro   0x00000000000173fa       0xd7 Core/Src/project_main.o
+ .debug_macro   0x00000000000174d1       0x1c Core/Src/project_main.o
+ .debug_macro   0x00000000000174ed       0x3d Core/Src/project_main.o
+ .debug_macro   0x000000000001752a       0x16 Core/Src/project_main.o
+ .debug_macro   0x0000000000017540      0x145 Core/Src/project_main.o
+ .debug_macro   0x0000000000017685      0x212 Core/Src/rtc.o
+ .debug_macro   0x0000000000017897      0x212 Core/Src/spi.o
+ .debug_macro   0x0000000000017aa9      0x208 Core/Src/stm32l0xx_hal_msp.o
+ .debug_macro   0x0000000000017cb1      0x212 Core/Src/stm32l0xx_it.o
+ .debug_macro   0x0000000000017ec3       0xee Core/Src/sysmem.o
+ .debug_macro   0x0000000000017fb1      0x23b Core/Src/sysmem.o
+ .debug_macro   0x00000000000181ec      0x1ff Core/Src/system_stm32l0xx.o
+ .debug_macro   0x00000000000183eb      0x212 Core/Src/tim.o
+ .debug_macro   0x00000000000185fd      0x212 Core/Src/usart.o
+ .debug_macro   0x000000000001880f      0x21d Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+ .debug_macro   0x0000000000018a2c      0x208 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o
+ .debug_macro   0x0000000000018c34      0x20b Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o
+ .debug_macro   0x0000000000018e3f      0x1f9 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+ .debug_macro   0x0000000000019038      0x1f9 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+ .debug_macro   0x0000000000019231      0x231 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+ .debug_macro   0x0000000000019462      0x211 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+ .debug_macro   0x0000000000019673      0x1ff Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+ .debug_macro   0x0000000000019872      0x22f Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+ .debug_macro   0x0000000000019aa1      0x1f9 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+ .debug_macro   0x0000000000019c9a      0x1fa Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.o
+ .debug_macro   0x0000000000019e94      0x1ff Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.o
+ .debug_macro   0x000000000001a093      0x201 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+ .debug_macro   0x000000000001a294      0x224 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+ .debug_macro   0x000000000001a4b8      0x1f9 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+ .debug_macro   0x000000000001a6b1      0x513 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001abc4      0x1e1 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001ada5       0x16 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001adbb       0x20 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001addb       0x3a stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001ae15       0x55 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001ae6a       0x16 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001ae80       0xa6 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001af26       0x2e stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001af54       0x3a stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001af8e       0x4c stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001afda       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001afea       0x34 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001b01e       0xe7 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001b105       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001b115       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001b125       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_macro   0x000000000001b135      0x532 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
+ .debug_macro   0x000000000001b667       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
+ .debug_macro   0x000000000001b677      0x218 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
+ .debug_macro   0x000000000001b88f       0x16 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
+ .debug_macro   0x000000000001b8a5       0x10 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
+ .debug_macro   0x000000000001b8b5      0x1ba stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
+ .debug_macro   0x000000000001ba6f      0x10e stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
+ .debug_macro   0x000000000001bb7d       0x8d stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
+ .debug_macro   0x000000000001bc0a       0x28 stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
+ .debug_macro   0x000000000001bc32      0x477 stm32-it-sdk/Src/drivers/lorawan/crypto/cmac.o
+ .debug_macro   0x000000000001c0a9       0x10 stm32-it-sdk/Src/drivers/lorawan/crypto/cmac.o
+ .debug_macro   0x000000000001c0b9      0x4fc stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
+ .debug_macro   0x000000000001c5b5       0x28 stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
+ .debug_macro   0x000000000001c5dd       0x46 stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
+ .debug_macro   0x000000000001c623      0x59b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
+ .debug_macro   0x000000000001cbbe      0x4b1 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacAdr.o
+ .debug_macro   0x000000000001d06f      0x53b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacClassB.o
+ .debug_macro   0x000000000001d5aa       0x64 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacClassB.o
+ .debug_macro   0x000000000001d60e      0x4dd stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCommands.o
+ .debug_macro   0x000000000001daeb      0x4c3 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacConfirmQueue.o
+ .debug_macro   0x000000000001dfae      0x526 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
+ .debug_macro   0x000000000001e4d4      0x4c4 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
+ .debug_macro   0x000000000001e998      0x477 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacParser.o
+ .debug_macro   0x000000000001ee0f      0x477 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacSerializer.o
+ .debug_macro   0x000000000001f286      0xb39 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+ .debug_macro   0x000000000001fdbf      0x135 stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+ .debug_macro   0x000000000001fef4      0x4ce stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCommon.o
+ .debug_macro   0x00000000000203c2      0x4ca stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
+ .debug_macro   0x000000000002088c      0x13b stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
+ .debug_macro   0x00000000000209c7      0x4a2 stm32-it-sdk/Src/drivers/lorawan/systime.o
+ .debug_macro   0x0000000000020e69       0x97 stm32-it-sdk/Src/drivers/lorawan/systime.o
+ .debug_macro   0x0000000000020f00       0xfd stm32-it-sdk/Src/drivers/lorawan/systime.o
+ .debug_macro   0x0000000000020ffd      0x481 stm32-it-sdk/Src/drivers/lorawan/timeServer.o
+ .debug_macro   0x000000000002147e       0xac stm32-it-sdk/Src/drivers/lorawan/timeServer.o
+ .debug_macro   0x000000000002152a      0x4b8 stm32-it-sdk/Src/drivers/lorawan/utilities.o
+ .debug_macro   0x00000000000219e2      0x3d4 stm32-it-sdk/Src/drivers/sx1276/murata_cmwx1zzabz.o
+ .debug_macro   0x0000000000021db6      0x4d5 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
+ .debug_macro   0x000000000002228b      0x49d stm32-it-sdk/Src/it_sdk/console/console.o
+ .debug_macro   0x0000000000022728       0x4c stm32-it-sdk/Src/it_sdk/console/console.o
+ .debug_macro   0x0000000000022774      0x2fa stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o
+ .debug_macro   0x0000000000022a6e       0x2e stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o
+ .debug_macro   0x0000000000022a9c      0x3c2 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
+ .debug_macro   0x0000000000022e5e      0x212 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
+ .debug_macro   0x0000000000023070       0x28 stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
+ .debug_macro   0x0000000000023098      0x2e1 stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o
+ .debug_macro   0x0000000000023379      0x3a7 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
+ .debug_macro   0x0000000000023720       0x22 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
+ .debug_macro   0x0000000000023742      0x384 stm32-it-sdk/Src/it_sdk/encrypt/aes128ctr.o
+ .debug_macro   0x0000000000023ac6       0x28 stm32-it-sdk/Src/it_sdk/encrypt/aes128ctr.o
+ .debug_macro   0x0000000000023aee      0x39f stm32-it-sdk/Src/it_sdk/encrypt/tools.o
+ .debug_macro   0x0000000000023e8d      0x15f stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
+ .debug_macro   0x0000000000023fec      0x45d stm32-it-sdk/Src/it_sdk/logger/error.o
+ .debug_macro   0x0000000000024449      0x410 stm32-it-sdk/Src/it_sdk/logger/logger.o
+ .debug_macro   0x0000000000024859      0x539 stm32-it-sdk/Src/it_sdk/lorawan/lorawan.o
+ .debug_macro   0x0000000000024d92      0x2ef stm32-it-sdk/Src/it_sdk/lowpower/lowpower.o
+ .debug_macro   0x0000000000025081       0x16 stm32-it-sdk/Src/it_sdk/lowpower/lowpower.o
+ .debug_macro   0x0000000000025097      0x334 stm32-it-sdk/Src/it_sdk/main.o
+ .debug_macro   0x00000000000253cb      0x2ac stm32-it-sdk/Src/it_sdk/tool.o
+ .debug_macro   0x0000000000025677      0x2f4 stm32-it-sdk/Src/it_sdk/sched/scheduler.o
+ .debug_macro   0x000000000002596b       0x28 stm32-it-sdk/Src/it_sdk/sched/scheduler.o
+ .debug_macro   0x0000000000025993       0x34 stm32-it-sdk/Src/it_sdk/sched/scheduler.o
+ .debug_macro   0x00000000000259c7      0x2c2 stm32-it-sdk/Src/it_sdk/time/time.o
+ .debug_macro   0x0000000000025c89      0x2ef stm32-it-sdk/Src/it_sdk/time/timer.o
+ .debug_macro   0x0000000000025f78      0x323 stm32-it-sdk/Src/stm32l_sdk/adc/adc.o
+ .debug_macro   0x000000000002629b      0x391 stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
+ .debug_macro   0x000000000002662c      0x2ba stm32-it-sdk/Src/stm32l_sdk/misc_wrapper.o
+ .debug_macro   0x00000000000268e6      0x372 stm32-it-sdk/Src/stm32l_sdk/uart_wrapper.o
+ .debug_macro   0x0000000000026c58       0x46 stm32-it-sdk/Src/stm32l_sdk/uart_wrapper.o
+ .debug_macro   0x0000000000026c9e      0x2ee stm32-it-sdk/Src/stm32l_sdk/eeprom/eeprom.o
+ .debug_macro   0x0000000000026f8c       0x1c stm32-it-sdk/Src/stm32l_sdk/eeprom/eeprom.o
+ .debug_macro   0x0000000000026fa8      0x2ce stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
+ .debug_macro   0x0000000000027276       0x10 stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
+ .debug_macro   0x0000000000027286      0x443 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+ .debug_macro   0x00000000000276c9      0x2f0 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
+ .debug_macro   0x00000000000279b9      0x2b2 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
 
 .debug_line     0x0000000000000000    0x3a188
  .debug_line    0x0000000000000000      0x76f Core/Src/adc.o
@@ -22460,158 +22460,158 @@ OUTPUT(itsdk-example-murata-lora.elf elf32-littlearm)
  .debug_line    0x0000000000038bac      0xae5 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
  .debug_line    0x0000000000039691      0xaf7 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
 
-.debug_str      0x0000000000000000    0xadfb4
+.debug_str      0x0000000000000000    0xadfa0
  .debug_str     0x0000000000000000    0x85a20 Core/Src/adc.o
                                       0x85d96 (size before relaxing)
  .debug_str     0x0000000000085a20     0x4619 Core/Src/gpio.o
                                       0x8a22e (size before relaxing)
  .debug_str     0x000000000008a039      0x545 Core/Src/main.o
                                       0x8a4b1 (size before relaxing)
- .debug_str     0x000000000008a57e     0xca4f Core/Src/project_main.o
-                                      0x96c30 (size before relaxing)
- .debug_str     0x0000000000096fcd      0x12a Core/Src/rtc.o
+ .debug_str     0x000000000008a57e     0xca3b Core/Src/project_main.o
+                                      0x96c1c (size before relaxing)
+ .debug_str     0x0000000000096fb9      0x12a Core/Src/rtc.o
                                       0x85df1 (size before relaxing)
- .debug_str     0x00000000000970f7       0x58 Core/Src/spi.o
+ .debug_str     0x00000000000970e3       0x58 Core/Src/spi.o
                                       0x85dd6 (size before relaxing)
- .debug_str     0x000000000009714f       0x2c Core/Src/stm32l0xx_hal_msp.o
+ .debug_str     0x000000000009713b       0x2c Core/Src/stm32l0xx_hal_msp.o
                                       0x85931 (size before relaxing)
- .debug_str     0x000000000009717b       0xd0 Core/Src/stm32l0xx_it.o
+ .debug_str     0x0000000000097167       0xd0 Core/Src/stm32l0xx_it.o
                                       0x85e8b (size before relaxing)
- .debug_str     0x000000000009724b      0x4e9 Core/Src/sysmem.o
+ .debug_str     0x0000000000097237      0x4e9 Core/Src/sysmem.o
                                        0x5ecc (size before relaxing)
- .debug_str     0x0000000000097734       0x9c Core/Src/system_stm32l0xx.o
+ .debug_str     0x0000000000097720       0x9c Core/Src/system_stm32l0xx.o
                                       0x854de (size before relaxing)
- .debug_str     0x00000000000977d0       0xf5 Core/Src/tim.o
+ .debug_str     0x00000000000977bc       0xf5 Core/Src/tim.o
                                       0x85df8 (size before relaxing)
- .debug_str     0x00000000000978c5       0x6b Core/Src/usart.o
+ .debug_str     0x00000000000978b1       0x6b Core/Src/usart.o
                                       0x85fa7 (size before relaxing)
- .debug_str     0x0000000000097930       0x36 Core/Startup/startup_stm32l072czyx.o
+ .debug_str     0x000000000009791c       0x36 Core/Startup/startup_stm32l072czyx.o
                                          0x7e (size before relaxing)
- .debug_str     0x0000000000097966      0x41f Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
+ .debug_str     0x0000000000097952      0x41f Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o
                                       0x85b52 (size before relaxing)
- .debug_str     0x0000000000097d85      0x34e Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o
+ .debug_str     0x0000000000097d71      0x34e Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o
                                       0x85b9a (size before relaxing)
- .debug_str     0x00000000000980d3      0x1cb Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o
+ .debug_str     0x00000000000980bf      0x1cb Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o
                                       0x859d3 (size before relaxing)
- .debug_str     0x000000000009829e      0x28d Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
+ .debug_str     0x000000000009828a      0x28d Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o
                                       0x85943 (size before relaxing)
- .debug_str     0x000000000009852b      0x267 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
+ .debug_str     0x0000000000098517      0x267 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o
                                       0x8584b (size before relaxing)
- .debug_str     0x0000000000098792      0x242 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
+ .debug_str     0x000000000009877e      0x242 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o
                                       0x8578e (size before relaxing)
- .debug_str     0x00000000000989d4      0x2a0 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
+ .debug_str     0x00000000000989c0      0x2a0 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o
                                       0x8575a (size before relaxing)
- .debug_str     0x0000000000098c74      0x138 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
+ .debug_str     0x0000000000098c60      0x138 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o
                                       0x8551c (size before relaxing)
- .debug_str     0x0000000000098dac      0x2d2 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
+ .debug_str     0x0000000000098d98      0x2d2 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o
                                       0x859b4 (size before relaxing)
- .debug_str     0x000000000009907e      0x348 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
+ .debug_str     0x000000000009906a      0x348 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o
                                       0x85968 (size before relaxing)
- .debug_str     0x00000000000993c6      0x1ac Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.o
+ .debug_str     0x00000000000993b2      0x1ac Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc.o
                                       0x858a8 (size before relaxing)
- .debug_str     0x0000000000099572      0x769 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.o
+ .debug_str     0x000000000009955e      0x769 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rtc_ex.o
                                       0x85ddc (size before relaxing)
- .debug_str     0x0000000000099cdb      0x52e Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
+ .debug_str     0x0000000000099cc7      0x52e Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o
                                       0x85d3b (size before relaxing)
- .debug_str     0x000000000009a209      0x7ce Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
+ .debug_str     0x000000000009a1f5      0x7ce Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o
                                       0x860ac (size before relaxing)
- .debug_str     0x000000000009a9d7      0x185 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
+ .debug_str     0x000000000009a9c3      0x185 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o
                                       0x85979 (size before relaxing)
- .debug_str     0x000000000009ab5c     0x2cf1 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
+ .debug_str     0x000000000009ab48     0x2cf1 stm32-it-sdk/Src/drivers/lorawan/core/lora-test.o
                                       0x90bec (size before relaxing)
- .debug_str     0x000000000009d84d     0x30b9 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
+ .debug_str     0x000000000009d839     0x30b9 stm32-it-sdk/Src/drivers/lorawan/core/lorawan.o
                                       0x93586 (size before relaxing)
- .debug_str     0x00000000000a0906     0x1fba stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
+ .debug_str     0x00000000000a08f2     0x1fba stm32-it-sdk/Src/drivers/lorawan/crypto/aes.o
                                        0x8d7e (size before relaxing)
- .debug_str     0x00000000000a28c0      0x1b1 stm32-it-sdk/Src/drivers/lorawan/crypto/cmac.o
+ .debug_str     0x00000000000a28ac      0x1b1 stm32-it-sdk/Src/drivers/lorawan/crypto/cmac.o
                                       0x8e459 (size before relaxing)
- .debug_str     0x00000000000a2a71      0x5a7 stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
+ .debug_str     0x00000000000a2a5d      0x5a7 stm32-it-sdk/Src/drivers/lorawan/crypto/soft-se.o
                                       0x8edc1 (size before relaxing)
- .debug_str     0x00000000000a3018     0x2933 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
+ .debug_str     0x00000000000a3004     0x2933 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMac.o
                                       0x934bf (size before relaxing)
- .debug_str     0x00000000000a594b       0x7c stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacAdr.o
+ .debug_str     0x00000000000a5937       0x7c stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacAdr.o
                                       0x8efb6 (size before relaxing)
- .debug_str     0x00000000000a59c7      0x6bc stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacClassB.o
+ .debug_str     0x00000000000a59b3      0x6bc stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacClassB.o
                                       0x9140f (size before relaxing)
- .debug_str     0x00000000000a6083      0x368 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCommands.o
+ .debug_str     0x00000000000a606f      0x368 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCommands.o
                                       0x8eda2 (size before relaxing)
- .debug_str     0x00000000000a63eb      0x33b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacConfirmQueue.o
+ .debug_str     0x00000000000a63d7      0x33b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacConfirmQueue.o
                                       0x8f232 (size before relaxing)
- .debug_str     0x00000000000a6726      0x77b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
+ .debug_str     0x00000000000a6712      0x77b stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacCrypto.o
                                       0x8f78a (size before relaxing)
- .debug_str     0x00000000000a6ea1      0x1d6 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
+ .debug_str     0x00000000000a6e8d      0x1d6 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacFCntHandler.o
                                       0x8ec62 (size before relaxing)
- .debug_str     0x00000000000a7077       0x78 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacParser.o
+ .debug_str     0x00000000000a7063       0x78 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacParser.o
                                       0x8e735 (size before relaxing)
- .debug_str     0x00000000000a70ef       0xd6 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacSerializer.o
+ .debug_str     0x00000000000a70db       0xd6 stm32-it-sdk/Src/drivers/lorawan/mac/LoRaMacSerializer.o
                                       0x8e7e6 (size before relaxing)
- .debug_str     0x00000000000a71c5     0x25cd stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
+ .debug_str     0x00000000000a71b1     0x25cd stm32-it-sdk/Src/drivers/lorawan/mac/region/Region.o
                                       0x91dda (size before relaxing)
- .debug_str     0x00000000000a9792      0x524 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCommon.o
+ .debug_str     0x00000000000a977e      0x524 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionCommon.o
                                       0x8f911 (size before relaxing)
- .debug_str     0x00000000000a9cb6      0x3f9 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
+ .debug_str     0x00000000000a9ca2      0x3f9 stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionEU868.o
                                       0x90498 (size before relaxing)
- .debug_str     0x00000000000aa0af      0x433 stm32-it-sdk/Src/drivers/lorawan/systime.o
+ .debug_str     0x00000000000aa09b      0x433 stm32-it-sdk/Src/drivers/lorawan/systime.o
                                       0x8e74e (size before relaxing)
- .debug_str     0x00000000000aa4e2      0x216 stm32-it-sdk/Src/drivers/lorawan/timeServer.o
+ .debug_str     0x00000000000aa4ce      0x216 stm32-it-sdk/Src/drivers/lorawan/timeServer.o
                                       0x9069c (size before relaxing)
- .debug_str     0x00000000000aa6f8       0x7f stm32-it-sdk/Src/drivers/lorawan/utilities.o
+ .debug_str     0x00000000000aa6e4       0x7f stm32-it-sdk/Src/drivers/lorawan/utilities.o
                                       0x8e9e9 (size before relaxing)
- .debug_str     0x00000000000aa777      0x377 stm32-it-sdk/Src/drivers/sx1276/murata_cmwx1zzabz.o
+ .debug_str     0x00000000000aa763      0x377 stm32-it-sdk/Src/drivers/sx1276/murata_cmwx1zzabz.o
                                       0x95bdf (size before relaxing)
- .debug_str     0x00000000000aaaee      0x4a4 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
+ .debug_str     0x00000000000aaada      0x4a4 stm32-it-sdk/Src/drivers/sx1276/sx1276.o
                                       0x9731c (size before relaxing)
- .debug_str     0x00000000000aaf92      0x520 stm32-it-sdk/Src/it_sdk/console/console.o
+ .debug_str     0x00000000000aaf7e      0x520 stm32-it-sdk/Src/it_sdk/console/console.o
                                       0x90a8d (size before relaxing)
- .debug_str     0x00000000000ab4b2      0x1ea stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o
+ .debug_str     0x00000000000ab49e      0x1ea stm32-it-sdk/Src/it_sdk/eeprom/eeprom.o
                                       0x8c532 (size before relaxing)
- .debug_str     0x00000000000ab69c      0x28a stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
+ .debug_str     0x00000000000ab688      0x28a stm32-it-sdk/Src/it_sdk/eeprom/sdk_config.o
                                       0x8f635 (size before relaxing)
- .debug_str     0x00000000000ab926       0x51 stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o
+ .debug_str     0x00000000000ab912       0x51 stm32-it-sdk/Src/it_sdk/eeprom/sdk_state.o
                                       0x8a0d2 (size before relaxing)
- .debug_str     0x00000000000ab977      0x420 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
+ .debug_str     0x00000000000ab963      0x420 stm32-it-sdk/Src/it_sdk/eeprom/securestore.o
                                       0x8d81e (size before relaxing)
- .debug_str     0x00000000000abd97       0xe0 stm32-it-sdk/Src/it_sdk/encrypt/aes128ctr.o
+ .debug_str     0x00000000000abd83       0xe0 stm32-it-sdk/Src/it_sdk/encrypt/aes128ctr.o
                                       0x8cfee (size before relaxing)
- .debug_str     0x00000000000abe77      0x14d stm32-it-sdk/Src/it_sdk/encrypt/tools.o
+ .debug_str     0x00000000000abe63      0x14d stm32-it-sdk/Src/it_sdk/encrypt/tools.o
                                       0x8f4fb (size before relaxing)
- .debug_str     0x00000000000abfc4      0x259 stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
+ .debug_str     0x00000000000abfb0      0x259 stm32-it-sdk/Src/it_sdk/encrypt/tiny-AES-c/aes.o
                                        0x7130 (size before relaxing)
- .debug_str     0x00000000000ac21d      0x189 stm32-it-sdk/Src/it_sdk/logger/error.o
+ .debug_str     0x00000000000ac209      0x189 stm32-it-sdk/Src/it_sdk/logger/error.o
                                       0x9061d (size before relaxing)
- .debug_str     0x00000000000ac3a6      0x13a stm32-it-sdk/Src/it_sdk/logger/logger.o
+ .debug_str     0x00000000000ac392      0x13a stm32-it-sdk/Src/it_sdk/logger/logger.o
                                       0x8e1e3 (size before relaxing)
- .debug_str     0x00000000000ac4e0      0x346 stm32-it-sdk/Src/it_sdk/lorawan/lorawan.o
+ .debug_str     0x00000000000ac4cc      0x346 stm32-it-sdk/Src/it_sdk/lorawan/lorawan.o
                                       0x91c40 (size before relaxing)
- .debug_str     0x00000000000ac826      0x1fe stm32-it-sdk/Src/it_sdk/lowpower/lowpower.o
+ .debug_str     0x00000000000ac812      0x1fe stm32-it-sdk/Src/it_sdk/lowpower/lowpower.o
                                       0x8a192 (size before relaxing)
- .debug_str     0x00000000000aca24       0x47 stm32-it-sdk/Src/it_sdk/main.o
+ .debug_str     0x00000000000aca10       0x47 stm32-it-sdk/Src/it_sdk/main.o
                                       0x8c7b2 (size before relaxing)
- .debug_str     0x00000000000aca6b      0x225 stm32-it-sdk/Src/it_sdk/tool.o
+ .debug_str     0x00000000000aca57      0x225 stm32-it-sdk/Src/it_sdk/tool.o
                                       0x89f1b (size before relaxing)
- .debug_str     0x00000000000acc90       0xff stm32-it-sdk/Src/it_sdk/sched/scheduler.o
+ .debug_str     0x00000000000acc7c       0xff stm32-it-sdk/Src/it_sdk/sched/scheduler.o
                                       0x8c256 (size before relaxing)
- .debug_str     0x00000000000acd8f      0x21c stm32-it-sdk/Src/it_sdk/time/time.o
+ .debug_str     0x00000000000acd7b      0x21c stm32-it-sdk/Src/it_sdk/time/time.o
                                       0x89f1c (size before relaxing)
- .debug_str     0x00000000000acfab      0x181 stm32-it-sdk/Src/it_sdk/time/timer.o
+ .debug_str     0x00000000000acf97      0x181 stm32-it-sdk/Src/it_sdk/time/timer.o
                                       0x8c2db (size before relaxing)
- .debug_str     0x00000000000ad12c      0x1aa stm32-it-sdk/Src/stm32l_sdk/adc/adc.o
+ .debug_str     0x00000000000ad118      0x1aa stm32-it-sdk/Src/stm32l_sdk/adc/adc.o
                                       0x8c69b (size before relaxing)
- .debug_str     0x00000000000ad2d6      0x240 stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
+ .debug_str     0x00000000000ad2c2      0x240 stm32-it-sdk/Src/stm32l_sdk/gpio_wrapper.o
                                       0x8f773 (size before relaxing)
- .debug_str     0x00000000000ad516      0x19f stm32-it-sdk/Src/stm32l_sdk/misc_wrapper.o
+ .debug_str     0x00000000000ad502      0x19f stm32-it-sdk/Src/stm32l_sdk/misc_wrapper.o
                                       0x89fed (size before relaxing)
- .debug_str     0x00000000000ad6b5      0x2f6 stm32-it-sdk/Src/stm32l_sdk/uart_wrapper.o
+ .debug_str     0x00000000000ad6a1      0x2f6 stm32-it-sdk/Src/stm32l_sdk/uart_wrapper.o
                                       0x8d249 (size before relaxing)
- .debug_str     0x00000000000ad9ab       0xf9 stm32-it-sdk/Src/stm32l_sdk/eeprom/eeprom.o
+ .debug_str     0x00000000000ad997       0xf9 stm32-it-sdk/Src/stm32l_sdk/eeprom/eeprom.o
                                       0x8c1b2 (size before relaxing)
- .debug_str     0x00000000000adaa4       0xbd stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
+ .debug_str     0x00000000000ada90       0xbd stm32-it-sdk/Src/stm32l_sdk/lowpower/lowpower.o
                                       0x8a274 (size before relaxing)
- .debug_str     0x00000000000adb61      0x238 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
+ .debug_str     0x00000000000adb4d      0x238 stm32-it-sdk/Src/stm32l_sdk/rtc/rtc.o
                                       0x9000e (size before relaxing)
- .debug_str     0x00000000000add99       0xa9 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
+ .debug_str     0x00000000000add85       0xa9 stm32-it-sdk/Src/stm32l_sdk/rtc/systick.o
                                       0x8c18e (size before relaxing)
- .debug_str     0x00000000000ade42      0x172 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
+ .debug_str     0x00000000000ade2e      0x172 stm32-it-sdk/Src/stm32l_sdk/spi/spi.o
                                       0x89e65 (size before relaxing)
 
 .comment        0x0000000000000000       0x7b
