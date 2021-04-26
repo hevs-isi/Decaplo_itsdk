@@ -80,6 +80,7 @@ uint16_t getBatteryLevel();				//get the battery level with ADC
 
 
 //***** UART MEASURE ******
+#define UART_SENSOR			1
 UART_HandleTypeDef huart1;
 extern uint8_t byte;
 extern uint8_t tabToPrint[5];
@@ -89,16 +90,23 @@ uint16_t measureUart;												//measure as int
 uint8_t numberMeasure = 90;
 /**************************/
 
+/***********RELAY**********/
+#define RELAY_PORT		GPIOA			//port for the relay
+#define RELAY_PIN       GPIO_PIN_8  	// Pin for the relay
+#define SPICS_PORT		GPIOB			//port for the relay
+#define SPICS_PIN       GPIO_PIN_12  	// Pin for the relay
+#define RELAY_TOGGLE	1
+uint8_t relay_state = 0;
+void toggle_relay();
+
 void task() {
 
-// readUart();
 	/**
 	 * if not joined set the green led to 1
 	 */
 	if(!itsdk_lorawan_hasjoined()){
 		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 	}
-
 
 	// wait for the board configuration
 	uint8_t i = 0;
@@ -135,9 +143,11 @@ void task() {
 				}
 			} else {
 				// Send a LoRaWan Frame
+#ifdef UART_SENSOR
 				uint8_t measureValidity = readUart();
-
 				sendUplink(measureUart, measureValidity);
+#endif
+
 				s_state.lastComMS = 0;
 			}
 		} else {
@@ -204,6 +214,7 @@ void sendUplink(uint16_t measure, uint8_t validity){
 	*	A201 : adr off
 	*	A202 : adr on
 	* 0xA3 : set Datarate
+	* 0xB1
  * Send on port 3
  ****************************************************************************************/
 void process_downlink(uint8_t port, uint8_t rx[]){
@@ -239,6 +250,10 @@ void process_downlink(uint8_t port, uint8_t rx[]){
 			case 163:
 				//set datarate
 				dataRate = setDataRate(rx[1]);
+				break;
+
+			case 177: //B1 toggle relay
+				toggle_relay();
 				break;
 			default:
 				break;
@@ -317,6 +332,7 @@ void project_loop() {
  * UART sensor part
  ****************************************************************************************/
 #define debugUart   0
+
 uint8_t readUart(){
 
 	  GPIO_InitTypeDef POWER_ACTIVE;
@@ -350,10 +366,8 @@ uint8_t readUart(){
 	 tabToConvert[2] = tabToPrint[3];							//
 	 tabToConvert[3] = tabToPrint[4];							//
 
-
 	 sscanf(tabToConvert, "%d", &measureUart);					//convert char[] to int
 	 log_info("Final measure : %d", measureUart);				//print final measure
-
 
 	 if(measureUart==0 || measureUart<=500 || measureUart>=5000 || measureUart == 4999){	//check if the measure is valid or not
 		log_info(" Measure is not valid\r\n");
@@ -362,8 +376,6 @@ uint8_t readUart(){
 	 	log_info(" Measure is valid\r\n");
 	 	return 1;
 	 }
-
-
 }
 
 
@@ -375,6 +387,59 @@ void resetMeasure(uint8_t * array, uint8_t size){
 		array[i] = 0x30; //Set to 0
 	}
 }
+
+/****************************************************************************************
+ * Relay part
+ ****************************************************************************************/
+void toggle_relay(){
+	GPIO_InitTypeDef gpRelay = {
+	      .Pin  = RELAY_PIN,
+	      .Mode = GPIO_MODE_OUTPUT_PP,
+	  };
+	  HAL_GPIO_Init(GPIOA, &gpRelay);
+
+	  GPIO_InitTypeDef gpSPICS = {
+	        .Pin  = SPICS_PIN,
+	        .Mode = GPIO_MODE_OUTPUT_PP,
+	  };
+	  HAL_GPIO_Init(GPIOB, &gpSPICS);
+
+	  GPIO_InitTypeDef gpPowerActive = {
+	        .Pin  = GPIO_PIN_11,
+	        .Mode = GPIO_MODE_OUTPUT_PP,
+	    };
+	  HAL_GPIO_Init(GPIOA, &gpPowerActive);
+
+
+	  HAL_Delay(1000);
+
+	  HAL_GPIO_WritePin(GPIOA, gpPowerActive.Pin, 1);
+	  HAL_Delay(1000);
+	  if(relay_state == 0){
+		 // 0 on spi_cs 1 on relayopen
+		  relay_state = 1;
+
+		  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 1);
+		  HAL_GPIO_WritePin(SPICS_PORT, gpSPICS.Pin, 0);
+		  log_info("relay open\n\r");
+	  }else{
+		  // 1 on spi_cs 0 on relayopen
+		  relay_state = 0;
+
+		  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 0);
+		  HAL_GPIO_WritePin(SPICS_PORT, gpSPICS.Pin, 1);
+		  log_info("relay close \n\r");
+	  }
+	  HAL_Delay(4);   // max commutating time is 4ms
+
+	  HAL_GPIO_WritePin(RELAY_PORT, gpRelay.Pin, 0);
+	  HAL_GPIO_WritePin(SPICS_PORT, gpSPICS.Pin, 0);
+
+	  HAL_GPIO_WritePin(GPIOA, gpPowerActive.Pin, 0);
+
+
+}
+
 
 //========================================================================================
 //Test part

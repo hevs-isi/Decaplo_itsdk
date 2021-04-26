@@ -75,15 +75,15 @@ void SystemClock_Config(void);
 extern uint8_t byte;
 extern uint8_t tabToPrint[5];
 /*test relay*/
-#define RELAY_PORT		GPIOA		//port for the relay
-#define RELAY_PIN       GPIO_PIN_8  	// Pin for the relay
-#define SPICS_PORT		GPIOB		//port for the relay
-#define SPICS_PIN       GPIO_PIN_12  	// Pin for the relay
-#define VCC_SENSOR_PIN  GPIO_PIN_11 // PA11
-int relay_state = 0;
-void test_relay();
-void enable_vcc_sensor();
-void disable_vcc_sensor();
+//#define RELAY_PORT		GPIOA		//port for the relay
+//#define RELAY_PIN       GPIO_PIN_8  	// Pin for the relay
+//#define SPICS_PORT		GPIOB		//port for the relay
+//#define SPICS_PIN       GPIO_PIN_12  	// Pin for the relay
+//#define VCC_SENSOR_PIN  GPIO_PIN_11 // PA11
+//int relay_state = 0;
+//void test_relay();
+//void enable_vcc_sensor();
+//void disable_vcc_sensor();
 
 /**
  * main loop
@@ -142,16 +142,16 @@ int main(void)
 	/* USER CODE BEGIN 3 */
 
 
-	// itsdk_loop();
+	 itsdk_loop();
 
-	  test_relay();
+	//  test_relay();
 
 
   }
   /* USER CODE END 3 */
 }
 
-void test_relay()
+/*void test_relay()
 {
 
   GPIO_InitTypeDef gpRelay = {
@@ -216,7 +216,7 @@ void disable_vcc_sensor()
   };
   //HAL_GPIO_Init(GPIOA, &gp);
   HAL_GPIO_WritePin(GPIOA, gp.Pin, 0);
-}
+}*/
 
 
 
