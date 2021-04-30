@@ -66,12 +66,8 @@ struct state {
 #define VBAT_DIV2_PORT  __BANK_B		//tension divider for ADC
 #define VBAT_DIV2_PIN	__LP_GPIO_2		//
 
-
-
-
 //***** send *******
 void sendUplink(uint16_t measure, uint8_t validity);						//method that prepare payload and send
-
 
 //***** get battery level******
 uint16_t getBatteryLevel();				//get the battery level with ADC
@@ -105,18 +101,23 @@ void toggle_valve();
 /***************************
 ********Pulse Counter*******
 ***************************/
-extern uint16_t ticks;
-extern uint32_t flow;
+#ifdef USE_PULSE_COUNTER
+	#include "stm32l0xx_hal_lptim.h"
+	LPTIM_HandleTypeDef hlptim1;
+	void start_pulse_counter();
+	uint32_t instantaneous_flow (); //flow in l/min
+	uint32_t total_liters = 0; // increment each time timer reached 10,it said 10liters
+#endif
+
 
 void task() {
-	log_info("task %d\n\r", ticks);
-	log_info("flow %d\n\r", flow);
-
+//	log_info("Total_liters :  %d\n\r", total_liters);
+//	instantaneous_flow();
 
 	/**
 	 * if not joined set the green led to 1
 	 */
-/*	if(!itsdk_lorawan_hasjoined()){
+	if(!itsdk_lorawan_hasjoined()){
 		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 	}
 
@@ -155,7 +156,7 @@ void task() {
 				}
 			} else {
 				// Send a LoRaWan Frame
-#ifdef UART_SENSOR
+#ifdef USE_UART_ULTRASOUND
 				uint8_t measureValidity = readUart();
 				sendUplink(measureUart, measureValidity);
 #endif
@@ -165,7 +166,7 @@ void task() {
 		} else {
 			s_state.lastComMS += TASKDELAYMS;
 		}
-	}*/
+	}
 }
 
 
@@ -343,7 +344,6 @@ void project_loop() {
 /****************************************************************************************
  * UART sensor part
  ****************************************************************************************/
-#define debugUart   0
 
 uint8_t readUart(){
 
@@ -362,11 +362,10 @@ uint8_t readUart(){
 	 	HAL_UART_Receive_IT(&huart1, &byte, 1); 				//start measure, result is into tabToPrint
 	 	HAL_Delay(50);											//
 
-		#if debugUart											//DEBUG
-	 	log_info("Measure #%d : ", measureAttempt);				//Print all 90 measure
+	 	/*log_info("Measure #%d : ", measureAttempt);				//Print all 90 measure
 	 		HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500); //
 	 		log_info("\n\r");									//
-		#endif
+	 	*/
 	 	measureAttempt++;
 	 }
 
@@ -454,6 +453,81 @@ void toggle_valve(){
 }
 
 
+/****************************************************************************************
+ * Pulse Counter Part
+ ****************************************************************************************/
+#ifdef USE_PULSE_COUNTER
+
+	/**
+	 * Start LPTIM for pulse counting
+	 */
+	void start_pulse_counter(){
+		  HAL_LPTIM_Counter_Start_IT(&hlptim1, 20);
+	}
+
+	/**
+	 * return instantaneous flow in l/min
+	 */
+	uint32_t instantaneous_flow (){
+		uint32_t startFlow = 0;
+		uint32_t stopFlow = 0;
+
+		startFlow = total_liters + HAL_LPTIM_ReadCounter(&hlptim1);		//number total + actual timevalue
+		HAL_Delay(10000);
+		stopFlow = total_liters + HAL_LPTIM_ReadCounter(&hlptim1);		//number total + actual timevalue
+
+		//log_info("start liters : %d\n\r", startFlow);
+		//log_info("stop liters : %d\n\r", stopFlow);
+		//log_info("Instant liters : %d\n\r", stopFlow-startFlow);
+
+		return (stopFlow-startFlow)*6; //return value in l/min
+
+	}
+
+	/**
+	 * callback for timer reload
+	 * @param LPTIM_HandleTypeDef *hlptim : lptim instance
+	 */
+	void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
+	{
+		total_liters +=1;
+	}
+
+	/**
+	  * @brief LPTIM1 Initialization Function
+	  * @param None
+	  * @retval None
+	  */
+	void MX_LPTIM1_Init(void)
+	{
+
+	  /* USER CODE BEGIN LPTIM1_Init 0 */
+
+	  /* USER CODE END LPTIM1_Init 0 */
+
+	  /* USER CODE BEGIN LPTIM1_Init 1 */
+
+	  /* USER CODE END LPTIM1_Init 1 */
+	  hlptim1.Instance = LPTIM1;
+	  hlptim1.Init.Clock.Source = LPTIM_CLOCKSOURCE_ULPTIM;
+	  hlptim1.Init.Clock.Prescaler = LPTIM_PRESCALER_DIV1;
+	  hlptim1.Init.UltraLowPowerClock.Polarity = LPTIM_CLOCKPOLARITY_RISING;
+	  hlptim1.Init.UltraLowPowerClock.SampleTime = LPTIM_CLOCKSAMPLETIME_DIRECTTRANSITION;
+	  hlptim1.Init.Trigger.Source = LPTIM_TRIGSOURCE_SOFTWARE;
+	  hlptim1.Init.OutputPolarity = LPTIM_OUTPUTPOLARITY_HIGH;
+	  hlptim1.Init.UpdateMode = LPTIM_UPDATE_IMMEDIATE;
+	  hlptim1.Init.CounterSource = LPTIM_COUNTERSOURCE_EXTERNAL;
+	  if (HAL_LPTIM_Init(&hlptim1) != HAL_OK)
+	  {
+		Error_Handler();
+	  }
+	  /* USER CODE BEGIN LPTIM1_Init 2 */
+
+	  /* USER CODE END LPTIM1_Init 2 */
+
+	}
+
+#endif
 
 //========================================================================================
 //Test part

@@ -79,11 +79,9 @@ void test_relay();
 
 //pulse counter
 #include "stm32l0xx_hal_lptim.h"
-LPTIM_HandleTypeDef hlptim1;
-void MX_LPUART1_UART_Init(void);
-static void test_pulse_lp_timer();
-uint16_t ticks = 0;
-uint32_t flow = 0;
+//LPTIM_HandleTypeDef hlptim1;
+//uint16_t ticks = 0;
+//uint32_t flow = 0;
 
 
 
@@ -123,7 +121,6 @@ int main(void)
 //  MX_IWDG_Init();
   MX_ADC_Init();
 //  MX_TIM21_Init();
-  MX_LPTIM1_Init();
 
   /* USER CODE BEGIN 2 */
   itsdk_setup();
@@ -132,11 +129,11 @@ int main(void)
   /* Infinite loop */
 
   /* USER CODE BEGIN WHILE */
-  /********desable debug module and pins (SWLCK & SWDIO)*******/
 
-
-
-  HAL_LPTIM_Counter_Start_IT(&hlptim1, 20);
+#ifdef USE_PULSE_COUNTER
+  MX_LPTIM1_Init();
+  start_pulse_counter();
+#endif
 
   while (1)
   {
@@ -145,7 +142,6 @@ int main(void)
 
 
 	 itsdk_loop();
-	  test_pulse_lp_timer();
 
 
 	 /*test relais*/
@@ -156,72 +152,6 @@ int main(void)
 }
 
 
-
-//----------------
-/**
- * Counts the pulses from the PULSE_COUNTER input using the Low-Power Timer. The CPU is set in STOP
- * mode and wake up by the timer when the counter reaches 50.
- *
- * TODO: When the CPU enters in stop mode, it continues instead of stopping there until the interrupt occurs
- *
- *
- */
-static void test_pulse_lp_timer()
-{
-  uint8_t buf[32];
-
-  // start counter
-  //HAL_LPTIM_Counter_Start_IT(&hlptim1, 1);    // period of the counting up to 65535
-
-  ticks = HAL_LPTIM_ReadCounter(&hlptim1);
-  //snprintf((char*)buf, 32, "Pulse input counter=%d\n\r", ticks);
-  //log_info(buf);
-  HAL_Delay(100);
-
-
-}
-
-void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
-{
-  //log_info("HAL_LPTIM_AutoReloadMatchCallback");
-	flow +=1;
-}
-
-
-
-/**
-  * @brief LPTIM1 Initialization Function
-  * @param None
-  * @retval None
-  */
-void MX_LPTIM1_Init(void)
-{
-
-  /* USER CODE BEGIN LPTIM1_Init 0 */
-
-  /* USER CODE END LPTIM1_Init 0 */
-
-  /* USER CODE BEGIN LPTIM1_Init 1 */
-
-  /* USER CODE END LPTIM1_Init 1 */
-  hlptim1.Instance = LPTIM1;
-  hlptim1.Init.Clock.Source = LPTIM_CLOCKSOURCE_ULPTIM;
-  hlptim1.Init.Clock.Prescaler = LPTIM_PRESCALER_DIV1;
-  hlptim1.Init.UltraLowPowerClock.Polarity = LPTIM_CLOCKPOLARITY_RISING;
-  hlptim1.Init.UltraLowPowerClock.SampleTime = LPTIM_CLOCKSAMPLETIME_DIRECTTRANSITION;
-  hlptim1.Init.Trigger.Source = LPTIM_TRIGSOURCE_SOFTWARE;
-  hlptim1.Init.OutputPolarity = LPTIM_OUTPUTPOLARITY_HIGH;
-  hlptim1.Init.UpdateMode = LPTIM_UPDATE_IMMEDIATE;
-  hlptim1.Init.CounterSource = LPTIM_COUNTERSOURCE_EXTERNAL;
-  if (HAL_LPTIM_Init(&hlptim1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN LPTIM1_Init 2 */
-
-  /* USER CODE END LPTIM1_Init 2 */
-
-}
 
 
 

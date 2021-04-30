@@ -80,6 +80,12 @@
 #define ITSDK_WITH_EXPERIMENTAL 	__DISABLE								// activate or deactivate some experimental code by default set it to DISABLE
 #define ITSDK_WITH_GPIO_HANDLER		__ENABLE								// Enable the internal GPIO Handler, when disable you need to map it manually
 
+//HEI
+#define USE_PULSE_COUNTER			0										// use pulse counter for flow measurement
+#define USE_UART_ULTRASOUND			0										// use uart ultrasound
+
+
+
 #define ITSDK_LOGGER_CONF			0x00F0									// error->info level on serial1 => USART2 (see logger.c)
 #define ITSDK_LOGGER_WITH_SEG_RTT 	__DISABLE								// activate or deactive the segger RTT console (see segger.md file)
 #define ITSDK_LOGGER_MODULE			( \
