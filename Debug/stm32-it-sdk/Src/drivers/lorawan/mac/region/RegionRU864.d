@@ -29,6 +29,7 @@ stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o: \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_i2c.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_i2c_ex.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_iwdg.h \
+ ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_lptim.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr_ex.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_rtc.h \
@@ -120,6 +121,8 @@ stm32-it-sdk/Src/drivers/lorawan/mac/region/RegionRU864.o: \
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_i2c_ex.h:
 
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_iwdg.h:
+
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_lptim.h:
 
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_pwr.h:
 

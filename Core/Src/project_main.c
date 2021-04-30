@@ -50,7 +50,7 @@
 
 int32_t COMFREQS = (3*60*1000); 		// app dutycycle
 //#define COMFREQS 3*60*1000
-#define TASKDELAYMS	10*(1000)
+#define TASKDELAYMS	3*(1000)//10
 uint8_t dataRate = __LORAWAN_DR_0;
 uint8_t setDataRate(uint8_t nbr);
 
@@ -102,12 +102,21 @@ uint8_t numberMeasure = 90;
 uint8_t bistable_valve_state = 0;
 void toggle_valve();
 
+/***************************
+********Pulse Counter*******
+***************************/
+extern uint16_t ticks;
+extern uint32_t flow;
+
 void task() {
+	log_info("task %d\n\r", ticks);
+	log_info("flow %d\n\r", flow);
+
 
 	/**
 	 * if not joined set the green led to 1
 	 */
-	if(!itsdk_lorawan_hasjoined()){
+/*	if(!itsdk_lorawan_hasjoined()){
 		gpio_set(LEDGreen_PORT,LEDGreen_PIN);
 	}
 
@@ -156,7 +165,7 @@ void task() {
 		} else {
 			s_state.lastComMS += TASKDELAYMS;
 		}
-	}
+	}*/
 }
 
 

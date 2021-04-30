@@ -151,7 +151,7 @@
 										 | __LP_GPIO_2   	/* User button */  	\
 									/*	 | __LP_GPIO_3 */   /* spi1 */ 			\
 									/*	 | __LP_GPIO_4 */	/* LoRa Dio0 */ 	\
-									/*	 | __LP_GPIO_5 */	/* Led 1 */ 		\
+										 | __LP_GPIO_5 	/* Pulse counter wake-up */ 		\
 									/*	 | __LP_GPIO_6 */	/* Led 3 / Uart1 Tx */ 		\
 										 | __LP_GPIO_7  	/* Green led */ 		\
 									/*	 | __LP_GPIO_8 */	/* i2c NA */		\
