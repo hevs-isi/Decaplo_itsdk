@@ -130,7 +130,7 @@ int main(void)
 
   /* USER CODE BEGIN WHILE */
 
-#ifdef USE_PULSE_COUNTER
+#if(USE_PULSE_COUNTER==1)
   MX_LPTIM1_Init();
   start_pulse_counter();
 #endif

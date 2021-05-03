@@ -8,4 +8,3 @@ stm32l0xx_it.c:165:6:EXTI0_1_IRQHandler	8	static
 stm32l0xx_it.c:180:6:EXTI4_15_IRQHandler	8	static
 stm32l0xx_it.c:195:6:USART1_IRQHandler	8	static
 stm32l0xx_it.c:209:6:USART2_IRQHandler	8	static
-stm32l0xx_it.c:223:6:LPTIM1_IRQHandler	8	static

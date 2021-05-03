@@ -76,15 +76,15 @@ uint16_t getBatteryLevel();				//get the battery level with ADC
 /**************************
 ******* UART MEASURE ******
 **************************/
-#define UART_SENSOR			1
-UART_HandleTypeDef huart1;
-extern uint8_t byte;
-extern uint8_t tabToPrint[5];
-uint8_t readUart();
-void resetMeasure(uint8_t * array, uint8_t size);
-uint16_t measureUart;												//measure as int
-uint8_t numberMeasure = 90;
-
+#if(USE_UART_ULTRASOUND==1)
+	UART_HandleTypeDef huart1;
+	extern uint8_t byte;
+	extern uint8_t tabToPrint[5];
+	uint8_t readUart();
+	void resetMeasure(uint8_t * array, uint8_t size);
+	uint16_t measureUart;												//measure as int
+	uint8_t numberMeasure = 90;
+#endif
 
 /***************************
 *************RELAY**********
@@ -101,7 +101,7 @@ void toggle_valve();
 /***************************
 ********Pulse Counter*******
 ***************************/
-#ifdef USE_PULSE_COUNTER
+#if(USE_PULSE_COUNTER==1)
 	#include "stm32l0xx_hal_lptim.h"
 	LPTIM_HandleTypeDef hlptim1;
 	void start_pulse_counter();
@@ -124,11 +124,21 @@ void task() {
 	// wait for the board configuration
 	uint8_t i = 0;
 	uint8_t devEui[8] = {0};
+	uint8_t appEui[8] = {0};
+	uint8_t appKey[16] = {0};
+
 	itsdk_lorawan_getDeviceEUI(devEui);
+	itsdk_lorawan_getAppEUI(appEui);
+	itsdk_lorawan_getAppKEY(appKey);
 	while ( i < 8 && devEui[i] == 0 ) i++;
 	if  ( i < 8 ) {
 		if ( s_state.setup == BOOL_FALSE) {
-			log_info("Init LoRawan Stack ");
+			log_info("Init LoRawan Stack \n\r");
+			log_info("devEUI : 0x%02X %02X %02X %02X %02X %02X %02X %02X \n\r",devEui[0],devEui[1],devEui[2],devEui[3],devEui[4],devEui[5],devEui[6],devEui[7]);
+			log_info("appEUI : 0x%02X %02X %02X %02X %02X %02X %02X %02X \n\r",appEui[0],appEui[1],appEui[2],appEui[3],appEui[4],appEui[5],appEui[6],appEui[7]);
+			log_info("appKey : 0x%02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X\n\r",appKey[0],appKey[1],appKey[2],appKey[3],appKey[4],appKey[5]
+					,appKey[6],appKey[7],appKey[8],appKey[9],appKey[10],appKey[11],appKey[12],appKey[13],appKey[14],appKey[15]);
+
 			itsdk_lorawan_init_t r;
 			#ifdef ITSDK_LORAWAN_CHANNEL
 				static itsdk_lorawan_channelInit_t channels= ITSDK_LORAWAN_CHANNEL;
@@ -156,9 +166,12 @@ void task() {
 				}
 			} else {
 				// Send a LoRaWan Frame
-#ifdef USE_UART_ULTRASOUND
+#if(USE_UART_ULTRASOUND==1)
 				uint8_t measureValidity = readUart();
 				sendUplink(measureUart, measureValidity);
+#endif
+#if(USE_PULSE_COUNTER==1)
+
 #endif
 
 				s_state.lastComMS = 0;
@@ -344,61 +357,61 @@ void project_loop() {
 /****************************************************************************************
  * UART sensor part
  ****************************************************************************************/
+#if(USE_UART_ULTRASOUND==1)
+	uint8_t readUart(){
 
-uint8_t readUart(){
-
-	  GPIO_InitTypeDef POWER_ACTIVE;
-	  POWER_ACTIVE.Pin   = GPIO_PIN_11 ;
-	  POWER_ACTIVE.Mode  = GPIO_MODE_OUTPUT_PP;
-
-
-	 int measureAttempt = 0;
-	 resetMeasure(&tabToPrint[0], 4); 							//Reset the return array
-	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_SET);  //Set on the ultrasonic sensor
-	 	HAL_Delay(50);											//
-
-	 log_info("Start the measure !\r\n");
-	 while(measureAttempt < numberMeasure){
-	 	HAL_UART_Receive_IT(&huart1, &byte, 1); 				//start measure, result is into tabToPrint
-	 	HAL_Delay(50);											//
-
-	 	/*log_info("Measure #%d : ", measureAttempt);				//Print all 90 measure
-	 		HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500); //
-	 		log_info("\n\r");									//
-	 	*/
-	 	measureAttempt++;
-	 }
-
-	 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_RESET);//PowerOff the sensor
-
-     uint8_t tabToConvert[4];									//remove first 'R' char
-	 tabToConvert[0] = tabToPrint[1];							//
-	 tabToConvert[1] = tabToPrint[2];							//
-	 tabToConvert[2] = tabToPrint[3];							//
-	 tabToConvert[3] = tabToPrint[4];							//
-
-	 sscanf(tabToConvert, "%d", &measureUart);					//convert char[] to int
-	 log_info("Final measure : %d", measureUart);				//print final measure
-
-	 if(measureUart==0 || measureUart<=500 || measureUart>=5000 || measureUart == 4999){	//check if the measure is valid or not
-		log_info(" Measure is not valid\r\n");
-	 	return 0;
-	 }else{
-	 	log_info(" Measure is valid\r\n");
-	 	return 1;
-	 }
-}
+		  GPIO_InitTypeDef POWER_ACTIVE;
+		  POWER_ACTIVE.Pin   = GPIO_PIN_11 ;
+		  POWER_ACTIVE.Mode  = GPIO_MODE_OUTPUT_PP;
 
 
-/**
- * Reset the Uart Buffer
- */
-void resetMeasure(uint8_t * array, uint8_t size){
-	for (int i = 0; i < size; i++){
-		array[i] = 0x30; //Set to 0
+		 int measureAttempt = 0;
+		 resetMeasure(&tabToPrint[0], 4); 							//Reset the return array
+		 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_SET);  //Set on the ultrasonic sensor
+			HAL_Delay(50);											//
+
+		 log_info("Start the measure !\r\n");
+		 while(measureAttempt < numberMeasure){
+			HAL_UART_Receive_IT(&huart1, &byte, 1); 				//start measure, result is into tabToPrint
+			HAL_Delay(50);											//
+
+			/*log_info("Measure #%d : ", measureAttempt);				//Print all 90 measure
+				HAL_UART_Transmit(&huart2, &tabToPrint[0], 5, 500); //
+				log_info("\n\r");									//
+			*/
+			measureAttempt++;
+		 }
+
+		 HAL_GPIO_WritePin(GPIOA, POWER_ACTIVE.Pin, GPIO_PIN_RESET);//PowerOff the sensor
+
+		 uint8_t tabToConvert[4];									//remove first 'R' char
+		 tabToConvert[0] = tabToPrint[1];							//
+		 tabToConvert[1] = tabToPrint[2];							//
+		 tabToConvert[2] = tabToPrint[3];							//
+		 tabToConvert[3] = tabToPrint[4];							//
+
+		 sscanf(tabToConvert, "%d", &measureUart);					//convert char[] to int
+		 log_info("Final measure : %d", measureUart);				//print final measure
+
+		 if(measureUart==0 || measureUart<=500 || measureUart>=5000 || measureUart == 4999){	//check if the measure is valid or not
+			log_info(" Measure is not valid\r\n");
+			return 0;
+		 }else{
+			log_info(" Measure is valid\r\n");
+			return 1;
+		 }
 	}
-}
 
+
+	/**
+	 * Reset the Uart Buffer
+	 */
+	void resetMeasure(uint8_t * array, uint8_t size){
+		for (int i = 0; i < size; i++){
+			array[i] = 0x30; //Set to 0
+		}
+	}
+#endif
 /****************************************************************************************
  * Relay part
  ****************************************************************************************/
@@ -456,7 +469,7 @@ void toggle_valve(){
 /****************************************************************************************
  * Pulse Counter Part
  ****************************************************************************************/
-#ifdef USE_PULSE_COUNTER
+#if(USE_PULSE_COUNTER==1)
 
 	/**
 	 * Start LPTIM for pulse counting

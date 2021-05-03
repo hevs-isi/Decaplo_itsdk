@@ -81,7 +81,7 @@
 #define ITSDK_WITH_GPIO_HANDLER		__ENABLE								// Enable the internal GPIO Handler, when disable you need to map it manually
 
 //HEI
-#define USE_PULSE_COUNTER			0										// use pulse counter for flow measurement
+#define USE_PULSE_COUNTER			1										// use pulse counter for flow measurement
 #define USE_UART_ULTRASOUND			0										// use uart ultrasound
 
 
