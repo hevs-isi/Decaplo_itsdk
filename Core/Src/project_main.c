@@ -128,6 +128,7 @@ void task() {
 	uint8_t appKey[16] = {0};
 
 	itsdk_lorawan_getDeviceEUI(devEui);
+
 	itsdk_lorawan_getAppEUI(appEui);
 	itsdk_lorawan_getAppKEY(appKey);
 	while ( i < 8 && devEui[i] == 0 ) i++;
